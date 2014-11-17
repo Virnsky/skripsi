@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1415514946 source:c:\users\scyld\documents\skripsi project\parse_variasi.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1416211493 source:c:\users\scyld\documents\skripsi project\huffman_skripsi\parse_variasi.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
