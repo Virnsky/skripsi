@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
+#include <treelibrary.h>
 
 FILE * fp;
 fpos_t pos1;
@@ -241,6 +242,24 @@ int main (){
         fread(str2,1,huf_var,fp);
         check_symbol(str2,&L);
     }
+
+//Special test 'untuk pembentukan pohon'
+    htlist_head* akarpohon;
+    akarpohon->first=NULL;
+    htree* pohon;
+    symbol_list* ksim=L.first;
+    while(ksim!=NULL)
+    {
+        add_tree_list(akarpohon,ksim->t.symbol,ksim->t.frekuensi);
+        ksim=ksim->next;
+    }
+    printf("create tree\n");
+    create_tree(akarpohon,pohon);
+    printf("succesfully create tree\n");
+    printPaths(pohon);
+
+    return 0;
+//test selesai
 
     print_list(&L);
     printf("\nTotal Karakter Dalam Berkas Adalah %d\n",count_char_max(fp));

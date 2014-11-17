@@ -14,6 +14,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="E:/Project/gitproject/skripsi/" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -33,6 +34,8 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="parse_variasi.cpp" />
+		<Unit filename="treelibrary.cpp" />
+		<Unit filename="treelibrary.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
