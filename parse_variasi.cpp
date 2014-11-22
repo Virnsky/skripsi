@@ -6,10 +6,10 @@
 FILE * fp;
 fpos_t pos1;
 char str2[10], str1[10], str3[10], s[10];
-int i=0, z=0, k=0;
-int x,sisa,total,limit, huf_var, batas;
-char temp_prio1[5], temp_prio2[5];
-int temp_ind1 = 0, temp_ind2 = 0, temp_max_fre;
+int i=0, z=0, k=0, p=0;
+int x,sisa,total,limit, huf_var, batas, mulai;
+char temp_prio1[10], temp_prio2[10], temp_prio3[10], temp_prio4[10], temp_prio5[10];
+int temp_ind1 = 0, temp_ind2 = 0, temp_ind3 = 0, temp_ind4 = 0, temp_ind5 = 0,temp_max_fre;
 
 struct data_t
 {
@@ -168,11 +168,16 @@ symbol_list* get_symbol(const char* symbol_name,list* L)
 }
 
 void var_reset(){
-    printf("\nTahap Var_Reset : Ok");
+    //printf("\nTahap Var_Reset : Ok");
     temp_max_fre = 0;
     strcpy(str1,"");
     strcpy(str2,"");
     strcpy(str3,"");
+    strcpy(temp_prio1,"");
+    strcpy(temp_prio2,"");
+    strcpy(temp_prio3,"");
+    strcpy(temp_prio4,"");
+    strcpy(temp_prio5,"");
     total=0;
     k=0;
 };
@@ -182,42 +187,34 @@ void compare_sysmbol(list *lt,char str[],int index_seek, int limit, char temp_sy
     //printf("\nTahap Awal Comparing Simbol : Ok");
     while(k<limit){
         total = index_seek+k;
-        fsetpos(fp, &pos1);
-        //printf("\nTahap 1 Comparing Simbol : Ok");
         fseek(fp,total,SEEK_SET);
         fread(str,1,huf_var,fp);
         symbol_list* yuri=get_symbol(str,lt);
-        //printf("\nTahap 2 Comparing Simbol : Ok");
         if(yuri==NULL){
             printf("\nYuri = Null");
         }
         else{
             int f=yuri->t.frekuensi;
-            strcpy(s,str);
-            printf("\nIsi dari loop %d adalah %s",k,s);
-            //printf("\nTahap 3 Comparing Simbol : Ok");
+            strncpy(s,str,huf_var);
             if(frek_symbol<f){
                 if(count_char_left(fp)>huf_var){
-                    strcpy(temp_symbol,s);
-                    index_symbol = k+1;
+                    strncpy(temp_symbol,s,huf_var);
+                    index_symbol = k;
                     frek_symbol = f;
-                    printf("\nIsi dari second loop %d adalah Simbol %s, Index %d, Frek %d",k,temp_symbol,index_symbol,frek_symbol);
-                }
+                    printf("\nLoop Selesi Simbol %d : %s || %d || %d",k,temp_symbol,index_symbol,frek_symbol);
+
+                 }
             }
         }
     k++;
     }
-    //printf("\nTahap Akhir Parsing Simbol : Ok");
 };
-void preadd_parse(list* lt,char str[],int limited){
+void preadd_parse(list* lt,char str[],int limited,int index){
     var_reset();
-    fsetpos(fp, &pos1);
-    //fseek(fp,0,SEEK_SET);
-    fread(str,1,limited,fp);
+    fseek(fp,index,SEEK_SET);
+    fread(str,1,(limited+1),fp);
+    strncpy(str,str,huf_var);
     add_symbol(str,lt);
-    printf("\nTahap Add Simbol Awal : Ok");
-    printf("\nIsi dari Limited : %d",limited);
-    printf("\nIsi Dari Fungsi PreAdd adalah %s",str);
     if(!strcmp(str,"")) printf(" Kosong");
 };
 
@@ -242,7 +239,7 @@ int main (){
         fread(str2,1,huf_var,fp);
         check_symbol(str2,&L);
     }
-
+    print_list(&L);/*
 //Special test 'untuk pembentukan pohon'
     htlist_head* akarpohon;
     akarpohon->first=NULL;
@@ -260,57 +257,72 @@ int main (){
 
     return 0;
 //test selesai
-
-    print_list(&L);
+*/
     printf("\nTotal Karakter Dalam Berkas Adalah %d\n",count_char_max(fp));
-    printf("\nTahap 1");
     fseek(fp,0,SEEK_SET);
     for(z; z<=(count_char_max(fp)-(huf_var-1)); z){
+        printf("\n\nProses Ke %d",p);
         fgetpos(fp, &pos1);
-        compare_sysmbol(&L,str1,z,huf_var,temp_prio1,temp_ind1,temp_max_fre);
-        printf("\nTahap 2");
-        printf("\nIsi dari Keluaran tahap 2 adalah %s, %d, %d",temp_prio1,temp_ind1,temp_max_fre);
+        compare_sysmbol(&L,str1,z,huf_var,temp_prio1,temp_ind1,temp_max_fre);                   // Tahap 1
+        printf("\ntemp_prio1 adalah %s",temp_prio1);
 
-        if (temp_ind1!=1){
-            temp_ind1=temp_ind1-1;
-            compare_sysmbol(&L,str2,temp_ind1,huf_var,temp_prio2,temp_ind2,temp_max_fre);
-            sisa=temp_ind1;
-            printf("\nTahap 2-A");
+        if (temp_ind1!=0){
+            printf("\nMasuk ke Proses temp_ind1!=0");
+            printf("\nIsi Sebelum proses, temp_prio2 adalah %s", temp_prio2);
+            mulai=z+temp_ind1;
+            compare_sysmbol(&L,str2,mulai,huf_var,temp_prio2,temp_ind2,temp_max_fre);       // Tahap 2
+            sisa=temp_ind1+temp_ind2;
+            printf("\ntemp_prio2 adalah %s",temp_prio2);
 
-            if(sisa>huf_var){
-                batas=huf_var-sisa;
-                compare_sysmbol(&L,str2,z,batas,temp_prio2,temp_ind2,temp_max_fre);
-                printf("\nTahap 2-A-B");
+            if(temp_ind2!=0){
+                printf("\nMasuk ke Proses temp_ind2!=0");
+                batas=temp_ind1+temp_ind2;
+                mulai=(z+temp_ind2+temp_ind1);
+                compare_sysmbol(&L,str3,mulai,huf_var,temp_prio3,temp_ind3,temp_max_fre);
+                printf("\ntemp_prio3 adalah %s",temp_prio3);
+                sisa=temp_ind1+temp_ind2+temp_ind3;
 
-                if(temp_ind2==temp_ind1){
-                    preadd_parse(&parselist,str1,temp_ind1);
-                    add_symbol(temp_prio2,&parselist);
-                    z=z+temp_ind2+huf_var-1;
-                    printf("\nTahap 2-A-B-A");
-                }
+                if(sisa>=huf_var){
+                    printf("\nMasuk ke Proses sisa>=Huf_var");
+                    batas=(sisa+1)-huf_var;
+                    compare_sysmbol(&L,str1,z,batas,temp_prio4,temp_ind4,temp_max_fre);
+                    printf("\ntemp_prio4 adalah %s",temp_prio4);
 
-                else{
-                    preadd_parse(&parselist,str1,temp_ind2);
-                    add_symbol(temp_prio2,&parselist);
-                    z=z+temp_ind2+temp_ind1+huf_var-1;
-                    printf("\nTahap 2-A-B-B");
+                    if(temp_ind4!=0){
+                        printf("\nMasuk ke Proses temp_ind4!=0");
+                        batas=temp_ind4-1;
+                        preadd_parse(&parselist,str1,batas,z);
+                        add_symbol(temp_prio4,&parselist);
+                        printf("\nSimbol yang dimasukan Ke List adalah %s dan %s",str1,temp_prio4);
+                        z=z+temp_ind4+huf_var;
+                    }
+                    else{
+                        printf("\nMasuk ke Proses temp_ind4==0");
+                        add_symbol(temp_prio4,&parselist);
+                        printf("\nSimbol yang dimasukan Ke List adalah %s",temp_prio4);
+                        z=z+temp_ind4+huf_var;
+                    }
                 }
             }
-
             else{
-                preadd_parse(&parselist,str3,temp_ind1);
-                printf("\nData yang akan di masukan ke parsing adalah %s",str3);
-                z=z+temp_ind1+huf_var;
-                printf("\nTahap 2-B");
+                printf("\nMasuk ke Proses Sisa<huf_var");
+                batas=temp_ind1-1;
+                preadd_parse(&parselist,str2,batas,z);
+                printf("\nSimbol yang dimasukan Ke List adalah %s",str2);
+                z=z+temp_ind1;
             }
         }
-
         else{
+            printf("\nMasuk ke Proses temp_ind1==0");
             add_symbol(temp_prio1,&parselist);
-            z=z+temp_ind1+huf_var-1;
-            printf("\nTahap 3");
+            printf("\nSimbol yang dimasukan Ke List adalah %s",temp_prio1);
+            z=z+huf_var;
         }
+        p++;
     }
+    batas=count_char_max(fp)-z;
+    preadd_parse(&parselist,str3,batas,z);
+    printf("\nSimbol Akhir yang dimasukan adalah %s\n\n",str3);
     print_list(&parselist);
     fclose (fp);
     return 1;
