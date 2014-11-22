@@ -8,7 +8,7 @@ fpos_t pos1;
 char str2[10], str1[10], str3[10], s[10];
 int i=0, z=0, k=0, p=0;
 int x,sisa,total,limit, huf_var, batas, mulai;
-char temp_prio1[10], temp_prio2[10], temp_prio3[10], temp_prio4[10], temp_prio5[10];
+char temp_prio1[10], temp_prio2[10], temp_prio3[10], temp_prio4[10], temp_prio5[10], vt[10];
 int temp_ind1 = 0, temp_ind2 = 0, temp_ind3 = 0, temp_ind4 = 0, temp_ind5 = 0,temp_max_fre;
 
 struct data_t
@@ -170,14 +170,15 @@ symbol_list* get_symbol(const char* symbol_name,list* L)
 void var_reset(){
     //printf("\nTahap Var_Reset : Ok");
     temp_max_fre = 0;
-    strcpy(str1,"");
-    strcpy(str2,"");
-    strcpy(str3,"");
-    strcpy(temp_prio1,"");
-    strcpy(temp_prio2,"");
-    strcpy(temp_prio3,"");
-    strcpy(temp_prio4,"");
-    strcpy(temp_prio5,"");
+    memset(str1, '\0',10);
+    memset(str2, '\0',10);
+    memset(str3, '\0',10);
+    memset(temp_prio1, '\0',10);
+    memset(temp_prio2, '\0',10);
+    memset(temp_prio3, '\0',10);
+    memset(temp_prio4, '\0',10);
+    memset(temp_prio5, '\0',10);
+    memset(vt, '\0',10);
     total=0;
     k=0;
 };
@@ -195,7 +196,7 @@ void compare_sysmbol(list *lt,char str[],int index_seek, int limit, char temp_sy
         }
         else{
             int f=yuri->t.frekuensi;
-            strncpy(s,str,huf_var);
+            strcpy(s,str);
             if(frek_symbol<f){
                 if(count_char_left(fp)>huf_var){
                     strncpy(temp_symbol,s,huf_var);
@@ -213,8 +214,10 @@ void preadd_parse(list* lt,char str[],int limited,int index){
     var_reset();
     fseek(fp,index,SEEK_SET);
     fread(str,1,(limited+1),fp);
-    strncpy(str,str,huf_var);
-    add_symbol(str,lt);
+    //printf("\nIsi str : %s",str);
+    strncpy(vt,str,(limited+1));
+    //printf("Isi strncpy : %s",vt);
+    add_symbol(vt,lt);
     if(!strcmp(str,"")) printf(" Kosong");
 };
 
@@ -259,6 +262,9 @@ int main (){
 //test selesai
 */
     printf("\nTotal Karakter Dalam Berkas Adalah %d\n",count_char_max(fp));
+
+        /* ##### BEGIN OF PARSING SYMBOLS ##### */
+
     fseek(fp,0,SEEK_SET);
     for(z; z<=(count_char_max(fp)-(huf_var-1)); z){
         printf("\n\nProses Ke %d",p);
@@ -271,7 +277,6 @@ int main (){
             printf("\nIsi Sebelum proses, temp_prio2 adalah %s", temp_prio2);
             mulai=z+temp_ind1;
             compare_sysmbol(&L,str2,mulai,huf_var,temp_prio2,temp_ind2,temp_max_fre);       // Tahap 2
-            sisa=temp_ind1+temp_ind2;
             printf("\ntemp_prio2 adalah %s",temp_prio2);
 
             if(temp_ind2!=0){
@@ -280,7 +285,7 @@ int main (){
                 mulai=(z+temp_ind2+temp_ind1);
                 compare_sysmbol(&L,str3,mulai,huf_var,temp_prio3,temp_ind3,temp_max_fre);
                 printf("\ntemp_prio3 adalah %s",temp_prio3);
-                sisa=temp_ind1+temp_ind2+temp_ind3;
+                sisa=temp_ind1+temp_ind2+temp_ind3+1;
 
                 if(sisa>=huf_var){
                     printf("\nMasuk ke Proses sisa>=Huf_var");
@@ -319,10 +324,15 @@ int main (){
             z=z+huf_var;
         }
         p++;
+        batas=count_char_max(fp)-z;
+        printf("\nMax Char : %d dan Current Char : %d dan sisa %d",count_char_max(fp),z,batas);
     }
     batas=count_char_max(fp)-z;
     preadd_parse(&parselist,str3,batas,z);
     printf("\nSimbol Akhir yang dimasukan adalah %s\n\n",str3);
+
+    /*  ##### END OF PARSING SYMBOLS #####   */
+
     print_list(&parselist);
     fclose (fp);
     return 1;
