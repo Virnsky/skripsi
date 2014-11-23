@@ -203,15 +203,13 @@ void compare_sysmbol(list *lt,char str[],int index_seek, int limit, char temp_sy
                     strncpy(temp_symbol,s,huf_var);
                     index_symbol = k;
                     frek_symbol = f;
-                    printf("\nLoop Selesi Simbol %d : %s || %d || %d",k,temp_symbol,index_symbol,frek_symbol);
-
                  }
             }
         }
     k++;
     }
 };
-void preadd_parse(list* lt,char str[],int limited,int index){
+void preadd_parse(list* lt,char str[],int limited,int index, list* L){
     var_reset();
     fseek(fp,index,SEEK_SET);
     fread(str,1,(limited+1),fp);
@@ -219,6 +217,7 @@ void preadd_parse(list* lt,char str[],int limited,int index){
     strncpy(vt,str,(limited+1));
     //printf("Isi strncpy : %s",vt);
     add_symbol(vt,lt);
+    check_symbol(vt,L);
     if(!strcmp(str,"")) printf(" Kosong");
 };
 
@@ -228,7 +227,9 @@ int main (){
     list L;
     L.first=NULL;
     list parselist;
+    list tabel_huffman;
     parselist.first=NULL;
+    tabel_huffman.first=NULL;
 
     printf("Enter Length: ");
     scanf("%d", &huf_var);
@@ -268,6 +269,7 @@ int main (){
 
     fseek(fp,0,SEEK_SET);
     for(z; z<=(count_char_max(fp)-(huf_var-1)); z){
+        printf("\n\nProses ke : %d",p);
         fseek(fp,z,SEEK_SET);
         compare_sysmbol(&L,str1,z,huf_var,temp_prio1,temp_ind1,temp_max_fre);                   // Tahap 1
 
@@ -288,31 +290,35 @@ int main (){
 
                     if(temp_ind4!=0){
                         batas=temp_ind4-1;
-                        preadd_parse(&parselist,str1,batas,z);
+                        preadd_parse(&parselist,str1,batas,z, &tabel_huffman);
                         if(temp_prio4 != temp_prio5){
                             batas=(sisa+1)-huf_var;
                             compare_sysmbol(&L,str2,z,batas,temp_prio5,temp_ind5,temp_max_fre);
                             add_symbol(temp_prio5,&parselist);
+                            check_symbol(temp_prio5,&tabel_huffman);
                         }
                         else{
                             add_symbol(temp_prio4,&parselist);
+                            check_symbol(temp_prio4,&tabel_huffman);
                         }
                         z=z+temp_ind4+huf_var;
                     }
                     else{
                         add_symbol(temp_prio4,&parselist);
+                        check_symbol(temp_prio4,&tabel_huffman);
                         z=z+temp_ind4+huf_var;
                     }
                 }
             }
             else{
                 batas=temp_ind1-1;
-                preadd_parse(&parselist,str2,batas,z);
+                preadd_parse(&parselist,str2,batas,z, &tabel_huffman);
                 z=z+temp_ind1;
             }
         }
         else{
             add_symbol(temp_prio1,&parselist);
+            check_symbol(temp_prio1,&tabel_huffman);
             z=z+huf_var+temp_ind1;
 
         }
@@ -321,12 +327,15 @@ int main (){
     }
     batas=count_char_max(fp)-z;
     if(batas!=0){
-        preadd_parse(&parselist,str3,batas,z);
+        preadd_parse(&parselist,str3,batas,z,&tabel_huffman);
     }
 
     /*  ##### END OF PARSING SYMBOLS #####   */
 
+    printf("\n\nData yang siap dikode kan\n");
     print_list(&parselist);
+    printf("\n\nTabel Huffman\n");
+    print_list(&tabel_huffman);
     fclose (fp);
     return 1;
 }
