@@ -187,17 +187,44 @@ void compare_sysmbol(list *lt,char str[],int index_seek, int limit, char temp_sy
     var_reset();
     //printf("\nTahap Awal Comparing Simbol : Ok");
     while(k<limit){
+        memset(str, '\0',10);
         total = index_seek+k;
         fseek(fp,total,SEEK_SET);
         fread(str,1,huf_var,fp);
         symbol_list* yuri=get_symbol(str,lt);
         if(yuri==NULL){
             printf("\nYuri = Null");
+            printf("\nString before = %s",str);
+            memset(str, '\0',10);
+            frek_symbol=0;
+            fseek(fp,(total-3),SEEK_SET);           // KENAPA MEMBACANYA DIBAGIAN AKHIR KELINGKAH!!!!!!!
+            fread(str,1,huf_var,fp);
+            //symbol_list* yuri=get_symbol(str,lt);
+            printf("\nString after = %s",str);
+            /*int f=yuri->t.frekuensi;
+            if(f==0) f=0;
+            printf("  Frek : %d",f);
+            strcpy(s,str);
+            printf("\nstrcpy dari str ke s : %s",s);
+            if(frek_symbol<f){
+                printf("\nfrek_symbol<f");
+                printf("\nSisa > huf_var || %d > %d",count_char_left(fp),huf_var);
+                batas=count_char_left(fp)+huf_var;
+                if(batas>=huf_var){
+                    printf("\nCompare");
+                    strncpy(temp_symbol,s,huf_var);
+                    index_symbol = k;
+                    frek_symbol = f;
+                    printf("\nLoop Selesi Simbol %d : %s || %d || %d",k,temp_symbol,index_symbol,frek_symbol);
+
+                 }
+            }*/
         }
         else{
             int f=yuri->t.frekuensi;
             strcpy(s,str);
             if(frek_symbol<f){
+                printf("\nSisa > huf_var || %d > %d",count_char_left(fp),huf_var);
                 if(count_char_left(fp)>huf_var){
                     strncpy(temp_symbol,s,huf_var);
                     index_symbol = k;
@@ -292,13 +319,23 @@ int main (){
                     batas=(sisa+1)-huf_var;
                     compare_sysmbol(&L,str1,z,batas,temp_prio4,temp_ind4,temp_max_fre);
                     printf("\ntemp_prio4 adalah %s",temp_prio4);
+                    strncpy(temp_prio5,temp_prio4,huf_var);
 
                     if(temp_ind4!=0){
                         printf("\nMasuk ke Proses temp_ind4!=0");
                         batas=temp_ind4-1;
                         preadd_parse(&parselist,str1,batas,z);
-                        add_symbol(temp_prio4,&parselist);
-                        printf("\nSimbol yang dimasukan Ke List adalah %s dan %s",str1,temp_prio4);
+                        printf("\ntemp_prio4 dalam fungsi adalah %s",temp_prio4);
+                        if(temp_prio4 != temp_prio5){
+                            batas=(sisa+1)-huf_var;
+                            compare_sysmbol(&L,str2,z,batas,temp_prio5,temp_ind5,temp_max_fre);
+                            add_symbol(temp_prio5,&parselist);
+                            printf("\nSimbol yang dimasukan Ke List (temp_prio5) adalah %s dan %s",str1,temp_prio5);
+                        }
+                        else{
+                            add_symbol(temp_prio4,&parselist);
+                            printf("\nSimbol yang dimasukan Ke List (temp_prio4) adalah %s dan %s",str1,temp_prio4);
+                        }
                         z=z+temp_ind4+huf_var;
                     }
                     else{
@@ -321,7 +358,8 @@ int main (){
             printf("\nMasuk ke Proses temp_ind1==0");
             add_symbol(temp_prio1,&parselist);
             printf("\nSimbol yang dimasukan Ke List adalah %s",temp_prio1);
-            z=z+huf_var;
+            z=z+huf_var+temp_ind1;
+
         }
         p++;
         batas=count_char_max(fp)-z;
