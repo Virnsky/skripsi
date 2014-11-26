@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
-#include <treelibrary.h>
+#include "treelibrary.h"
 
 FILE * fp;
 fpos_t pos1;
@@ -54,27 +54,41 @@ void add_symbol(char symbol_name[],list *L)
 
 }
 
-void sort_list(list* L)
-{
-    if(L->first!=NULL)
-    {
-        symbol_list* lt=L->first;
-        int i=0;
-        while(lt!=NULL)
-        {
-            symbol_list* lu=lt;
-            while(lu!=NULL)
-            {
-                if(lu->t.frekuensi > lu->next->t.frekuensi)
-                {
 
-                }
-                lu=lu->next;
-            }
-            lt=lt->next;
-        }
+// bubble sort for list sorting
+void sort_list(list* L){
+    if(L->first!=NULL){
+		char bubble_burst;
+        struct symbol_list *lt, *temp;
+        do{
+			lt=L->first;
+			bubble_burst= 0;
+			// first element
+			if (lt->t.frekuensi > lt->next->t.frekuensi){
+				temp= lt->next->next;
+				L->first = lt->next;
+				L->first->next= lt;
+				lt->next= temp;
+				bubble_burst= 1;
+				}
+			// second element and forth
+			while(lt->next!=NULL && lt->next->next!=NULL){
+				//printf("%d. symbol:%s\tfrek:%d\n",i,lt->t.symbol,lt->t.frekuensi);
+				if (lt->next->t.frekuensi > lt->next->next->t.frekuensi){
+					temp= lt->next->next;
+					lt->next->next= temp->next;
+					temp->next= lt->next;
+					lt->next= temp;
+					bubble_burst= 1;
+					}
+				lt=lt->next;	
+				}
+			}
+		while(bubble_burst);	
     }
+    else printf("list masih kosong\n");
 }
+
 
 void print_list(list* L)
 {
@@ -84,7 +98,13 @@ void print_list(list* L)
         int i=1;
         while(lt!=NULL)
         {
-            printf("%d. symbol:%s   frek:%d\n",i,lt->t.symbol,lt->t.frekuensi);
+            printf("%d. symbol:%s\tlen:%d\tfrek:%d\n",i,lt->t.symbol,strlen(lt->t.symbol),lt->t.frekuensi);
+            //~ if (lt->next !=NULL){
+				//~ if (lt->next->next !=NULL){
+					//~ printf("boooo!\n");
+					//~ }
+				//~ }
+            
             lt=lt->next;
             i++;
         }
@@ -335,6 +355,7 @@ int main (){
     printf("\n\nData yang siap dikode kan\n");
     print_list(&parselist);
     printf("\n\nTabel Huffman\n");
+    sort_list(&tabel_huffman);
     print_list(&tabel_huffman);
     fclose (fp);
     return 1;
