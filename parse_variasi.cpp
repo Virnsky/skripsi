@@ -54,8 +54,7 @@ void add_symbol(char symbol_name[],list *L)
 
 }
 
-
-// bubble sort for list sorting
+// bubble sort: prioritize length then frequency if the lengths are equal
 void sort_list(list* L){
     if(L->first!=NULL){
 		char bubble_burst;
@@ -64,7 +63,11 @@ void sort_list(list* L){
 			lt=L->first;
 			bubble_burst= 0;
 			// first element
-			if (lt->t.frekuensi > lt->next->t.frekuensi){
+			if (
+				(strlen(lt->t.symbol) > strlen(lt->next->t.symbol)) ||
+				( (strlen(lt->t.symbol) == strlen(lt->next->t.symbol))
+					&& (lt->t.frekuensi > lt->next->t.frekuensi))
+				){
 				temp= lt->next->next;
 				L->first = lt->next;
 				L->first->next= lt;
@@ -74,7 +77,11 @@ void sort_list(list* L){
 			// second element and forth
 			while(lt->next!=NULL && lt->next->next!=NULL){
 				//printf("%d. symbol:%s\tfrek:%d\n",i,lt->t.symbol,lt->t.frekuensi);
-				if (lt->next->t.frekuensi > lt->next->next->t.frekuensi){
+				if (
+					(strlen(lt->next->t.symbol) > strlen(lt->next->next->t.symbol)) ||
+					((strlen(lt->next->t.symbol) == strlen(lt->next->next->t.symbol))
+						&& (lt->next->t.frekuensi > lt->next->next->t.frekuensi))
+				){
 					temp= lt->next->next;
 					lt->next->next= temp->next;
 					temp->next= lt->next;
@@ -88,7 +95,6 @@ void sort_list(list* L){
     }
     else printf("list masih kosong\n");
 }
-
 
 void print_list(list* L)
 {
