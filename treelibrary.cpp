@@ -7,7 +7,7 @@ void add_tree_list(htlist_head* L,char symbol[6],int frek)
     htree*  t_branch=(htree*) malloc(sizeof(htree));
 
 	strcpy(t_branch->symbol,symbol);
-	printf("add symbol %s\n",t_branch->symbol);
+//	printf("add symbol %s\n",t_branch->symbol);
 	t_branch->frekuensi=frek;
 	t_branch->left=NULL;
 	t_branch->right=NULL;
@@ -88,12 +88,13 @@ void del_htlist_front(htlist_head* L)
     if(L->first!=NULL)
     {
         htree_list* t_l=L->first;
+        t_l->branch=NULL;
         L->first=L->first->next;
         t_l->next=NULL;
         free(t_l);
     }
 }
-void create_tree(struct htlist_head* L,struct htree* Tr)
+void create_tree(struct htlist_head* L)
 {
     if(L->first!=NULL)
     {
@@ -109,14 +110,38 @@ void create_tree(struct htlist_head* L,struct htree* Tr)
             del_htlist_front(L);
             printf("branch created %d\n",b->frekuensi);
         }
-        Tr=L->first->branch;
+
     }else
     {
         printf("list NULL\n");
     }
 }
 
-void printPathsRecur(struct htree* node, int path[], int pathLen)
+void debug_list(struct htlist_head* L)
+{
+    if(L->first!=NULL)
+    {
+        htree_list* lt=L->first;
+        int i=1;
+        while(lt!=NULL)
+        {
+            printf("%d. symbol branch:%s\tfrek:%d\n",i,lt->branch->symbol,lt->branch->frekuensi);
+            //~ if (lt->next !=NULL){
+				//~ if (lt->next->next !=NULL){
+					//~ printf("boooo!\n");
+					//~ }
+				//~ }
+
+            lt=lt->next;
+            i++;
+        }
+    }else
+    {
+        printf("list kosong\n");
+    }
+}
+
+void printPathsRecur(htree* node, int path[], int pathLen)
 {
 
     if (node==NULL)
@@ -125,19 +150,19 @@ void printPathsRecur(struct htree* node, int path[], int pathLen)
   /* append this node to the path array */
     path[pathLen] = node->frekuensi;
     pathLen++;
-    printf("show path %d\n",node->frekuensi);
+//    printf("show path %d\n",node->frekuensi);
   /* it's a leaf, so print the path that led to here  */
     if (node->left==NULL && node->right==NULL)
     {
         printArray(path, pathLen);
-//        printf("%s\n",node->symbol);
+        printf("%s\n",node->symbol);
     }
     else
     {
     /* otherwise try both subtrees */
-        printf("rekurse left\n");
+//        printf("rekurse left\n");
         printPathsRecur(node->left, path, pathLen);
-        printf("rekurse right\n");
+//        printf("rekurse right\n");
         printPathsRecur(node->right, path, pathLen);
     }
 }
@@ -152,7 +177,52 @@ void printArray(int ints[], int len)
 //    printf("\n");
 }
 
-void printPaths(struct htree* node)
+//debug with file
+void printPathsRecur(htree* node, int path[], int pathLen, FILE* fp)
+{
+
+    if (node==NULL)
+        return;
+
+  /* append this node to the path array */
+    path[pathLen] = node->frekuensi;
+    pathLen++;
+//    printf("show path %d\n",node->frekuensi);
+  /* it's a leaf, so print the path that led to here  */
+    if (node->left==NULL && node->right==NULL)
+    {
+        printArray(path, pathLen,fp);
+        printf("%s\n",node->symbol);
+        fwrite(node->symbol,sizeof(char),sizeof(node->symbol),fp);
+        fprintf(fp,"\n");
+    }
+    else
+    {
+    /* otherwise try both subtrees */
+//        printf("rekurse left\n");
+        printPathsRecur(node->left, path, pathLen,fp);
+//        printf("rekurse right\n");
+        printPathsRecur(node->right, path, pathLen,fp);
+    }
+}
+
+void printArray(int ints[], int len, FILE* fp)
+{
+    int i;
+    for (i=0; i<len; i++)
+    {
+        printf("%d-", ints[i]);
+        fprintf(fp,"%d ", ints[i]);
+    }
+}
+
+void printPaths(htree* node, FILE* fp)
+{
+    int path[1000];
+    printPathsRecur(node, path, 0, fp);
+}
+//end debug
+void printPaths(htree* node)
 {
     int path[1000];
     printPathsRecur(node, path, 0);

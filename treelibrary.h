@@ -7,7 +7,7 @@
 
 struct htree
 {
-    char symbol[6];
+    char symbol[10];
     int frekuensi;
     struct htree* right;
     struct htree* left;
@@ -33,9 +33,17 @@ void add_tree_list(htlist_head* L,char symbol[6],int frek);
 void add_tree_list(htlist_head* L,htree* t_tree);
 void sort_tree_list(htlist_head* L);
 void del_htlist_front(htlist_head* L);
-void create_tree(htlist_head* L,htree* Tr);
-void printPathsRecur(struct htree* node, int path[], int pathLen);
+void create_tree(htlist_head* L);
+void debug_list(struct htlist_head* L);
+void printPathsRecur(htree* node, int path[], int pathLen);
 void printArray(int ints[], int len);
-void printPaths(struct htree* node);
+void printPaths(htree* node);
+
+//debug
+void printPathsRecur(htree* node, int path[], int pathLen, FILE* fp);
+void printArray(int ints[], int len, FILE* fp);
+void printPaths(htree* node, FILE* fp);
+//end debug
+
 
 #endif // TREELIBRARY_H_INCLUDED

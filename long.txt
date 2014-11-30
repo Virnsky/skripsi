@@ -1,0 +1,2318 @@
+*****
+**    **** ****  **  *  * **** ***
+***** *  * *    **** *  * *  * **
+**    **** *     **  **** *  * ***
+
+      ~FORTUNE SUMMONERS~
+
+*****
+**    *  * ***** ***** **** **** *** ****  ****
+  *** *  * * * * * * * *  * *  * **  *     **
+***** **** *   * *   * **** *  * *** *   ***
+
+
+SECRET OF THE ELEMENTAL STONE
+
+
+
+
+AKA Fortune Summoner ~Arche and the Spirit Stone ~ JP Title
+
+Guide Version 0.35 By Chao Min Wu
+
+
+===============================================================================
+
+             		         Copyright
+
+===============================================================================
+
+This guide was written by Chao Min Wu (Zoelius) (Zoel in other forums)
+
+This guide cannot be reproduced under any circumstances except for personal 
+private use. It may not be published on any website or otherwise distributed 
+publicly at all, no exceptions. This guide shall only be allow for public 
+display on www.gamefaqs.com  and www.neoseeker.com. Any other use is strictly
+prohibited and is a violation of copyright laws. 
+
+If you have any questions, tips, or concerns, my contact is Chaomin@gmail.com 
+
+
+Please Note:This is the initial version of the guide, so not all 
+content has been covered yet. 
+
+Please don't send me flames and spam via email, as it will be immediately 
+deleted and your email address will be blocked.
+
+
+
+===============================================================================
+
+			     Table of Contents
+
+===============================================================================
+
+
+
+
+
+1A =	About Fortune Summoners
+
+-----------------------------
+  Section 2 Gameplay Basics  /
+----------------------------- 
+   
+    1A =    Controls
+    1B =    Status Glossary
+    1C =    Leveling
+    1D =    Saving
+    1E =    File Transfer
+
+-----------------------------
+  Section 3 Main Walkthrough /
+----------------------------- 
+
+Prolouge Chapter
+
+    3A = Day 1
+    3B = Day 2
+    3C = Day 3
+    3D = Day 4
+    3E = Day 5
+    3G = Day 6
+    3H = Day 7
+    3I = Day 8
+
+----------------------------- 
+  Section 4 Mark of Heroism  /
+----------------------------- 
+
+----------------------------
+  Section 5 Side Quest      /
+----------------------------
+
+----------------------------------
+  Section 6 Character Parameters /
+---------------------------------
+---------------------------------
+  Section 7 Equipment List      /
+--------------------------------
+---------------------------------
+  Section 8 Miscellaneous info  /
+--------------------------------
+
+
+
+
+
+===============================================================================
+
+			     Gameplay Basic
+
+							GUIDE SECTION 2
+===============================================================================
+
+
+
+ ================
+\    Controls 	 /
+ ================							     1A
+===============================================================================
+
+
+
+Default Key Board Controls
+
+Jump			        = C
+Attack 	                        = X
+Draw Sword / Select Magic       = Z
+Examine				= V
+Change Character / Text Skip    = None
+Open Menu			= None
+Change Spellbook		= NumEnter
+Use Healing Item		= F
+Change Follow Mode		= None
+Change Magic Use Mode		= None
+Change Scroll Mode		= None
+Move POV UP			= Page Up
+Move POV DOwn			= Page Down
+Move POV Right			= End
+Move POV Left			= Home
+Select Spell 0-9		= Num0-9
+
+
+
+===============================================================================
+
+
+
+ ================
+\Status Glossary /
+ ================							     1B
+===============================================================================
+HP: Hit Points, the number that determines your current health. Reaching zero
+    will result in knockout.
+
+MP: Magic Points, use for casting magic.
+
+
+Attack:          Physical attack power. Higher status will increase the damage
+		 output of your weapons.
+
+Defense:         Defense against physical attacks.
+
+Spirit:		s Increase the power of your magic attacks.
+
+Resistance:      Increase magic resistance, higher resistance can reduced the
+		 effects of negative status ailments.
+
+
+ ================
+\    Leveling   /
+ ===============							     1C
+===============================================================================
+In Fortune Summoners, status are randomly increase randomly upon leveling up.
+For perfectionist or players the wants the best possible results, I highly
+recommend that save your game before leveling your character. This also applies
+when using status increasing items.
+
+
+
+ ================
+\     Saving     /
+ ================							     1D
+===============================================================================
+
+To save your progress, you must speak to an innkeeper, a script event or an
+angel statue at a dungeon.
+
+
+
+ ================
+\  File Transfer /
+ ================							     1E
+===============================================================================
+
+If you started playing Fortune Summoners from the official demo, you can 
+transfer your save file by copying the User folder from your Fortune Summoners
+directory. This method also works for Deluxe version and vice versa. 
+
+
+
+
+
+===============================================================================
+
+			     Main Walkthrough
+
+							GUIDE SECTION 3
+===============================================================================
+
+
+
+
+
+Prolouge Chapter
+===============================================================================
+
+~Day 1~ 	3A
+
+
+
+Treasure List
+ 
+ Item Name           Location
+ -----------------------------------------------------------------------------
+|Melshee Chocolate | Examine the Closet at Arche's house 3rd Floor            |
+ -----------------------------------------------------------------------------
+|10 Copper Coins   | Examine the drawer at Arche's house 3rd Floor            |
+ -----------------------------------------------------------------------------
+|Strongirl Juice   | Examine the Closet at Arche's parent's room 2nd Floor    |
+ -----------------------------------------------------------------------------
+|Tough Drop        | Examine the Drawer at Arche's neighbour's house          |
+ -----------------------------------------------------------------------------
+|5 Copper Coins    | Destroy the barrel in front of the weapons shop	      |
+ -----------------------------------------------------------------------------
+|Underwear (Boys)  | Examine the Drawer at the weapon shop	              |
+ -----------------------------------------------------------------------------
+|1 Silver Coin     | Examine the Drawer at the Inn 2nd Floor	              |
+ -----------------------------------------------------------------------------
+|Mentama Drop      | Examine the closet at the Inn 2nd Floor	              |
+ -----------------------------------------------------------------------------
+|Underwear (Girls) | Examine the Drawer at dress shop 2F backroom	      |
+ -----------------------------------------------------------------------------
+|1 Silver Coin     | Examine the Closet at the Inn 2nd Floor	              |
+ -----------------------------------------------------------------------------
+|Melshee Chocolate | Examine the Drawer at Louise's house 2nd floor	      |
+ -----------------------------------------------------------------------------
+|Green Beret       | Examine the Drawer at Sana's house 2nd floor	      |
+ -----------------------------------------------------------------------------
+
+
+
+
+Town of Tonkiness
+===============================================================================
+
+
+
+================
+Map of Tonkiness/
+================
+
+
+	Wind Shrine<--- Sana's House----Louise's House
+
+                                                ^
+  Old Lady's House-- Arche's House (Item Shop)  |
+                              |      	        |
+Exit--Inn -----Weapon Shop---- ----------------- ------Dress Shop--Exit
+
+
+Talk to Arche's Mother, then enter the room on the 2nd floor. Destory all the
+pots and barrel with your sword. Talk to Arche's mother again, then head to
+the room on the first floor. Move the crate against the left wall.
+
+*NOTE*
+------
+Remember to put your sword away to push a heavy object.
+
+
+
+Speak to Arche's Mother, then talk to Arche's father. Leave the house and take
+the east exit Then go to the weaponsmith on your left. Talk to the Weaponsmith
+anf get the custom knife. Bring it back to your dad.
+
+
+
+~Day 2~ 	3B
+
+
+Treasure List
+ 
+ Item Name           Location
+ -----------------------------------------------------------------------------
+|Herb x3	   | Given by Arche's mother			              |
+ -----------------------------------------------------------------------------
+|Herb		   | Treasure Chest on the Top Platform located on Field 3    |
+ -----------------------------------------------------------------------------
+
+
+Tonkiness--Field 1--->Field 2 --> Field 3 ---> Minasa-Ratis Magic School
+
+
+
+
+
+Take the right exit of Tonkiness, as soon as you reach to the next map area
+you will encounter your first battle.
+
+
+Fighting Tips
+=============
+Arche will give let you know of the controls of basic combat. When playing
+Fortune Summoners, I do not recommend button mashing, because of the slow 
+animation recovery per attack, you will most likely be killed if you're 
+spamming attacks. Learn to use your attacks and time your guard by pressing up.
+Because Auto Guard is not reliable.
+
+
+
+After defeating the two Slimes, Sana will join your party. Now keep taking the
+east exit until you reach to the school.
+
+
+================================
+Map of Minasa-Ratis Magic School/
+================================
+
+
+Treasure List
+ 
+ Item Name           Location
+ -----------------------------------------------------------------------------
+|Power Drop	   | Destroy the vase near Arche's Classroom	              |
+ -----------------------------------------------------------------------------
+|4 Copper Coins    | Destroy the barrel at the left wall of the Stables       |
+ -----------------------------------------------------------------------------
+|5 Copper Coins    | Destroy the woodcrate on the right wall of the Stables   |
+ -----------------------------------------------------------------------------
+|24 Cooper Coins   | Open the treasure chest at the top of the Stables        |
+ -----------------------------------------------------------------------------
+|25 Cooper Coins   | Open the treasure chest under the ledge at Field 6       |
+ -----------------------------------------------------------------------------
+
+
+
+                         School Building
+			      ^               Stables
+                              |                 ^               N/A
+                              |      	        |		 |
+Exit--------------------------------------------------Field 6--Field7-- Cave
+
+
+(Inside School)
+
+
+ Headmaster's Office     Storage Room              Classroom B
+2F      ^ 		        ^		    ^      ^
+ ------- ----------------------- ------------------- ------ ---------
+|		                   				     |
+|   Arche's Class Room                Nurse's Office      Library    |
+|     ^           ^                   	      ^  	     ^	     |
+ ----- ----------- -------------Exit---------- -------------- -------
+
+
+Talk to Stella twice, then leave the school. Take the east exit and keep on
+moving straight until you reach into the Mountain Cave. 
+
+
+
+
+====================
+Map of Mountain Cave/
+====================
+
+Treasure List
+ 
+ Item Name           Location
+ -----------------------------------------------------------------------------
+|Herb		   | Treasure Chest on area 3			              |
+ -----------------------------------------------------------------------------
+|3 Copper Coins	   | Destroy the woodcrate in area 5		              |
+ -----------------------------------------------------------------------------
+
+
+
+               Area 3      Area 5 
+	         ^           ^
+Area 1 -> Area 2  ------- Area 4
+
+
+
+Kill the slimes and take the exit on the right.  The north exit here leads to
+a dead end that contains a treasure chest with one herb inside. Now return
+to the previous area, and wait till the moving platform, and hop on. Head 
+for the next area. You should try to be careful in this room, because there
+is  more then two monsters which can be difficult for first time players. 
+Defeat the monsters and take the exit on the right. Go near the water, Arche
+will  notice that its a dead end and Colm and friends will show up. Now leave 
+the cave and return home. Talk to Arche's mother, then go to the third floor
+and sleep.
+
+
+
+
+~Day 3~ 	3D
+
+
+Treasure List
+ 
+ Item Name           Location
+ -----------------------------------------------------------------------------
+|3 Silver Coins	   | Destroy the woodcrate at on left field of Tonikness      |
+ -----------------------------------------------------------------------------
+|Slime Bean	   | Destroy the woodcrate at on left field of Tonikness      |
+ -----------------------------------------------------------------------------
+|Guardian Drop     | Destroy the woodcrate at on left field of Tonikness      |
+ -----------------------------------------------------------------------------
+
+OPTIONAL
+========
+You can take the left exit out of Tonkiness. By reaching to bridge area, you
+can obtain three items that can be somewhat helpful, but I recommend not 
+doing it because you will have to defeat four sets of Mothbees twice in 
+order to get it. Its best to come back here when you're stronger.
+
+
+
+
+
+====================
+Map of Mountain Cave/
+====================
+
+Treasure List
+ 
+ Item Name           Location
+ -----------------------------------------------------------------------------
+|Cloth Armor       | Treasure Chest on area 7			              |
+ -----------------------------------------------------------------------------
+|Good Child Drop   | Treasure Chest on area 10			              |
+ -----------------------------------------------------------------------------
+|Herb		   | Treasure Chest on area 11			              |
+ -----------------------------------------------------------------------------
+|48 Copper Coins   | Treasure Chest on area 11			              |
+ -----------------------------------------------------------------------------
+
+
+
+				                        -> Area 7
+				 	               |
+               Area 3      Area 5-----------------> Area 6
+	         ^           ^                         |
+Area 1 -> Area 2  ------- Area 4   Area 10  Area 11    |
+					 ^   ^	       |
+					Area 9  <-----   ---> Area 8
+
+
+
+Go to the school and take the gate exit to the Stables. Talk to Sana to
+recruit her into your party. Then go back to the cave you explored yesterday.
+Head to the dead area with the large pool of water. Sana lets Arche know that
+her elemental stones allows her to breathe underwater. Switch to Sana and 
+travel underwater and press the switch at the end of the other side. Head to
+the nextarea, the upper path contains a chest with Cloth Armor, so take the 
+upper path first. Then return back to the previous area and take the bottom
+path to go to area 8. Go to your left side, and push the wood crate and use it
+to jump and on the moving platform, this will lift the steel platform up. 
+Switch to your other character and press the switch near the steel platform.
+Return to the previous area, you will notice the wall on the left end is gone.
+Take the left exit to area 9, take the first exit on your right will lead you
+to area 10 which has a chest that contains a Good Child Drop. The second exit
+will have a large door you can't open and two treasure chests beside it. 
+Try to exit through the large door. Sana will tell you to go home.
+
+
+
+~Day 4~ 	3D
+
+Talk to Ms. Sophia and answer "yes". Leave the classroom and return home. Talk
+to Arche's mother. Then go to the first floor and enter the storage room.
+Examine the pot on the very left. You will an Old Key. Now remember that door
+you can't open back in the mountain cave? well head back to the area and
+enter that door.
+
+====================
+Map of Cave Dungeon /
+====================		      
+				          
+ Area 6 		         Area 8 -------------------Area 11
+   ^  ^				 ^     V  		         |
+ Area 5      ------>  Area 7 ----     Area 9-->Area 10           |
+   ^  ^     |		                  | (Mark of Heroism)    |
+ Area 3   Area 4	        Area 10 <-			 |
+      ^     ^                (Save Point)	     Area 13 <--- --> Area 12
+  Area 2----            			   (Boss Room)
+    ^	       
+     ----Area 1
+
+
+
+
+Treasure List
+ 
+ Item Name           Location
+
+ -----------------------------------------------------------------------------
+|Green Smock       | Treasure Chest on area 6			              |
+ -----------------------------------------------------------------------------
+|Mystery Juice     | Destroy the Wood Crate near the entrance to area 10      |
+ -----------------------------------------------------------------------------
+|Mark of Heroism   | Area 10					              |
+ -----------------------------------------------------------------------------
+|Memory Photo 1    | Treasure Chest in Area 12. (Open the left treasure chest |
+|		   | to activate a spike trap and use it as lift to reach to  |
+|		   | the top platform.)					      |
+ -----------------------------------------------------------------------------
+|Good Child Drop   | Treasure Chest in Area 12. 			      |
+ -----------------------------------------------------------------------------
+|Power Drop        | Treasure Chest in Area 12. 			      |
+ -----------------------------------------------------------------------------
+
+
+Take the left exit to go to area 2, then enter the first door you see, next
+enter the first door you see again. You will find two treasure chest, open
+the one on the right which contains a Green Smock. Do not open the treasure
+chest on the left (Poison Trap). Now head back to area 2 and the second door
+on the right. Keep heading right until you reach area 8, then take the first
+door to enter area 9. Take the left path, there's a path leading to another
+room, inside there is a fountain which can heal your party and save your game.
+Return to area 9, push the iron block on to the blue switch, this will activate
+the lift, push the block onto the lift, then push it all the way to end until
+you hit the blue switch. Then head to the next area. Inside this room is your
+first Mark of Heroism. Mark of Heroism increase your maximum level and cooper
+carry amount, so make sure you find them all. Now run to the right and hit
+the switch. This will removed the wall with the moon marking.
+Run back to area 8 and take the stairs on the furthest right to area 11.
+Fall down, and run to the right side and open the door to go to area 12. 
+Open the first treasure chest. This will activate a spike trap which you can
+use as a lift. Jump on the top of it, you will find three treasure chest on
+top. Run back to area 11 and take the west exit to fight the boss.
+
+
+ ============================================================================
+\   Boss        |  Exp    | Special Attacks				     |
+ ============================================================================
+|Skeleton       | 95	  | Sleep Magic					     |
+ ----------------------------------------------------------------------------
+
+The Skeleton has a very quick attack speed which is extremely annoying. If
+you keep on defending, the Skeleton will do a leap attack which breaks your
+guard. Have Arche to use wide thrust to keep it away from Sana, until she can
+cast Diamond Dust to do heavy damage to the Skeleton. When the Skeleton is in 
+its casting animation, it will cast it's sleep spell. You can cancel this by
+attacking the Skeleton, or avoid it by jump of out the Skeleton's range. 
+
+
+Once you defeated the Skeleton, take the exit in the right. After the event
+exit the room.
+
+
+PROLOUGE ENDS 
+=============
+This is also where the official demo ends. 
+
+
+
+
+
+Bonus Chapter	"The Other, Other Cave"				3E
+===============================================================================
+This is a short side chapter that you can start by loading your prolouge clear
+data. 
+
+
+Treasure List
+ 
+ Item Name           Location
+
+ -----------------------------------------------------------------------------
+|Fresh Milk        | Destroy the Wood Crate near the old lady. (Starting area)|
+ -----------------------------------------------------------------------------
+|Herb	           | Treasure Chest on Field 1			              |
+ -----------------------------------------------------------------------------
+|20 Copper Coins   | Treasure Chest in field 2     			      |
+ -----------------------------------------------------------------------------
+|Skeleton Strap    | Treasure in Cave 3					      |
+ -----------------------------------------------------------------------------
+
+
+
+
+		     Field 2			   Cave 3
+                       ^			     ^
+Starting Location -> Field 1-->Field 3 -> Cave 1-> Cave 2-> Cave 4 (Boss)
+
+
+
+The main reason for playing this chapter is to obtain the Skeleton Strap
+which will increase your resistance. When you reach the cave dungeon area
+enter on your first door. There is a switch there, have a party member stand
+on it, then run to the other end to get the Skeleton Strap.
+
+*NOTE*
+------
+Turn off follow mode if your party member does not stay where the switch is.
+
+
+Now run back the previous room and head to furthest east end. You will
+end up fighting a Skeleton Boss.
+
+
+ ============================================================================
+\   Boss        |  Exp    | Special Attacks				     |
+ ============================================================================
+|Skeleton       | 143	  | Sleep Magic					     |
+ ----------------------------------------------------------------------------
+
+Exactly the same as the previous Skeleton Boss except with higher status.
+Just repeat what you before.
+
+
+
+
+
+
+
+Main Chapter
+===============================================================================
+
+
+
+~Day 5~ 	3F
+
+
+
+	Wind Shrine<--- Sana's House----Louise's House
+
+                                                ^
+  Old Lady's House-- Arche's House (Item Shop)  |
+                              |      	        |
+Exit--Inn -----Weapon Shop---- ----------------- ------Dress Shop--Exit
+
+
+Head back to Tonkiness and go to area where Sana's house is, take the left
+exit, and go to the Wind Shrine. The Guard will not let you in, so run back
+to the area where Arche's House is and go to the house beside the item shop.
+Talk to the Old Lady, she will give you a handmade lunch. Deilver it to the
+guard.
+
+Now take the left exit out of Tonkiness, run all the way to where the broken
+bridge area is. Speak to the Woman standing in this area twice. Deliver the
+love letter back to the Guard at the Wind Shrine.
+
+
+
+==========================
+Map of Shrine of the Wind /
+==========================
+
+
+			   Area 4
+				^
+(Mark of Heroism) Area 3 <---Area 2---> Area 5--
+				^	       |	            
+				 ---Start      | 	    Area 14-> Area 15
+					       V		   ^
+      			  Area7 <---- ---- Area 6      ->Area 10---
+				     V		      |     |
+	   (Boss)   Area 16  <---Area 8----->Area 9---      V
+				   
+				       	     Area 12<--Area 11-->Area 13
+				  		            (Mark of Heroism)
+			
+
+Treasure List
+ 
+ Item Name           Location
+
+ -----------------------------------------------------------------------------
+|Mark of Heroism   | Area 3						      |
+ -----------------------------------------------------------------------------
+|Better Herb       | Treasure Chest in area 4				      |
+ -----------------------------------------------------------------------------
+|Magic Candy       | Treasure Chest in area 4			              |
+ -----------------------------------------------------------------------------
+|Leather Armor     | Treasure Chest in area 7    			      |
+ -----------------------------------------------------------------------------
+|Venom Away        | Treasure Chest in area 7				      |
+ -----------------------------------------------------------------------------
+|Mark of Heroism   | Area 13						      |
+ -----------------------------------------------------------------------------
+|Memory Photo 2    | Treasure Chest in area 14				      |
+ -----------------------------------------------------------------------------
+|Good child Drop   | Treasure Chest in area 14				      |
+ -----------------------------------------------------------------------------
+|Better Herb       | Treasure Chest in area 15				      |
+ -----------------------------------------------------------------------------
+|Power Drop	   | Treasure Chest in area 15				      |
+ -----------------------------------------------------------------------------
+|Mark of Heroism   | Room after Boss					      |
+ -----------------------------------------------------------------------------
+
+Use Sana to travel underwater and run to the other side. Press the switch
+then enter the next area. Take the left exit from here, there is a Mark of
+Heroism right in this room. Return back to the previous area, the first room
+you can enter contains two treasure chest, but you need to use Sana by herself
+due to the water below. Now go back to the previous room, and kill all the
+snakes on the top platform, and use Arche to push the crate down. Push the
+crate to the blue switch to unlock the path on your right. Run all the way
+to the next area. Until you have reach to the area where there multiple
+lift platforms. Jump all the way on the center, if you go to the left area
+first, there is treasure chest containing a Leather Armor. Return back to
+where the center door is. Take the right path from here on, once you reach to
+a large pool of water, you will have to switch to Sana. You will find a 
+switch at the very end near where the cart is. Press the switch to drain
+the water. Then switch back to Arche and push the cart, so you can use it
+as platform to reach to the next area. Take the top path to reach to the
+next area, then when you see the first door you can enter, you can find
+a Mark of Heroism on the right exit. Go back to the previous area and take
+the other exit. On the next area its very dangerous, because you will have
+to switch to Sana to find the switch to drain the water. Once you found
+the switch on the other side, switch back to Arche, there's a cart that
+you will have to use as a platform to make it to the switch on the top. Once
+you have hit that switch, you will have to backtrack all the way  back to
+Area 8 (area where the first cart is). On the left side, you will now notice
+the water is drain, use Arche to push the block away. This door will lead
+you to the boss room.
+
+
+
+
+ ============================================================================
+\   Boss        |  Exp    | Special Attacks				     |
+ ============================================================================
+|Lead Merkid    | 179	  | Splash					     |
+ ----------------------------------------------------------------------------
+
+
+The leader Merkid has two Merkid along with him. Its a rough battle to start,
+make sure you kill the Mage Merkid first, because the Mage Merkid have the
+lowest HP and also can cast all kinds of nasty spells. Once you finish
+all the Merkid's sidekick, the battle should be breeze. Just keep attacking
+the leader Merkid and have Sana cast her spells.
+
+
+Once you have defeated the boss, take the right exit, you will find another
+Mark of Heroism. Continue forward and obtain the Crest of Wind. Now return
+home.
+
+
+
+
+~Day 6~ 	3G
+
+
+Go to Sana's house and speak to Sana's mother. Leave Tonkiness and head to
+school. Talk to Ms. Sophia at the Headmaster Office. Speak to all the student
+in class and then leave. 
+
+
+
+
+Run back to Tonkiness village. Then take the left exit. Keep on running 
+through the left path, you will notice the bridge is now fixed, keep
+running on left. When the path begins to split, take the left path to get
+to Weathervane Tower. You will notice Colm and friends are here. Talk to
+them, then go back to the area where the path begins to split. Take
+the upper path, until you have reach to Barness village.
+
+
+
+========================
+Map of Barness Village /
+=======================
+
+     
+     Exit 
+Cave--^--Inn-----Item Shop
+		      ^
+Windmill 2--- Mayor--- --Old Lady's House--House-Windmill--Plant House--Exit 
+
+
+Treasure List
+ 
+ Item Name           Location
+
+ -----------------------------------------------------------------------------
+|Chest Sash        | Destroy the left barrel in the Plant House		      |
+ -----------------------------------------------------------------------------
+|5 Silver Coin     | Destroy the top right Barrel on first Windmill House     |
+ -----------------------------------------------------------------------------
+|Magic Candy       | Treasure Chest on first Windmill House	              |
+ -----------------------------------------------------------------------------
+|Walnut Chocolate  | Destroy the vase at the backyard of the Old Lady's house |
+ -----------------------------------------------------------------------------
+|Blue Socks	   | Closet at Mayor's house 1st Floor 			      |
+ -----------------------------------------------------------------------------
+|Underwear (Boys)  | Drawer at Mayor's house 2nd Floor 			      |
+ -----------------------------------------------------------------------------
+|Power Drop        | Destroy the vase near the second Windmill House 	      |
+ -----------------------------------------------------------------------------
+|Taiyaki           | Destroy the vase at the second Windmill House 	      |
+ -----------------------------------------------------------------------------
+|10 Copper Coins   | Destroy the wood crate at the second Windmill House      |
+ -----------------------------------------------------------------------------
+|Tough Drop	   | Closet in item shop				      |
+ -----------------------------------------------------------------------------
+|Taiyaki           | Drawer in the Inn backroom				      |
+ -----------------------------------------------------------------------------
+
+
+
+Run to the Windmill house on the very left side of the map. Speak to the man
+in there. Then go to the Mayor's house beside the windmill house. Talk to
+the mayor. Now go to back area of Barness and take the north exit out.
+
+
+
+
+
+==================
+Map of Wind Hill /
+=================
+
+
+	  
+Cave 1<- Field 2<-Field 1---Barness Village
+	  |			^
+	  | Dungeon<---Cave6	|
+	  |	         ^	|
+	  |	      Cave 5-----
+	  V		  ^ 
+       Cave 2  	       Cave 4--->
+	  |		 ^
+	   ->Field 3 ----
+		V
+	     Cave 3
+
+Treasure List
+ 
+ Item Name           Location
+ -----------------------------------------------------------------------------
+|200 Copper Coin   | Treasure Chest in Cave 1				      |
+ -----------------------------------------------------------------------------
+|Walnut Chocolate  | Treasure Chest in Cave 1				      |
+ -----------------------------------------------------------------------------
+|Better Herb	   | Treasure Chest in Cave 2				      |
+ -----------------------------------------------------------------------------
+|Herb		   | Treasure Chest in Cave 3				      |
+ -----------------------------------------------------------------------------
+|Stronggirl Juice  | Treasure Chest in Cave 3				      |
+ -----------------------------------------------------------------------------
+
+There is caves you can find that will lead you the last area. When you have 
+enter the cave with the four blocks, push all of the blocks on the right. This
+should give you just enough distance to jump over the large pool of water. 
+You will find a switch here, that will unlock the path with the heart marking.
+Find the area with Heart marking, this should lead you to a dead end with an 
+altar. Chiffon will tell you to place your elemental stone on the altar. This
+creates a door. Take the door to enter the Barness Hill Dungeon. 
+
+
+
+
+===========================
+Map of Barness Hill Dungeon/
+==========================
+
+
+(Mark)
+Area 3<--Area 2	-->Area 4-- ->Area 5   Area7
+         ^                 |            ^---	         Area 9
+	 |		   |		    |		    ^
+Start----->AREA STELLA	    ----------->Area 6----Area-7> Area 8-->AREA STELLA
+					   |
+			 AREA STELLA ------ 
+			 (treasure)
+
+**Area marked wtih AREA STELLA, are rooms that are covered with vines and only
+Stella can access through there.
+
+
+
+Treasure List
+ 
+ Item Name           Location
+ -----------------------------------------------------------------------------
+|Mark of Heroism   | Area 3				   		      |
+ -----------------------------------------------------------------------------
+|234 Copper Coin   | Treasure Chest in area 1				      |
+ -----------------------------------------------------------------------------
+|Guardian Drop     | Destroy the Barrel in area 5			      |
+ -----------------------------------------------------------------------------
+|Rusty Sword       | Treasure Chest in area 4				      |
+ -----------------------------------------------------------------------------
+
+Run to the left side at the start of the dungeon. You will find a switch that
+bears a mark of a diamond. Press this switch, this will remove the barricade
+between Barness Village's cave, allowing you to travel back to town without
+the need of running all the way through the Wind Hills. Now run back to the
+right and exit out through the first door. Take the left exit and you will
+find a Mark of Heroism in this room. Then leave, and now take the right exit.
+Kill all the monsters in this room, and then push the large block on the 
+the bottom, position it where the top platform ends. Now jump up to the top
+platform and push the large block on to the block in the bottom, so that
+they stack. Now push the blocks to the end of the map and use it to jump to
+the other side. If you take the top route you will go to dead end area with
+a chest that contains a Guardian Drop. But take the bottom path and take the
+exit from there. Now find the first exit on the from the west, in this area 
+you will have to push the crate from the right side on to the moving crate
+that is in the center. Once you do, you can use it as a platform and jump
+on the left side. In here you will find a switch with the Sword Marking,
+press that and return to the previous room. Go down to the bottom, you
+will find the iron lift is activated now. Jump on to it and make it to the
+next room. Keep running right until you find a large door. When you try
+to open, a mysterious voice will ask you a question. Answer back "12".
+
+If you chose the wrong answer, you will be send back to the entrance of the
+dungeon. 
+
+
+
+======================
+Map of Chartreux City/
+=====================
+
+Small House-----Mayberk Mansion	   
+  	           ^
+	           |	
+Candy Kid's House----Fortune Teller--House<-
+					   |
+Exit<-Candy Store---Apartment-Weaponshop<---Inn---Item Shop--Bakery->Exit
+
+Treasure List
+ 
+ Item Name           Location
+
+ -----------------------------------------------------------------------------
+|5 Silver Coins   | Closet in the dress shop 3rd Floor 			      |
+ -----------------------------------------------------------------------------
+|Magic Candy      | Right Closet in the Item shop 3rd floor		      |
+ -----------------------------------------------------------------------------
+|23 Copper Coins  | Closet in the inn 2nd floor				      |
+ -----------------------------------------------------------------------------
+|Better Herb      | Left Closet in the inn 3rd floor			      |
+ -----------------------------------------------------------------------------
+|Chest Sash       | Right Closet in the inn 3rd floor			      |
+ -----------------------------------------------------------------------------
+|Underwear (Boys) | Drawer in Apartment (1st Floor) beside weapon shop 	      |
+ -----------------------------------------------------------------------------
+|Chartreux Bun    | Drawer in Apartment 2nd Floor 			      |
+ -----------------------------------------------------------------------------
+|8 Copper Coins   | Destroy the vase on Apartment 3rd Floor		      |
+ -----------------------------------------------------------------------------
+|5 Copper Coins   | Destroy the barrel on Apartment 3rd Floor		      |
+ -----------------------------------------------------------------------------
+|Strongirl Juice  | Closet on Apartment 3rd Floor		      	      |
+ -----------------------------------------------------------------------------
+|15 Copper Coins  | Destroy the barrel in front of the candy store	      |
+ -----------------------------------------------------------------------------
+|Mystery Juice    | Drawer in candy store				      |
+ -----------------------------------------------------------------------------
+
+BACK AREA
+
+ -----------------------------------------------------------------------------
+|Woven Gloves     | Closet in first house to the left			      |
+ -----------------------------------------------------------------------------
+|Underwear (Girls)| Drawer in Fortuneteller's house 2nd floor		      |
+ -----------------------------------------------------------------------------
+
+
+Mayberk Manor
+
+ -----------------------------------------------------------------------------
+|Tough Drop       | Destroy the Barrel in the small house on the left	      |
+ -----------------------------------------------------------------------------
+|Letter Opener    | Drawer in Stella's Room				      |
+ -----------------------------------------------------------------------------
+|16 Silver Coins  | Desk Drawer in Stella's room			      |
+ -----------------------------------------------------------------------------
+|Red Ribbon	  | Closet in Stella's room				      |
+ -----------------------------------------------------------------------------
+|Better Herb	  | Closet in Stella's Father's room			      |
+ -----------------------------------------------------------------------------
+|Guardian Drop	  | Drawer in Center Room 2nd Floor			      |
+ -----------------------------------------------------------------------------
+|Good Child Vase  | Destroy the vase in the kitchen 			      |
+ -----------------------------------------------------------------------------
+|Better Herb x 5  | Speak to Rowen		 			      |
+ -----------------------------------------------------------------------------
+
+
+Road from Chartreux to Barness
+
+ -----------------------------------------------------------------------------
+|Tough Drop       | Treasure Chest					      |
+ -----------------------------------------------------------------------------
+|30 Silver Coins  | Treasure Chest					      |
+ -----------------------------------------------------------------------------
+|5 Copper Coins   | Destroy the left vase in Inn			      |
+ -----------------------------------------------------------------------------
+|Strongirl Juice  | Left Drawer in Inn		 			      |
+ -----------------------------------------------------------------------------
+|Better Herb      | Drawer in Inn 2F 		 			      |
+ -----------------------------------------------------------------------------
+
+
+The game will then switch to Stella's point of view. Take the exit on the 
+center of Chartreux City, and then take the exit at the far to reach to the
+Mayberk Manor. Enter the mansion and then leave speak to Rowen and leave.
+Now take the right exit out of Chartreux City. Keep running right until
+you make it to Barness Village. There is an inn inbetween the roads, that
+you can stop by for a rest. 
+
+
+*If you want the Memory Photo 3 item, you will need to backtrack to the first
+cave where the school is. There is a treasure chest that can only be access 
+with Stella.
+
+
+
+** Using Stella **
+
+Stella plays very similar to Sana, she has better melee properties and
+use all attack spells. Try to keep enemies at a distance and cast your
+magic. The best way to deal with monsters is to use her Fire Handling
+attack, (Direction key plus Attack).  This does a fair a bit of damage
+without consuming MP. Once you have reach level 4, you can use Stella's
+Chaser ability, this can literally kill every monster you encounter in 
+one cast.
+
+
+
+===========================
+Map of Barness Hill Dungeon/
+==========================
+
+
+(Mark)
+AREA AR  <--AREA AR -->AREA AR-- ->AREA AR   AREA AR
+^   	                  |            ^---	      AREA 9 (Boss)
+|	 		  |		    |		 ^
+|    	                    --------------Area 11->AREA 10--> AREA 8<---Area 7
+|					   			        |
+Start-->Area 1->Area 2->Area 3-> Area 4->Area 5			        |
+			 |				                |
+			  -------->Area 6-------------------------------
+
+ -----------------------------------------------------------------------------
+|Defense Ring	  | Treasure Chest in Area 5				      |
+ -----------------------------------------------------------------------------
+|45 Silver Coins  | Treasure Chest in Area 5				      |
+-----------------------------------------------------------------------------
+|Better Herb      | Treasure Chest in Area 5				      |
+ -----------------------------------------------------------------------------
+|Better Herb      | Treasure Chest in Area 6				      |
+ -----------------------------------------------------------------------------
+|Magic Candy      | Treasure Chest in Area 6				      |
+ -----------------------------------------------------------------------------
+|Moldy Bun        | Treasure Chest in Area 7				      |
+ -----------------------------------------------------------------------------
+|Better Herb      | Treasure Chest in Area 9 Boss Room			      |
+ -----------------------------------------------------------------------------
+|Mystery Juice    | Treasure Chest in Area 11				      |
+ -----------------------------------------------------------------------------
+|Revival Drink    | Treasure Chest in Area 11				      |
+ -----------------------------------------------------------------------------
+
+
+
+For Stella you will have to take a different path because Stella cannot push
+heavy objects. Start by taking the right exit, use Stella's Fire Handling skill
+to burn through the vines then exit out. Stella's route in pretty straight
+forward, on the next room, light up the torches to open the door. Then
+you can continue straight to a dead end for a some healing items. Take the
+bottomless pit on the far end there is exit you can take to get to the next
+area. In the this room there is a switch that contains the mark of Club, find
+it in the center left side of the room, press it and the barricade on the upper
+left exit is gone. Take this exit and you will be back where Stella encounters
+Arche.
+
+
+The game will shift back to Arche's point of view. Go open the large door
+Watch the event with Stella.
+
+
+
+ ============================================================================
+\   Boss        |  Exp    | Special Attacks				     |
+ ============================================================================
+|Stella         | 256	  | Fire Wall / Chaser				     |
+ ----------------------------------------------------------------------------
+
+Stella is a pretty easy boss. Your normal attacks usually interrupt her spell
+casting. Just keep on attacking her and prevent her from using her spells
+and the battle should end fairly quick.
+
+
+
+
+Leave the dungeon, and then exit out of Barness Village. As you try to go home
+through the field map, an event with Colm and a doctor with appear. Backtrack
+back to Barness Village and enter the first house you see. Speak to the man
+inside and take the backdoor out of his house. Run to the end and enter the
+cave.
+
+
+
+
+======================
+Map of Herb Farm Cave/
+=====================
+
+Start->Area 2----- -> Area 3
+	          |
+		  V			(Boss)		     (Save Point)
+       Area 5 < Area 4			Area 13 <- Area 11-> Area 12 (Mark)
+    		  V				       ^
+	        Area 6--- ----> Area 8-----            | ->Area 10
+			 V		    |	       |
+		       Area 7	        Area 9---------
+					 
+
+
+
+ -----------------------------------------------------------------------------
+|Better Herb	  | Treasure Chest in Area 3				      |
+ -----------------------------------------------------------------------------
+|Memory Photo 4   | Treasure Chest in Area 5				      |
+-----------------------------------------------------------------------------
+|Strongirl Juice  | Treasure Chest in Area 7				      |
+ -----------------------------------------------------------------------------
+|Good Child Drop  | Destroy the wood box in area 9			      |
+ -----------------------------------------------------------------------------
+|Revival Drink    | Treasure Chest in Area 10				      |
+ -----------------------------------------------------------------------------
+|3 Gold Coins     | Treasure Chest in Area 10				      |
+ -----------------------------------------------------------------------------
+|Mark of Heroism  | Area 12						      |
+ -----------------------------------------------------------------------------
+
+
+Start by going to the left side, you will see a large cart, destroy the crates
+beside it, but make sure you leave one crate. Push the cart against the right
+wall, then push the other crate next to the cart. Use the he crate to jump on
+to the cart and get to the next area. Keep on running right until you find
+two exits, going to the right exit will take you to a dead end with a chest 
+that contains a better herb. Go back to the previous room and take the first
+exit in the center. Fall down and you will find two exit, take the left exit
+first. In this room use Stella to jump on the moving platform and burn the
+vines. The chest in this room contains Memory Photo 4. Return to the previous
+room and take the other exit. Keep running left until you find a path blocked
+by vines, use Stella to burn it, then switch to Arche and push the iron block
+on to the blue switch. This should remove the wood barricade on the right side.
+The exit beside the wood barricade,  contains a Strongirl Juice. Now take the
+right exit out of of the map. In this room there is three switches you will
+have to find, there is one in the upper right side of the map, one in the
+middle right and the last one is in the bottom left side. Use Stella to light
+up the switches, this will remove the wood barricade on the left center of
+the map. From here on its pretty straight forward just keep going forward
+until you find the exit to the next room. Just before you go to the boss room
+you should take the exit on the right, because there is a save point and a
+mark of Heroism.
+ 
+
+
+
+ ============================================================================
+\   Boss        |  Exp    | Special Attacks				     |
+ ============================================================================
+|Baby Mage      | 400	  | Heal Water/ Diamond Dust / Shield /		     |
+ ----------------------------------------------------------------------------
+
+
+This boss can be very annoying or very easy depending on how fast you can
+take down the two Kobolds with him. Have Stella cast Phoenix and you able
+to take the Kobolds with a single hit. Then Focus on the Baby Mage. Baby Mage
+cast exactly the same spell set as Sana, and is very annoying, when its HP
+drop below 60% it will try to cast Heal Water to heal himself. Sometimes
+the Baby Mage will put on shield which will prevent you from dealing high
+physical damage to it. Just keep it at bay with Arche and have Stella cast
+Chaser.
+
+
+
+Once you have defeated the Baby Mage, go to the next room and take the herb.
+Now leave the dungeon and watch the event.
+
+
+
+
+
+
+
+~Day 7~ 	3H
+
+
+
+
+Talk to Colm and company and leave the school. Return home and speak to 
+Arche's Mother. Now take the west exit out of Tonkiness. You can either back
+track to Barness for the treasure items you couldn't get with Arche before
+or you can go to the next destination. 
+
+
+Treasure in Barness
+
+ Item Name           Location
+
+ -----------------------------------------------------------------------------
+|Life Dew	  | Treasure Chest underwater of Wind Hill area	              |
+ -----------------------------------------------------------------------------
+|2 Gold Coin	  | Treasure Chest underwater of Wind Hill area	              |
+ -----------------------------------------------------------------------------
+|Magic Ring	  | Treasure Chest in Wind Hill Cave area	              |
+ -----------------------------------------------------------------------------
+|45 Silver Coins  | Treasure Chest in Wind Hill Cave area	              |
+ -----------------------------------------------------------------------------
+|Good Child Drop  | Treasure Chest in Wind Hill Cave area	              |
+ -----------------------------------------------------------------------------
+
+
+
+
+Go to where to Weathervane Tower is and take the left exit from there. 
+Watch the event and fight the boss.
+
+
+
+
+ ============================================================================
+\   Boss        |  Exp    | Special Attacks				     |
+ ============================================================================
+|Lead Kobold    | 450	  | 						     |
+ ----------------------------------------------------------------------------
+
+There is two Kobolds in this boss fight, find a way to kill the other Kobold
+first, then fight the Lead Kobold. The Lead Kobold is like overlevel Kobold
+that hits extremely hard. Just treat this battle as a regular Kobold fight.
+If you're guarding, make sure you avoid it's leap attack.
+
+
+ -----------------------------------------------------------------------------
+|Mermaid Scale	  | Treasure Chest underwater of Loch Carudale	              |
+ -----------------------------------------------------------------------------
+
+
+Take the left exit until you have to the lake, use Sana to go underwater and
+reach to the cave on the other side of the map.
+
+
+=======================
+Map of Carudale Tunnels/
+=======================
+
+			Area 5<--  Area 2<-Start
+			 |  |      V
+	Area Stella <----   |  Area 3-> Area 4 (Mark of Heroism)
+    Exit 		     --
+      ^	  Area 9               V
+       ---^-Area 8<--Area7<---Area 6
+
+
+
+ -----------------------------------------------------------------------------
+|Mark of Heroism  | Area 4					              |
+ -----------------------------------------------------------------------------
+|Magic Candy      | Treasure Chest in Area 6			              |
+ -----------------------------------------------------------------------------
+|Better Herb      | Treasure Chest in Area 6			              |
+ -----------------------------------------------------------------------------
+|Life Dew         | Treasure Chest in Area 8			              |
+ -----------------------------------------------------------------------------
+|Cloth Gloves     | Treasure Chest in Area 8			              |
+ -----------------------------------------------------------------------------
+|Magic Ring	  | Treasure Chest in Area 9	           		      |
+ -----------------------------------------------------------------------------
+|Iron Dagger	  | Treasure Chest in Area 9			              |
+ -----------------------------------------------------------------------------
+|Mysteryjuice	  | Treasure Chest outside of Carudale Tunnel	              |
+ -----------------------------------------------------------------------------
+|Magic Candy	  | Treasure Chest outside of Carudale Tunnel	              |
+ -----------------------------------------------------------------------------
+
+Fall down and take the left exit, keep on moving until you see an exit on the
+bottom path. Take the bottom exit, on this room head for the right exit 
+(Poison Trap on the left treasure chest). You'll find a Mark of Heroism and
+also switch that opens the Sun door. Now return to the previous room and tak	e
+the exit on the upper left path. Go all the way to the bottom and you
+can see the path where the barricade block with the Sun symbol is open. Go
+take the exit from there. Run to next room on your left. In this room if goxc
+down the bottom, you can see three large platform carts. Kill all monsters 
+and push all three carts to a point where all three is spread evenly. Then
+run to the top and hop the top of the carts to make it across the next room.
+In this room, use Sana to cast Mermaid Robe on Arche and go underwater, when
+you reach to the other side, there is two exit, the first exit will take you
+to a treasure room and the other will take you to the exit of Carudale Tunnel.
+Push the boat on your right to obtain two treasure chest.
+
+
+
+Take the left exit until you have reach to Chartreux City. Go to Candy Store
+(Last house on the left side of the map) Talk to the shop owner, then leave
+and go to the back side of Chartreux City. Run to last house (The one just 
+past the mansion)and talk to the kid upstairs. Run back to the Bakery near
+the entrance of the City. Talk to the shop owner and get the Handmade Tart.
+Go back to the Candy Kid and trade him the Handmade Tart. Return home and
+talk to Arche's mother then go upstairs and sleep.
+
+
+
+
+
+~Day 8~ 	3I
+
+
+Leave the school and take the right exit out. Remember that area where the
+Guard won't let you pass? Take that route to Korat Village. There is gate
+that leads to another area and a save point with the healing witch near
+the beginning, but continue straight on ahead and around midway through, 
+an event will occur. Sana will be kidnapped and you will need to backtrack 
+to that Gate area near the healing witch. Enter here and take jump the
+platforms to reach higher ground and take the right exit. There is a cave
+that leads you to Org Lair hidden underneath one of the platforms, but
+I recommend taking the right exit first, in the right exit there is a
+a merchant selling healing items. Make sure you stock up alot of herbs,
+because the next destination is extremely dangerous.
+
+
+===================
+Map of Korat Field/
+==================
+
+	   Field 3-> Field 4- --->Field 5
+	     ^		     |               
+	     |	    Org Lair<
+Field 1 -> Field 2 (Save)-> Field 6-> Cranbal Valley
+
+
+ -----------------------------------------------------------------------------
+|Herb		  | Treasure Chest in Korat Field 4		              |
+ -----------------------------------------------------------------------------
+|650 Copper Coins | Treasure Chest in Korat Field 4		              |
+ -----------------------------------------------------------------------------
+
+
+
+
+================
+Map of Org Lair/
+===============		  --> Area 7 (Dead End)
+			 |
+			 |	    (Boss)    (Save)
+			 |	    Area 14<--Area 13--Area 12
+		Area 6---|                                   ^
+		^ 	  --> Area 8---    Area 10< -->Area 11
+		|	 	       |	   |          
+Start--> Area 2   --> Area 3           V	   |         
+			 |	    Area 9---------	
+			 V    
+		     Area 4--->Area 5
+		
+ -----------------------------------------------------------------------------
+|Moldy Bread      | Treasure Chest in Area 3			              |
+ -----------------------------------------------------------------------------
+|Herb	          | Destroy the Wodd Crate in Area 3		              |
+ -----------------------------------------------------------------------------
+|Better Herb	  | Treasure Chest in Area 3			              |
+ -----------------------------------------------------------------------------
+|Good Child Drop  | Treasure Chest in Area 5			              |
+ -----------------------------------------------------------------------------
+|Org Slayer       | Treasure Chest in Area 5			              |
+ -----------------------------------------------------------------------------
+|Better Herb	  | Treasure Chest in Area 10			              |
+ -----------------------------------------------------------------------------
+|Mark of Heroism  | Room after Boss				              |
+ -----------------------------------------------------------------------------
+
+Start by jumping on the two platsforms and then use the trap platform to lift
+you up to the next room. In this room, keep going straight, do not enter the
+first exit you see, but jump on the platforms and go for the right exit. This
+is basically a detour to get you the Org Slayer which is very handy for this
+dungeon. Run to the left side and fall down. Then take the exit on the left 
+door.
+
+Now on here in this room there six lifting platform, when you jump on the 
+second last platform, stand there for a very short time to raise the last
+platform up, and jump on it to reach to the next room.
+
+*The Timing is very strict here on jumping the platforms.
+
+
+In this room there is a Tough Drop and pass the water there lies a chest
+that contains the Org Slayer. Run back all the way near the beginning and take
+the exit that I tell you not to take earlier. 
+
+
+In this room you will notice the path is split between up and down, take the
+path on the bottom, because the upper path is a deadend. On the next room,
+jump up to the top, you will find a switch, push the statue on to the switch.
+This will open the barricade on the bottom of the map. In the center right
+there is a chest that contain a Power Drop. Drop down to the bottom and open
+the door to your left. This room is pretty large, first jump up to the platform
+on the right and then jump on to higher platform on the left, keep going up
+until you find a door on the left. In this room you will find a cart, push the
+cart against the wall on the right, then jump on the top of the cart and push
+the statue on to the cart. Push the cart from the bottom, until its up against
+the platform on the center. push the statue out of the cart on to the center
+platform. Then push the cart from the bottom, until reach to the left end
+of the center platform. Now push the statue on to the cart and push the cart
+to the left wall. Now push the statue on the blue switch. This switch will
+activate the lifts on the previous map. Jump on to the lifts and make to the
+room on the right exit. From here on just keep going straight. There will
+be also a save point nearby.
+
+
+
+
+
+ ============================================================================
+\   Boss        |  Exp    | Special Attacks				     |
+ ============================================================================
+|Boss Org       | 450	  | 						     |
+ ----------------------------------------------------------------------------
+
+This is probably the easiest boss fight in the game. All because you have a
+full party. Now with Stella and Sana in your party, you should be unstoppable.
+If you found the Org Slayer in the dungeon, Arche should deal very high
+damage to the the Boss Org and his minions and with Stella's fire magic, they
+will drop very quickly.
+
+
+
+Leave the dungeon and head for the road to Korat Village. 
+
+
+*New field theme plays when you have all three party members in your party.
+
+=====================
+Map of Cranbal Valley/
+====================
+
+	  			   Field 5( Dead End )
+	                  	      ^
+Field 1 -------------->   Field 3-->Field 4-->Field 6-> Korat Village
+       |		  ^-- --^
+       V	(Lower Exit) |  (Higher Exit)
+     Cave 1		     |
+        |		   Cave 4
+        |		     ^
+        | -> Field 2---------
+        |
+  Cave 2<
+       |
+Cave 3<
+ (Mark of Heroism)
+
+
+ -----------------------------------------------------------------------------
+|Leather Cape     | Treasure Chest in Cave 1			              |
+ -----------------------------------------------------------------------------
+|Mark of Heroism  | Cave 3		 			              |
+ -----------------------------------------------------------------------------
+|Holy Water	  | Treasure Chest in Field 3 Near Diamond switch             |
+ -----------------------------------------------------------------------------
+|Holy Water       | Treasure Chest in Field 4			              |
+ -----------------------------------------------------------------------------
+|Good Child Drop  | Treasure Chest in Field 4			              |
+ -----------------------------------------------------------------------------
+
+Once you make it to Cranbal Valley, go find the cave below the cliff and
+enter.  Inside the cave there is is an exit on the bottom left corner,
+take this path until you have found the Mark of Heroism. Once you find the
+Mark, backtrack back to the first room and take the exit between the center.
+
+
+You will be back in the fields, around halfway through the map, switch to 
+Sana to travel underwater, and find another cave nearby. In this cave, take
+the left exit first. This will lead you outside beside a switch with a diamond
+symbol. Turn it on, this will activate the lifts, giving you a shortcut for
+going back. Return back to the cave and take the exit on the right side.
+Jump up the cliffs and head for the right exit until you have reach to Korat
+Village.
+
+
+
+
+
+=====================
+Map of Korat Village/
+====================
+						       Korat Cave
+						       ^  
+						       |  >Dead End
+						       | |
+Exit----Clothing Shop--Weapon Shop--Item Shop-Inn -->Tunnel-> Exit
+
+Tunnel<-->House 1 ->Mayor House-> House 2-------
+					   	|
+			 	  Fire Shrine  <
+
+
+=====================
+Map of Fire Shrine  /
+====================
+	    		 Area 4
+			  ^
+	      ->Area 3----	
+	     |
+Start--------  >Area 2 (Boss Area)
+
+
+ -----------------------------------------------------------------------------
+|Mind Chocolate   | Right Drawer in Clothing Shop 		              |
+ -----------------------------------------------------------------------------
+|Hot Water Salt   | Destroy the vase close to the Weapon Shop	              |
+ -----------------------------------------------------------------------------
+|Good Child Drop  | Closet in Inn 2F Backroom			              |
+ -----------------------------------------------------------------------------
+|Strongirl Juice  | Destroy the Vase in the Inn 1st Floor changing room	      |
+ -----------------------------------------------------------------------------
+|Underwear	  | Examine the Shelf in the Changing room	              |
+ -----------------------------------------------------------------------------
+|1 Gold Coin	  | Destory the Barrel on the right side of the Inn           |
+ -----------------------------------------------------------------------------
+|Orange Beret	  | Right Closet in House 1 backroom		              |
+ -----------------------------------------------------------------------------
+|Mystery Juice	  | Treasure in House 1 			              |
+ -----------------------------------------------------------------------------
+|Guardian Drop	  | Destroy the vase near the Mayor's house	              |
+ -----------------------------------------------------------------------------
+|Tough Drop	  | Closet in Mayor room			              |
+ -----------------------------------------------------------------------------
+|Chest Sash	  | Right Drawer in Mayor room			              |
+ -----------------------------------------------------------------------------
+|Power Drop	  | Right Drawer in House 2			              |
+ -----------------------------------------------------------------------------
+|Mahogany Staff	  | Fire Shrine area 4				              |
+ -----------------------------------------------------------------------------
+
+Go to the inn and speak to Ms. Sophia and then take the right exit out of the
+inn and try to use the hot spring. Then go to the Mayor's house and speak to 
+the Mayor. Go back to the inn and talk to Ellie. Then take go to the right
+exit out of Korat until you see Colm and company, there is a shrine right 
+below the cliff. Enter the shrine and take the right exit. 
+
+
+
+
+
+
+ ============================================================================
+\   Boss        |  Exp     | Special Attacks				     |
+ ============================================================================
+|Great Scorpion | 2500	   | Poison Effects				     |
+ ----------------------------------------------------------------------------
+
+
+
+A very easy boss fight. The Great Scorpion can use its pincer to attack which
+can cause poison very easily. But this boss fight doesn't last too long due 
+it's poor defense against magic attacks. Just have your party member cast 
+their magic spells and the battle should finish in no time.
+
+
+
+
+Watch the event and now you can enter that locked area right on the first top
+exit of the tunnel.
+
+
+
+
+=================
+Map of Korat Cave/
+=================
+
+
+Start->Area 2 (Mark of Heroism)
+ |
+ |
+ |
+  ------------- ----> Area 3
+               V
+              Area 4
+                   |
+                   |
+ Area 11 <Area 10 <  >Area 5 -------> Area 6
+  |	     |			   	|    
+  |	      ---------------- < Area 7<
+  |                           |
+  |			       -> Area 8 > Area 9
+  |
+  |                      Area 15 > Area 16 (Boss Area)                
+  V		               ^                      
+ Area 12 -> Area 13 > Area 14--                      
+		                    
+ 	                           
+
+
+This is one of the tougher dungeons found in the game. Beware of the steam that
+come in all different directions. Start the area by running to the right area
+until you enter the next room. You should find a Mark of Heroism in there.
+Leave the room and return to the entrance. Run all the way down and enter the
+next area. Starting here, the paths gets split into two paths, take the right
+path first, in here you will enter a large area with treasure chest scatter in
+different sections of the area. Return to the previous area once you have
+obtain all the treasures. Now take the exit on the center. Start by going 
+towards the right side, you will find a switch that opens the gate with the
+sword symbol. Now run all the way to the bottom, and take the exit on your 
+right. In here the path is split into, one in the left side and one on the 
+right, don't bother going to the left area until you have explore the area
+on the right side first. 
+
+From here, go all the way down the bottom, and take right path to the
+next room. Get the treasures and then, run down the take the exit on the
+bottom left section of the bottom. Now run to the left exit again, now go
+all the way down to the bottom. Push the blocks to prevent the steam from
+coming and then enter the room on your right. Right to the right exit again.
+This area, you will find a switch and a block. Have your party member stand
+on the block, and then when you push the switch, it will move the block,
+however watch for the steam, as the steam will knock your party member down
+the platform, leading you to start the puzzle from scratch, so have your 
+timing done correctly. (My method, is avoid the first two sets of steam and
+then switch to the party member on the platform and jump over) Now hit
+the swtich with the club symbol. You will now need to backtrack, all the
+way back to the area where you pushed the blocks to blocked the steam. Now
+go all the way up and find the exit on the upper left section of the map.
+Keep on continuing forward from here on, the Switch with the Club symbol should
+have activated the lift here, just keep running to the next exit until you
+reach the boss room.
+
+
+
+
+
+
+
+MORE TO COME	 
+
+===============================================================================
+
+			     Mark of Heroism
+
+							GUIDE SECTION 4
+===============================================================================
+
+
+Mark of Heroism is a key item found in Fortune Summoners use for increasing
+level cap. Experience points is also reduced when reaching near the cap level.
+So I highly recommend finding the Mark of Heroism first before you start 
+grinding for level. There is a total of twenty Marks in the entire game.
+
+
+
+Total Mark   Location 					      Max Level  Max CP
+ -----------------------------------------------------------------------------
+|None	   | Starting Default			 	          |  3 | 1000 |
+ -----------------------------------------------------------------------------
+|1	   | Mountain Cave Dungeon		 	          |  4 | 2000 |
+ -----------------------------------------------------------------------------
+|2	   | Shrine of the Wind 		 	          |  5 | 4000 |
+ -----------------------------------------------------------------------------
+|3	   | Shrine of the Wind 		 	          |  6 | 6000 |
+ -----------------------------------------------------------------------------
+|4	   | Shrine of the Wind, room after boss fight 	          |  7 | 8000 |
+ -----------------------------------------------------------------------------
+|5	   | Barness Village Dungeon			          |  8 | 10000|
+ -----------------------------------------------------------------------------
+|6	   | Herb Farm Cave				          |  9 | 12000|
+ -----------------------------------------------------------------------------
+|7	   | Carudale Tunnels				          | 10 | 15000|
+ -----------------------------------------------------------------------------
+|8	   | Org Cave					          | 11 | 20000|
+ -----------------------------------------------------------------------------
+|9	   | Cranbal Valley				          | 12 | 30000|
+ -----------------------------------------------------------------------------
+|10	   | Korat Cave 				          | 13 | 40000|
+ -----------------------------------------------------------------------------
+|11	   | Korat Cave, room after boss fight		          | 14 | 50000|
+ -----------------------------------------------------------------------------
+|12	   | Catacombs					          | 15 | 60000|
+ -----------------------------------------------------------------------------
+|13	   | Catacombs					          | 16 | 70000|
+ -----------------------------------------------------------------------------
+|14	   | Weathervane Tower, Save Room		          | 17 | 80000|
+ -----------------------------------------------------------------------------
+|15	   | Weathervane Tower,	Boss Room		          | 18 | 90000|
+ -----------------------------------------------------------------------------
+|16	   | Magician's Tower, Save Room		          | 19 |100000|
+ -----------------------------------------------------------------------------
+|17	   | Magician's Tower, Rooftop (Unison Required)	  | 20 |110000|
+ -----------------------------------------------------------------------------
+|18	   | Labyrith of Night, First Black Key Room		  | 21 |120000|
+ -----------------------------------------------------------------------------
+|19	   | Labyrith of Night, Second Black Key Room	          | 22 |130000|
+ -----------------------------------------------------------------------------
+|20	   | Labyrith of Night, Last Save Room		          | 23 |140000|
+ -----------------------------------------------------------------------------
+
+
+
+
+
+===============================================================================
+
+			     	Side Quest
+
+							GUIDE SECTION 5
+===============================================================================
+
+
+Help Out Side Quest
+--------------------
+
+This is a fetch item quest that you can take from Arche's father. For every
+quest you finish, Arche's father will add a new item for sale in the item
+shop. If you do manage to finish the entire chain of quest, Arche's father 
+will put the White Sword for sale. The White Sword is the strongest weapon for
+Arche in the game.
+
+
+ When	     Task				       Reward     
+ -----------------------------------------------------------------------------
+|Day 3	   |  Taiyaki			      |  Item shop will sell Taiyaki  |
+ -----------------------------------------------------------------------------
+|Taiyaki is a common drop from low level monsters, such as Green Slimes.      |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|Day 4	   | Slime Bean		|  Item shop will sell Slime Bean	      |
+ -----------------------------------------------------------------------------
+|Slime Bean is an item drop from Blue Slime and Yellow Slime. There is also   |
+|a Slime bean at the Bridge area west field of Tonkiness.		      |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|Day 5	   | Walnut Chocolate  |  Item shop will sell Walnut Chocolate 	      |
+ -----------------------------------------------------------------------------
+|Walnut Chocolate is an item drop from Cocorat. Also can be found in a        |
+|treasure in Barness Village.						      |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|Day 6 	   | Better Herb       |  Item shop will sell Better Herb 	      |
+ -----------------------------------------------------------------------------
+|Better Herb is a common chest item and is also sold in the item shop in      |
+|Barness village and other towns in the game.				      |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|Day 6 	After getting Wind Crest No.2   | Honey    	       |  None        |
+ -----------------------------------------------------------------------------
+|Honey is a item drop from Mothbees. 					      |
+ -----------------------------------------------------------------------------
+
+
+ -----------------------------------------------------------------------------
+|Day 7	   | Holy Water	       |  Item shop will sell Life Dew	              |
+ -----------------------------------------------------------------------------
+|Holy Water is sold in Korat Village, there is also a treasure chest in	      |
+|Carudale Valley containing Holy Water.					      |
+ -----------------------------------------------------------------------------
+
+
+ -----------------------------------------------------------------------------
+|Day 9	   | Magic Candy       |  None	 			              |
+ -----------------------------------------------------------------------------
+|Magic Candy can be found in treasure chest in most dungeons.		      |
+|Magic Candy is also sold in Korat's item shop.				      |
+ -----------------------------------------------------------------------------
+
+
+ -----------------------------------------------------------------------------
+|Day 9	   | Calming Cocoa     |  Item shop will sell Mind Chocolate          |
+ -----------------------------------------------------------------------------
+|Calming Cocoa is found in the Cave that is located on the path to Barness.   |
+|You will need all three party members to open the switch to obtain the       |
+|treasure.								      |
+ -----------------------------------------------------------------------------
+
+
+ -----------------------------------------------------------------------------
+|Day 9	   | Water of Life     |  None				              |
+ -----------------------------------------------------------------------------
+|Water of Life is located in a treasure chest that is found on the upper right|
+|corner of Weathervane Tower 5th floor.					      |
+ -----------------------------------------------------------------------------
+
+
+ -----------------------------------------------------------------------------
+|Day 10	   | Cleitcaithream    |  Item Shop will sell Revival Drink           |
+ -----------------------------------------------------------------------------
+|Cleitcaithream is obtain automatically once you have reach to the Chartreux  |
+|Flower Fields with all three party members. You can reach to the flower field|
+|by taking the west exit of Chartreux until the very end.		      |
+ -----------------------------------------------------------------------------
+
+
+ -----------------------------------------------------------------------------
+|Day 10	   | White Whale Oil   |  Item shop will sell Recall Lamp             |
+ -----------------------------------------------------------------------------
+|White Whale Oil is found near the entrance of the Wind Shrine. It is the     |
+|treasure chest on the cliff on upper left side. You will need the Unison     |
+|ability to obtain it.							      |
+ -----------------------------------------------------------------------------
+
+
+ -----------------------------------------------------------------------------
+|Day 11	   | White Iron Ore    |  None				              |
+ -----------------------------------------------------------------------------
+|White Iron Ore is found in the last dungeon. Near the second save fountain,  |
+|enter the exit near the Save fountain, and on the very left corner of the map|
+|, there is a skeleton. Examine it to obtain the White Ore.		      |
+ -----------------------------------------------------------------------------
+
+
+ -----------------------------------------------------------------------------
+|Day 11	   | Org Sword         |  Item shop will sell White Sword             |
+ -----------------------------------------------------------------------------
+|Org Sword is a rare drop from Org Centurions in the last dungeon.	      |
+ -----------------------------------------------------------------------------
+
+
+
+
+Memory Photos
+--------------------
+
+Memory Photos are items that are listed in the special item menu, you can view
+them to see the drawing of an event scene you have previously seen. Most Memory
+Photos require some backtracking to obtain, or they might be located in a hard
+to reach place.
+
+
+===============================================================================
+
+			     Character Parameters
+
+							GUIDE SECTION 6
+===============================================================================
+
+
+ ================
+\     Arche     /
+ ===============
+
+Overview: The main protagonist is like the typical Tank class of MMOs. A 
+physical damage dealer that shields caster. Arche is the easiest character
+to use and moves very similar to a fighting game character. Arche will gain
+the use of magic near the end of the game. Although Arche only has two magic
+in the entire game, these two magic skills are extremely strong that can almost
+make Arche into a broken character.
+
+
+
+
+
+Status
+======
+Attack Power : A
+Defense	     : B
+Spirit	     : F
+Resistance   : D
+
+ ------------------------
+|	Abilities	 |
+ ==============================================================================
+|Slash          | Command: X (Attack Button)	| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  A basic, downward-arcing swing. Hit above and in front of the  |
+|user. Doesn't involve stepping forward.				       |
+ ==============================================================================
+|Thrust         | Command: Down + X 		| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  A simple, straight sword thrust. Faster than a regular slash.  |
+ ==============================================================================
+|Roll	        | Command: Down, Forward 	| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  Tumble toward - or through - enemies to dodge attacks or get   |
+|the drop on them.							       |
+ ==============================================================================
+|Cartwheel      | Command: Down, Backward	| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  Cartwheel away from the enemy, avoiding attacks.	       |
+ ==============================================================================
+|Wide Slash     | Command: Forward + X		| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  A wide, chest-level slash which allows you to step far foward. |
+|Powerful, but leaves you open for a moment.				       |
+ ==============================================================================
+|Snap Thrust    | Command: Backward + X		| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  Make a snap turn and thrust behind yourself. Bot this and the  |
+|normal thrust can be done quickly together.				       |
+ ==============================================================================
+|Jumpkick       | Command: Forward, up, X	| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  A jumpkick is useful for closing with an enemy or when you find|
+|yourself unarmed.							       |
+ ==============================================================================
+|Arcing Slash   | Command: Up + X		| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  A slash which arcs upward well above the user's head. Hits     |
+|airborne foes harder than normal attacks.				       |
+ ==============================================================================
+|Downstab       | Command: (Midair) Down + X	| Cost: None	|LV: 2	       |
+ ------------------------------------------------------------------------------
+|Description :  A venerable finishing move that involves jumping into the air  |
+|and slamming into the ground, sword first.				       |
+ ==============================================================================
+|Combo Slash    | Command: Slash, then UP + X	| Cost: None	|LV: 3	       |
+ ------------------------------------------------------------------------------
+|Description :  A second attack you can use immediately after you Slash, which |
+|swings your blade back up and makes you step forward.			       |
+ ==============================================================================
+|Wheel Slash    | Command: Forward, Down, X	| Cost: None	|LV: 5	       |
+ ------------------------------------------------------------------------------
+|Description : A rolling slash attack which strikes the enemy from below.      |
+|Capable of moving through enemies like a roll				       |
+ ==============================================================================
+|Combo Wide Slash|Command: Slash, Forwad + X	| Cost: None	|LV: 7	       |
+ ------------------------------------------------------------------------------
+|Description : A combination attack which allows for a wide slash after a      |
+|normal slash.								       |
+ ==============================================================================
+|Snap Slash      |Command: Back, X		| Cost: None	|LV: 9	       |
+ ------------------------------------------------------------------------------
+|Description : Whip around and slash a critter in the face. Can combo into     |
+|move just like slash.							       |
+ ==============================================================================
+|Knight's Thrust |Command: )When Running) Down + X| Cost: None	|LV: 10	       |
+ ------------------------------------------------------------------------------
+|Description : Charge forward using your sword as a lance, not unlike a mounted|
+|knight. Can pierce through multiple foes and defense.			       |
+ ==============================================================================
+|Leaping Slash   |Command: Up, Forward, X	| Cost: None	|LV: 12        |
+ ------------------------------------------------------------------------------
+|Description : A technique in which the user leaps forward during a wide slash |
+|for more power. Totally unblockable.					       |
+|***Author's Note: My favorite move and probably the best melee skill for Arche|
+ ==============================================================================
+|Twirling Slash  |Command: Back, Down,  X	| Cost: None	|LV: 14        |
+ ------------------------------------------------------------------------------
+|Description : A somersault slash which arcs upward and behind the user. Deals |
+|great damage to anything attempting to flank you.			       |
+ ==============================================================================
+|The Full Moon   |Command: Jump, Up + X	        | Cost: None	|LV: 17        |
+ ------------------------------------------------------------------------------
+|Description : A powerful sword technique that combines a foward somersault    |
+|and a spinning slash. Incredibly potent against airborne foes. 	       |
+ ==============================================================================
+|									       |
+|				Unison only Skill			       |
+|									       |
+ ==============================================================================
+|Unison	         |Command: None			| Cost: 10 MP	|LV: Story    |
+ ------------------------------------------------------------------------------
+|Description : One of the greatest form of magic, which allows the user to     |
+|unite bodily with an elemental, temporarily gaining powerful magical abilities|
+ ==============================================================================
+|Wind Thrust     |Command: Attack during Unison	| Cost: None	|LV: Story     |
+ ------------------------------------------------------------------------------
+|Description : An ability which transforms differences in air pressure from    |
+|sword slashes into magical blades, allowing the user to attack from afar.     |
+|Available during Unison.						       |
+ ==============================================================================
+|Buster Tornado  |Command: None		        | Cost: 3 MP	|LV: 20        |
+ ------------------------------------------------------------------------------
+|Description : Summons a huge tornado with winds which slash like blades. Casts|
+|very quickly, making it easy to use in combination with sword attacks.	       |
+|Available during Unison.						       |
+ ==============================================================================
+
+
+
+
+
+
+
+
+ ================
+\      Sana     /
+ ===============
+
+Overview: Sana is the support mage in the game. Sana has healing and other
+abilities. Her attack magics don't hit as hard as Stella and also a lot
+harder to hit enemies with. Sana physical attributes are the worse in the game
+and needs another team member to give the cover she needs for casting spell.
+Sana is an excellent support character that have a wide range of spells that
+is must have battles.
+
+
+
+Status
+======
+Attack Power : F
+Defense	     : C
+Spirit	     : B
+Resistance   : B
+
+
+
+ ------------------------
+|	Abilities	 |
+ ==============================================================================
+|Staff Smack    | Command: X or Back + X	| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  Smack a foe with your staff. Sana's not the strongest girl     |
+|in the world, so this is a bit of a last-ditch move.			       |
+ ==============================================================================
+|Water Shoot    | Command: Down+X, Forward+X or UP +X| Cost: None|LV: Default  |
+ ------------------------------------------------------------------------------
+|Description :  Fires a bolt of magical water at a foe. Needs time to coalesce,|
+|so it is ineffective at close range.					       |
+ ==============================================================================
+|Diamond Dust   | Command: None		 	| Cost: 3 MP	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  Attack magic which freeze the ambient water vapor in the air   |
+|into massive crystals above the caster and sends them smashing down upon foes.|
+|Can freeze foes.							       |
+ ==============================================================================
+|Heal Water     | Command: None		 	| Cost: 4 MP	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  Soothes injuries with holy water. Restores 60 to 100 HP.       |
+ ==============================================================================
+|Shield         | Command: None		 	| Cost: 2 MP	|LV: 3	       |
+ ------------------------------------------------------------------------------
+|Description :  Creates a magical shield around the target. Shielded targets   |
+|take half damage & suffer no spell interruption. Shield fades with damage.    |
+|Only one ally can be shielded.						       |
+ ==============================================================================
+|Sleep Mist     | Command: None		 	| Cost: 3 MP	|LV: 4	       |
+ ------------------------------------------------------------------------------
+|Description :  Creates a cloud of fog which will put enemies within no sleep. |
+|Sleeping enemies will continue to sleep until they take substantial amount of |
+|damage.								       |
+ ==============================================================================
+|Splash        | Command: None		 	| Cost: 2 MP	|LV: 5	       |
+ ------------------------------------------------------------------------------
+|Description :  Fires bolts of magical water in all directions. The bolts can  |
+|be blocked and don't hit hard, but the spell can be cast very quickly.	       |
+ ==============================================================================
+|Mermaid Robe  | Command: None		 	| Cost: 2 MP	|LV: 6	       |
+ ------------------------------------------------------------------------------
+|Description :  Envelops all nearby allies in air bubbles, allowing them to    |
+|move and breathe underwater for a time. You will drown if the bubble 	       |
+|dissipates underwater!							       |
+ ==============================================================================
+|Turbid Squall | Command: None		        | Cost: 3 MP    |LV: 7	       |
+ ------------------------------------------------------------------------------
+|Description :  Creates a magical rain. Those who are hit by the rain will     |
+|suffer a decrease in their defense.					       |
+ ==============================================================================
+|Leap Back     | Command: Down, Back or Forward	| Cost: None    |LV: 8	       |
+ ------------------------------------------------------------------------------
+|Description :  Leap backwards, doding incoming attacks and distancing yourself|
+|from the enemy.							       |
+ ==============================================================================
+|Heal Water II | Command: None		 	| Cost: 6 MP	|LV: 9         |
+ ------------------------------------------------------------------------------
+|Description :  Soothes injuries with holy water. Restores 180 to 240 HP.      |
+ ==============================================================================
+|Force Field   | Command: None		 	| Cost: 5 MP	|LV: 11	       |
+ ------------------------------------------------------------------------------
+|Description : Shapes energy around an ally and increase their physical attack |
+|power. This spell can only be active on one person at a time.		       |
+ ==============================================================================
+|Antidote      | Command: None		 	| Cost: 4 MP	|LV: 13	       |
+ ------------------------------------------------------------------------------
+|Description : Healing magic which purges the body of any poisons.	       |
+ ==============================================================================
+|Diamond Dust II| Command: None		 	| Cost: 6 MP	|LV: 14	       |
+ ------------------------------------------------------------------------------
+|Description :  Attack magic which freeze the ambient water vapor in the air   |
+|into massive crystals above the caster and sends them smashing down upon foes.|
+|More power and crystals than level 1.					       |
+ ==============================================================================
+|Shield II      | Command: None		 	| Cost: 5 MP	|LV: 15	       |
+ ------------------------------------------------------------------------------
+|Description :  Creates a magical shield around the target. Absorbs more damage|
+|than level 1. Only one ally at a time may be shielded.			       |
+ ==============================================================================
+|Teleportation  | Command: None		 	| Cost: 6 MP	|LV: 19        |
+ ------------------------------------------------------------------------------
+|Description : Returns the caster and her allies to a safe location. However,  |
+|some areas do not allow teleportation.					       |
+ ==============================================================================
+|Water Blow     | Command: None		 	| Cost: 8 MP	|LV: 21	       |
+ ------------------------------------------------------------------------------
+|Description :  Sends forth a massive wave of water in front of the caster,    |
+|striking all enemies multiple times.					       |
+ ==============================================================================
+|Heal Mist      | Command: None		 	| Cost: 12 MP	|LV: 23	       |
+ ------------------------------------------------------------------------------
+|Description :  Soothes the injuries of all allies around the caster with a    |
+|mist of holy water.  Restores 180 to 240 HP.				       |
+ ==============================================================================
+
+
+
+
+ ================
+\     Stella    /
+ ===============
+
+Overview: Stella is the main attack mage. All of Stella's spells are damage
+oriented. Stella's magic hits very hard and can usually kill monsters with
+a single spell. 
+
+
+Status
+======
+Attack Power : C
+Defense	     : C
+Spirit	     : A
+Resistance   : B
+
+
+
+ ------------------------
+|	Abilities	 |
+ ==============================================================================
+|Stab	        | Command: X or Back + X	| Cost: None	|LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  Swipe at any plebeian who dares to get too close using your    |
+|dagger.								       |
+ ==============================================================================
+|Fire Handling  | Command: Down+X, Forward+X or UP +X| Cost: None|LV: Default  |
+ ------------------------------------------------------------------------------
+|Description :  Use Royal Scarlet's power to set foes and obstacles aflame.    |
+ ==============================================================================
+|Leap Back      | Command: Down, Back or Down, Foward| Cost: None|LV: Default  |
+ ------------------------------------------------------------------------------
+|Description :  Leap backwards, doding incoming attacks and distancing yourself|
+|from the enemey.							       |
+ ==============================================================================
+|Fire Wall      | Command: None		        | Cost: 3 MP    |LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  Creates walls of fire which damage enemies. The walls are very |
+|difficult to penetrate while active.					       |
+ ==============================================================================
+|Chaser        | Command: None			| Cost: 4 MP    |LV: 4	       |
+ ------------------------------------------------------------------------------
+|Description :  Launches ball of fire at foes. The Balls will chase their      |
+|target and are very accurate.						       |
+ ==============================================================================
+|Phoenix       | Command: None			| Cost: 4 MP    |LV: 7	       |
+ ------------------------------------------------------------------------------
+|Description :  Strikes enemies in front of you with a flaming bird. Can only  |
+|strike an enemy once per cast, but has a huge range and short cast time.      |
+ ==============================================================================
+|Disintegrate  | Command: None		 	| Cost: 4 MP    |LV: 9	       |
+ ------------------------------------------------------------------------------
+|Description :  Emits an aura of destruction in all directions, vaporizing any |
+|foes touched by it. Does not work on targets stronger than the caster.	       |
+ ==============================================================================
+|Blade         | Command: None		 	| Cost: 3 MP	|LV: 11        |
+ ------------------------------------------------------------------------------
+|Description :  Forms two spinning blades of flame around the caster. These    |
+|blades strike any foe that apporaches the caster.			       |
+ ==============================================================================
+|Inferno       | Command: None		 	| Cost: 5 MP	|LV: 11        |
+ ------------------------------------------------------------------------------
+|Description :  Sets a large patch of ground in front of the caster ablaze for |
+|a time. Foes within the blaze take constant damage until they get out.	       |
+ ==============================================================================
+|Life Force    | Command: None		 	| Cost: 4 MP	|LV: 11        |
+ ------------------------------------------------------------------------------
+|Description :  Use the power of heat and courage to soothe a target's 	       |
+|injuries. Not as effect as water, but restores 60 to 100 HP.		       |
+ ==============================================================================
+|Interceptor   | Command: None		 	| Cost: 5 MP	|LV: 11        |
+ ------------------------------------------------------------------------------
+|Description :  Fire countless flaming arrows upwards from the ground to strike|
+|enemies, including airborne ones. Can be cast quickly.			       |
+ ==============================================================================
+|Fire Wall II  | Command: None		        | Cost: 6 MP    |LV: Default   |
+ ------------------------------------------------------------------------------
+|Description :  Creates walls of fire which damage enemies. Much more	       |
+|powerful than level 1.							       |
+ ==============================================================================
+|Phoenix II    | Command: None			| Cost: 7 MP    |LV: 7	       |
+ ------------------------------------------------------------------------------
+|Description :  Strikes enemies in front of you with a flaming bird. Much more |
+|powerful than level 1.							       |
+ ==============================================================================
+|Chaser II     | Command: None			| Cost: 8 MP    |LV: 4	       |
+ ------------------------------------------------------------------------------
+|Description :  Launches ball of fire at foes. Much more powerful than level 1.|
+ ==============================================================================
+|Cerberus      | Command: None			| Cost: 11MP    |LV: 23	       |
+ ------------------------------------------------------------------------------
+|Description :  Summons the guardhound of Hell, Cerberus, to defend the user.  |
+|Cerberus' HP is based on the caster's spirit.				       |
+ ==============================================================================
+
+
+
+
+
+
+
+
+
+
+
+===============================================================================
+
+			     Equipment List 
+
+							GUIDE SECTION 7
+===============================================================================
+
+
+
+ ================
+\    Swords     / (Arche)
+ ===============
+
+
+ ============================================================================
+|Weapon Name	  |	Location			   | Status   |Cost  \
+ =============================================================================
+ -----------------------------------------------------------------------------
+|Bronze Sword	  | Tonkiness Weapon Shop		   | ATK +5   | 380   |
+ -----------------------------------------------------------------------------
+|Iron Sword	  | Tonkiness Weapon Shop (After day 4)	   | ATK +10  | 780   |
+ -----------------------------------------------------------------------------
+|Short Sword	  | Barness Item Shop 			   | ATK +20  | 2800  |
+ -----------------------------------------------------------------------------
+|Rusty Sword	  | Barness Hill Dungeon (Treasure) 	   | ATK +13  | 60    |
+|		  | Rare Drop from Kobold		   |	      |       |
+ -----------------------------------------------------------------------------
+|Long Sword	  | Chartreux City Weapon Shop		   | ATK +32  | 5500  |
+|		  | Rare Drop from Lead Kobold		   |          |       |
+ -----------------------------------------------------------------------------
+|Legendary Sword  | 200 CP Capsule Machine		   | ATK +13  | 250   |
+|		  |					   |  Sleep Property  |
+ -----------------------------------------------------------------------------
+|Org Slayer       | Treasure Chest in Org Lair		   | ATK +20  | 2000  |
+|		  |					   | + Damage on Org  |
+ -----------------------------------------------------------------------------
+|Ghost Blaster    | Chartreux City Weapon Shop		   | ATK +20  | N/A   |
+|		  | Day 9 night time			   | + Damage on Ghost|
+ -----------------------------------------------------------------------------
+|Battle Sword     | Chartreux City Weapon Shop (Day 9)	   | ATK +60  | 18000 |
+ -----------------------------------------------------------------------------
+|White Sword      | Finish all of Arche's Dad Help Out	   | ATK +80  | 33500 |
+|		  | Request, then sold in the Item Shop.   |          |       |
+ -----------------------------------------------------------------------------
+
+
+
+
+
+ ================
+\    Staff      / (Sana)
+ ===============
+
+
+ ============================================================================
+|Weapon Name	  |	Location			   | Status   |Cost  \
+ =============================================================================
+
+ -----------------------------------------------------------------------------
+|Merrin's Staff   | 20 CP Capsule Machine		   | ATK +4   | 25    |
+|		  | 					   | SPR +4   |       |
+|		  |					   | MP +8    |       |
+ -----------------------------------------------------------------------------
+|Wooden Sword	  | Korat Weapon Shop			   | ATK +16  | 780   |
+ -----------------------------------------------------------------------------
+|Mahogany Staff	  | Chartreux Weapon Shop		   | ATK +12  | 2900  |
+|		  | Treasure in Fire Shrine		   | SPR +8   |       |
+ -----------------------------------------------------------------------------
+|Rune Staff	  | Weathervane Tower			   | ATK +24  | 4250  |
+|		  | Treasure in 5th Floor 		   | SPR +16  |       |
+ -----------------------------------------------------------------------------
+|Star Rod	  | Treasure in Last Dungeon		   | ATK +40  | 16000 |
+|		  | 					   | SPR +24  |       |
+ -----------------------------------------------------------------------------
+
+
+
+
+
+
+ ================
+\    Dagger     / (Stella)
+ ===============
+
+
+ ============================================================================
+|Weapon Name	  |	Location			   | Status   |Cost  \
+ =============================================================================
+ -----------------------------------------------------------------------------
+|Letter Opener	  | Chartreux Weapon Shop		   | ATK +4   | 180   |
+|		  | Stella's Drawer			   |	      |       |
+ -----------------------------------------------------------------------------
+|Iron Dagger	  | Tonkiness Weapon Shop		   | ATK +8   | 450   |
+|		  | Treasure in Carudale Tunnels	   |	      |       |
+ -----------------------------------------------------------------------------
+|Rondel		  | Chartreux Weapon Shop		   | ATK +12  | 1050  |
+ -----------------------------------------------------------------------------
+|Lady's Dagger	  | Korat Village Weapon Shop		   | ATK +28  | 4300  |
+|		  | Treasure in Korat Cave		   |	      |       |
+ -----------------------------------------------------------------------------
+|Magic Dagger	  | Chartreux Weapon Shop (Day 9)	   | ATK +38  | 9700  |
+|		  | Treasure in Korat Cave		   | SPR +10  |       |
+ -----------------------------------------------------------------------------
+|Battle Dagger    | Tonkiness Weapon Shop		   | ATK +58  | 15800 |
+|		  | Must cleared game first		   |	      |       |
+ -----------------------------------------------------------------------------
+|Rapier		  | Dial up room in Last Dungeon	   | ATK +68  | 12500 |
+|		  | Must cleared game first		   |	      |       |
+ -----------------------------------------------------------------------------

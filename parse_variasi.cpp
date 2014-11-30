@@ -88,10 +88,10 @@ void sort_list(list* L){
 					lt->next= temp;
 					bubble_burst= 1;
 					}
-				lt=lt->next;	
+				lt=lt->next;
 				}
 			}
-		while(bubble_burst);	
+		while(bubble_burst);
     }
     else printf("list masih kosong\n");
 }
@@ -110,7 +110,7 @@ void print_list(list* L)
 					//~ printf("boooo!\n");
 					//~ }
 				//~ }
-            
+
             lt=lt->next;
             i++;
         }
@@ -270,25 +270,7 @@ int main (){
         fread(str2,1,huf_var,fp);
         check_symbol(str2,&L);
     }
-    print_list(&L);/*
-//Special test 'untuk pembentukan pohon'
-    htlist_head* akarpohon;
-    akarpohon->first=NULL;
-    htree* pohon;
-    symbol_list* ksim=L.first;
-    while(ksim!=NULL)
-    {
-        add_tree_list(akarpohon,ksim->t.symbol,ksim->t.frekuensi);
-        ksim=ksim->next;
-    }
-    printf("create tree\n");
-    create_tree(akarpohon,pohon);
-    printf("succesfully create tree\n");
-    printPaths(pohon);
-
-    return 0;
-//test selesai
-*/
+    print_list(&L);
     printf("\nTotal Karakter Dalam Berkas Adalah %d\n",count_char_max(fp));
 
         /* ##### BEGIN OF PARSING SYMBOLS ##### */
@@ -364,6 +346,31 @@ int main (){
     sort_list(&tabel_huffman);
     print_list(&tabel_huffman);
     fclose (fp);
+
+    //Special test 'untuk pembentukan pohon'
+    htlist_head* akarpohon;
+    akarpohon->first=NULL;
+    htree* pohon;
+    symbol_list* ksim=tabel_huffman.first;
+    while(ksim!=NULL)
+    {
+        add_tree_list(akarpohon,ksim->t.symbol,ksim->t.frekuensi);
+        ksim=ksim->next;
+    }
+    FILE* pp=fopen("pohon.txt", "w");
+//    sort_tree_list(akarpohon);
+//    debug_list(akarpohon);
+    printf("create tree\n");
+    create_tree(akarpohon);
+
+//    debug_list(akarpohon);
+
+    printf("succesfully create tree\n");
+    printPaths(akarpohon->first->branch,pp);
+    fclose(pp);
+    //print_list(&tabel_huffman);
+
+//test selesai
     return 1;
 }
 
