@@ -228,6 +228,46 @@ void printPaths(htree* node)
     printPathsRecur(node, path, 0);
 }
 
+void huffTableCreate(htree* node)
+{
+    char path[500];
+    huffTableRecurPath(node,'L',path,0);
+    huffTableRecurPath(node,'R',path,0);
+}
+void huffTableRecurPath(htree* node, char dir, char path[], int pathLen)
+{
+    if (node==NULL)
+        return;
+
+  /* append this node to the path array */
+    path[pathLen]=dir;
+    pathLen++;
+
+//    printf("show path %d\n",node->frekuensi);
+  /* it's a leaf, so print the path that led to here  */
+    if (node->left==NULL && node->right==NULL)
+    {
+
+        huffTablePrint(path, pathLen);
+        printf("%s\n",node->symbol);
+    }
+    else
+    {
+    /* otherwise try both subtrees */
+
+            huffTableRecurPath(node->left,'L',path,pathLen);
+            huffTableRecurPath(node->right,'R',path,pathLen);
+    }
+}
+void huffTablePrint(char ints[], int len)
+{
+    int i;
+    for (i=0; i<len; i++)
+    {
+        printf("%c ", ints[i]);
+    }
+}
+
 ///* Prototypes for funtions needed in printPaths() */
 //void printPathsRecur(struct node* node, int path[], int pathLen);
 //void printArray(int ints[], int len);

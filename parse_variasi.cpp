@@ -3,7 +3,7 @@
 #include <malloc.h>
 #include "treelibrary.h"
 
-FILE * fp;
+FILE* fp;
 fpos_t pos1;
 char str2[10], str1[10], str3[10], s[10];
 int i=0, z=0, k=0, p=0;
@@ -357,7 +357,7 @@ int main (){
         add_tree_list(akarpohon,ksim->t.symbol,ksim->t.frekuensi);
         ksim=ksim->next;
     }
-    FILE* pp=fopen("pohon.txt", "w");
+//    FILE* pp=fopen("pohon.txt", "w");
 //    sort_tree_list(akarpohon);
 //    debug_list(akarpohon);
     printf("create tree\n");
@@ -366,8 +366,9 @@ int main (){
 //    debug_list(akarpohon);
 
     printf("succesfully create tree\n");
-    printPaths(akarpohon->first->branch,pp);
-    fclose(pp);
+    huffTableCreate(akarpohon->first->branch);
+//    printPaths(akarpohon->first->branch,pp);
+//    fclose(pp);
     //print_list(&tabel_huffman);
 
 //test selesai

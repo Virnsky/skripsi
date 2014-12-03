@@ -45,5 +45,8 @@ void printArray(int ints[], int len, FILE* fp);
 void printPaths(htree* node, FILE* fp);
 //end debug
 
+void huffTableCreate(htree* node);
+void huffTableRecurPath(htree* node, char dir, char path[], int pathLen);
+void huffTablePrint(char ints[], int len);
 
 #endif // TREELIBRARY_H_INCLUDED

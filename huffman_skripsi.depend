@@ -59,3 +59,17 @@
 	<string.h>
 	<malloc.h>
 
+1417588680 source:e:\project\github project\skripsi\parse_variasi.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+	"treelibrary.h"
+
+1417591660 e:\project\github project\skripsi\treelibrary.h
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1417588808 source:e:\project\github project\skripsi\treelibrary.cpp
+	"treelibrary.h"
+
