@@ -249,7 +249,7 @@ void huffTableRecurPath(htree* node, char dir, char path[], int pathLen)
     {
 
         huffTablePrint(path, pathLen);
-        printf("%s\n",node->symbol);
+        printf(" %d %s\n",node->frekuensi,node->symbol);
     }
     else
     {
