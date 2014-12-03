@@ -29,6 +29,24 @@ struct htlist_head
 	struct htree_list* first;
 };
 
+
+struct huffData
+{
+	char symbol[10];
+	char encode[16];
+};
+
+struct huffTable
+{
+	huffData huff;
+	struct huffTable* next;
+};
+
+struct listHuff
+{
+	struct huffTable* first;
+};
+
 void add_tree_list(htlist_head* L,char symbol[6],int frek);
 void add_tree_list(htlist_head* L,htree* t_tree);
 void sort_tree_list(htlist_head* L);
@@ -39,14 +57,16 @@ void printPathsRecur(htree* node, int path[], int pathLen);
 void printArray(int ints[], int len);
 void printPaths(htree* node);
 
+
 //debug
 void printPathsRecur(htree* node, int path[], int pathLen, FILE* fp);
 void printArray(int ints[], int len, FILE* fp);
 void printPaths(htree* node, FILE* fp);
 //end debug
 
-void huffTableCreate(htree* node);
-void huffTableRecurPath(htree* node, char dir, char path[], int pathLen);
-void huffTablePrint(char ints[], int len);
+void huffTableCreate(htree* node, listHuff* hf);
+void huffTableRecurPath(htree* node, listHuff* hf, char dir, char path[], int pathLen);
+void huffTableAdd(listHuff* hf,char symbol[], char path[], int pathLen);
+void huffTablePrint(listHuff* hf);
 
 #endif // TREELIBRARY_H_INCLUDED

@@ -228,17 +228,17 @@ void printPaths(htree* node)
     printPathsRecur(node, path, 0);
 }
 
-void huffTableCreate(htree* node)
+void huffTableCreate(htree* node, listHuff* hf)
 {
     char path[500];
-    huffTableRecurPath(node,'L',path,0);
-    huffTableRecurPath(node,'R',path,0);
+    huffTableRecurPath(node, hf,'L',path,0);
+    huffTableRecurPath(node, hf,'R',path,0);
 }
-void huffTableRecurPath(htree* node, char dir, char path[], int pathLen)
+void huffTableRecurPath(htree* node, listHuff* hf, char dir, char path[], int pathLen)
 {
     if (node==NULL)
         return;
-
+    int i;
   /* append this node to the path array */
     path[pathLen]=dir;
     pathLen++;
@@ -247,24 +247,49 @@ void huffTableRecurPath(htree* node, char dir, char path[], int pathLen)
   /* it's a leaf, so print the path that led to here  */
     if (node->left==NULL && node->right==NULL)
     {
-
-        huffTablePrint(path, pathLen);
-        printf(" %d %s\n",node->frekuensi,node->symbol);
+        huffTableAdd(hf,node->symbol,path,pathLen);
     }
     else
     {
     /* otherwise try both subtrees */
 
-            huffTableRecurPath(node->left,'L',path,pathLen);
-            huffTableRecurPath(node->right,'R',path,pathLen);
+            huffTableRecurPath(node->left ,hf,'L',path,pathLen);
+            huffTableRecurPath(node->right,hf,'R',path,pathLen);
     }
 }
-void huffTablePrint(char ints[], int len)
+void huffTableAdd(listHuff* hf,char symbol[], char path[], int pathLen)
 {
     int i;
-    for (i=0; i<len; i++)
+    huffTable* hh=(huffTable*) malloc(sizeof(huffTable));
+    hh->next=NULL;
+    strcpy(hh->huff.symbol,symbol);
+
+    for (i=0; i<pathLen; i++)
     {
-        printf("%c ", ints[i]);
+        hh->huff.encode[i]=path[i];
+    }
+
+    if(hf->first==NULL)
+    {
+        hf->first=hh;
+    }else
+    {
+        huffTable* last_symbol=hf->first;
+        while(last_symbol->next!=NULL)
+        {
+            last_symbol=last_symbol->next;
+        }
+        last_symbol->next=hh;
+    }
+    hh=NULL;
+}
+void huffTablePrint(listHuff* hf)
+{
+    huffTable* a=hf->first;
+    while(a!=NULL)
+    {
+        printf("%s %s\n",a->huff.encode,a->huff.symbol);
+        a=a->next;
     }
 }
 

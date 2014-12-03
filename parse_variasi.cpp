@@ -29,6 +29,7 @@ struct list
 	struct symbol_list* first;
 };
 
+
 void add_symbol(char symbol_name[],list *L)
 {
 	symbol_list* smb=(symbol_list*) malloc(sizeof(symbol_list));
@@ -366,7 +367,10 @@ int main (){
 //    debug_list(akarpohon);
 
     printf("succesfully create tree\n");
-    huffTableCreate(akarpohon->first->branch);
+    listHuff beta;
+    beta.first=NULL;
+    huffTableCreate(akarpohon->first->branch,&beta);
+    huffTablePrint(&beta);
 //    printPaths(akarpohon->first->branch,pp);
 //    fclose(pp);
     //print_list(&tabel_huffman);
