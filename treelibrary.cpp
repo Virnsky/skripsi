@@ -231,8 +231,8 @@ void printPaths(htree* node)
 void huffTableCreate(htree* node, listHuff* hf)
 {
     char path[500];
-    huffTableRecurPath(node, hf,'L',path,0);
-    huffTableRecurPath(node, hf,'R',path,0);
+    huffTableRecurPath(node->left, hf,'0',path,0);
+    huffTableRecurPath(node->right, hf,'1',path,0);
 }
 void huffTableRecurPath(htree* node, listHuff* hf, char dir, char path[], int pathLen)
 {
@@ -253,8 +253,8 @@ void huffTableRecurPath(htree* node, listHuff* hf, char dir, char path[], int pa
     {
     /* otherwise try both subtrees */
 
-            huffTableRecurPath(node->left ,hf,'L',path,pathLen);
-            huffTableRecurPath(node->right,hf,'R',path,pathLen);
+            huffTableRecurPath(node->left ,hf,'0',path,pathLen);
+            huffTableRecurPath(node->right,hf,'1',path,pathLen);
     }
 }
 void huffTableAdd(listHuff* hf,char symbol[], char path[], int pathLen)
@@ -268,6 +268,7 @@ void huffTableAdd(listHuff* hf,char symbol[], char path[], int pathLen)
     {
         hh->huff.encode[i]=path[i];
     }
+    hh->huff.encode[pathLen]='\0';
 
     if(hf->first==NULL)
     {
