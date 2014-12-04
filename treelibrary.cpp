@@ -262,6 +262,7 @@ void huffTableAdd(listHuff* hf,char symbol[], char path[], int pathLen)
     int i;
     huffTable* hh=(huffTable*) malloc(sizeof(huffTable));
     hh->next=NULL;
+    hh->huff.len=pathLen;
     strcpy(hh->huff.symbol,symbol);
 
     for (i=0; i<pathLen; i++)

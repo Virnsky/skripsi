@@ -34,6 +34,7 @@ struct huffData
 {
 	char symbol[10];
 	char encode[16];
+	int len;
 };
 
 struct huffTable
