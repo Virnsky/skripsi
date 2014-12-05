@@ -230,11 +230,11 @@ void printPaths(htree* node)
 
 void huffTableCreate(htree* node, listHuff* hf)
 {
-    char path[500];
-    huffTableRecurPath(node->left, hf,'0',path,0);
-    huffTableRecurPath(node->right, hf,'1',path,0);
+    bool path[500];
+    huffTableRecurPath(node->left, hf,0,path,0);
+    huffTableRecurPath(node->right, hf,1,path,0);
 }
-void huffTableRecurPath(htree* node, listHuff* hf, char dir, char path[], int pathLen)
+void huffTableRecurPath(htree* node, listHuff* hf, bool dir, bool path[], int pathLen)
 {
     if (node==NULL)
         return;
@@ -253,11 +253,11 @@ void huffTableRecurPath(htree* node, listHuff* hf, char dir, char path[], int pa
     {
     /* otherwise try both subtrees */
 
-            huffTableRecurPath(node->left ,hf,'0',path,pathLen);
-            huffTableRecurPath(node->right,hf,'1',path,pathLen);
+            huffTableRecurPath(node->left ,hf,0,path,pathLen);
+            huffTableRecurPath(node->right,hf,1,path,pathLen);
     }
 }
-void huffTableAdd(listHuff* hf,char symbol[], char path[], int pathLen)
+void huffTableAdd(listHuff* hf,char symbol[], bool path[], int pathLen)
 {
     int i;
     huffTable* hh=(huffTable*) malloc(sizeof(huffTable));
@@ -269,7 +269,6 @@ void huffTableAdd(listHuff* hf,char symbol[], char path[], int pathLen)
     {
         hh->huff.encode[i]=path[i];
     }
-    hh->huff.encode[pathLen]='\0';
 
     if(hf->first==NULL)
     {
@@ -287,14 +286,51 @@ void huffTableAdd(listHuff* hf,char symbol[], char path[], int pathLen)
 }
 void huffTablePrint(listHuff* hf)
 {
+    int i;
+    int countTotalBit=0;
     huffTable* a=hf->first;
     while(a!=NULL)
     {
-        printf("%s %s\n",a->huff.encode,a->huff.symbol);
+        for(i=0;i<a->huff.len;i++)
+        {
+            printf("%d ",a->huff.encode[i]);
+        }
+        printf("%s\n",a->huff.symbol);
         a=a->next;
     }
 }
 
+/*
+void printEncodedFile(FILE* fhff,listHuff* hf)
+{
+    int i;
+    int encodeLen1;
+    int encodeLen2;
+    unsigned char cc1=0;
+    unsigned char cc2=0;
+    huffTable* a=hf->first;
+    while(a!=NULL)
+    {
+        encodeLen1=a->huff.len;
+
+        for(i=0;i<=encodeLen1;i++)
+        {
+            cc1=cc1 | (a->huff.encode[i] << (7-i));
+        }
+        if(a->next!=NULL)
+        {
+            encodeLen2=a->next->huff.len;
+        }
+
+        for(i=0;i<a->huff.len;i++)
+        {
+            printf("%d ",a->huff.encode[i]);
+        }
+        printf("%s\n",a->huff.symbol);
+        a=a->next;
+    }
+}
+*/
 ///* Prototypes for funtions needed in printPaths() */
 //void printPathsRecur(struct node* node, int path[], int pathLen);
 //void printArray(int ints[], int len);

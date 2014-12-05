@@ -11,6 +11,9 @@ int x,sisa,total,limit, huf_var, batas, mulai;
 char temp_prio1[10], temp_prio2[10], temp_prio3[10], temp_prio4[10], temp_prio5[10], vt[10];
 int temp_ind1 = 0, temp_ind2 = 0, temp_ind3 = 0, temp_ind4 = 0, temp_ind5 = 0,temp_max_fre;
 
+bool bitEncode[50000];
+int bitLen;
+
 struct data_t
 {
 	char symbol[10];
@@ -248,6 +251,111 @@ void preadd_parse(list* lt,char str[],int limited,int index, list* L){
     if(!strcmp(str,"")) printf(" Kosong");
 };
 
+
+huffTable* findHuffTable(listHuff* hf,const char* symbol)
+{
+    huffTable* srclist=hf->first;
+
+    while(srclist!=NULL)
+    {
+        if(!strcmp(srclist->huff.symbol,symbol))
+        {
+            return srclist;
+        }
+        srclist=srclist->next;
+    }
+    srclist=NULL;
+    return NULL;
+}
+
+void resetEncodeTable()
+{
+    bitLen=0;
+}
+
+void addEncodeTable(bool val)
+{
+    bitEncode[bitLen]=val;
+    bitLen++;
+}
+
+void printBit(char a)
+{
+//    printf("%d",a/256);
+    char g;
+    g=a&0b10000000;
+    g=g>>7;
+    printf("%d",g);
+    g=a&0b01000000;
+    g=g>>6;
+    printf("%d",g);
+    g=a&0b00100000;
+    g=g>>5;
+    printf("%d",g);
+    g=a&0b00010000;
+    g=g>>4;
+    printf("%d",g);
+    g=a&0b00001000;
+    g=g>>3;
+    printf("%d",g);
+    g=a&0b00000100;
+    g=g>>2;
+    printf("%d",g);
+    g=a&0b00000010;
+    g=g>>1;
+    printf("%d",g);
+    g=a&1;
+    printf("%d",g);
+}
+
+void createEncodeTable(list* L,listHuff* hf)
+{
+        symbol_list* lt=L->first;
+        int i;
+        while(lt!=NULL)
+        {
+            huffTable* huffSrc=findHuffTable(hf,lt->t.symbol);
+            if(huffSrc==NULL)
+            {
+                printf("failed\n");
+                resetEncodeTable();
+                return;
+            }else
+            {
+                for(i=0;i<huffSrc->huff.len;i++)
+                {
+                    addEncodeTable(huffSrc->huff.encode[i]);
+                }
+            }
+
+            lt=lt->next;
+        }
+
+    for(i=0;i<bitLen;i++)
+        printf("%d",bitEncode[i]);
+    printf("\nnumber of bit%d\n",bitLen);
+
+    FILE* jj=fopen("watatita.dat","w");
+    char m=0;
+    char reverseBit=0;
+    int countByte=0;
+    for(i=0;i<bitLen;i++)
+    {
+        m=m | (bitEncode[i]<<(7-countByte));
+        countByte++;
+        if(countByte>=8)
+        {
+            countByte=0;
+            printBit(m);
+            fprintf(jj,"%c",m);
+            m=0;
+        }
+
+    }
+    fclose(jj);
+}
+
+
 int main (){
     fp=fopen("kucing.txt", "r");
     if(fp==NULL)    printf("kucing tidak ada\n");
@@ -371,6 +479,7 @@ int main (){
     beta.first=NULL;
     huffTableCreate(akarpohon->first->branch,&beta);
     huffTablePrint(&beta);
+    createEncodeTable(&parselist,&beta);
 //    printPaths(akarpohon->first->branch,pp);
 //    fclose(pp);
     //print_list(&tabel_huffman);
