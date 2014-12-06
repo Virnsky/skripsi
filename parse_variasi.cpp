@@ -337,8 +337,29 @@ void createEncodeTable(list* L,listHuff* hf)
 
     FILE* jj=fopen("watatita.dat","w");
     char m=0;
-    char reverseBit=0;
     int countByte=0;
+    int countHuffTable=0;
+    fprintf(jj,"%c%c%c%c",0xA,0x7,0x7,0xA);
+
+    //count number of keys
+    huffTable* a=hf->first;
+    while(a!=NULL)
+    {
+        countHuffTable++;
+        a=a->next;
+    }
+
+    //print number of keys and number of bit
+    fprintf(jj,"%d%d",countHuffTable,bitLen);
+
+    a=hf->first;
+    while(a!=NULL)
+    {
+        fprintf(jj,"%s %s",a->huff.symbol,a->huff.encode);
+        printf("%s %d",a->huff.symbol,a->huff.encode);
+        a=a->next;
+    }
+
     for(i=0;i<bitLen;i++)
     {
         m=m | (bitEncode[i]<<(7-countByte));
@@ -346,7 +367,7 @@ void createEncodeTable(list* L,listHuff* hf)
         if(countByte>=8)
         {
             countByte=0;
-            printBit(m);
+//            printBit(m);
             fprintf(jj,"%c",m);
             m=0;
         }
