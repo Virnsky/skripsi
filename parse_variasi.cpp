@@ -285,6 +285,7 @@ void printBit(char a)
     char g;
     g=a&0b10000000;
     g=g>>7;
+    g=g&1;
     printf("%d",g);
     g=a&0b01000000;
     g=g>>6;
@@ -329,17 +330,13 @@ void createEncodeTable(list* L,listHuff* hf)
             }
 
             lt=lt->next;
-        }
-
-    for(i=0;i<bitLen;i++)
-        printf("%d",bitEncode[i]);
-    printf("\nnumber of bit%d\n",bitLen);
+        }//for(i=0;i<bitLen;i++){if(i%8==0){printf(" ");}printf("%d",bitEncode[i]);}printf("\nnumber of bit%d\n",bitLen);
 
     FILE* jj=fopen("watatita.dat","w");
     char m=0;
     int countByte=0;
     int countHuffTable=0;
-    fprintf(jj,"%c%c%c%c",0xA,0x7,0x7,0xA);
+    fprintf(jj,"%c%c",0xA7,0x7A);
 
     //count number of keys
     huffTable* a=hf->first;
@@ -350,18 +347,38 @@ void createEncodeTable(list* L,listHuff* hf)
     }
 
     //print number of keys and number of bit
-    fprintf(jj,"%d%d",countHuffTable,bitLen);
+    fprintf(jj,"%d %d ",countHuffTable,bitLen);
 
+    m=0;
     a=hf->first;
     while(a!=NULL)
     {
-        fprintf(jj,"%s %s",a->huff.symbol,a->huff.encode);
-        printf("%s %d",a->huff.symbol,a->huff.encode);
+//        printf("%d %s %d ",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
+        fprintf(jj,"%c%s%c",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
+        // 8 bit pertama huffman code
+        for(i=0;i<8;i++)
+        {
+            m=m | (a->huff.encode[i]<<(7-i));
+        }
+        fprintf(jj,"%c",m);//printBit(m);printf("\n");
+        m=0;
+        //8 bit ke dua
+        for(i=0;i<8;i++)
+        {
+            m=m | (a->huff.encode[i+8]<<(7-i));
+        }
+        fprintf(jj,"%c",m);//printBit(m);printf("\n");
+        m=0;
+
         a=a->next;
     }
 
+    printf("\n");
+
+    m=0;
     for(i=0;i<bitLen;i++)
     {
+        printf("%d",bitEncode[i]);
         m=m | (bitEncode[i]<<(7-countByte));
         countByte++;
         if(countByte>=8)
@@ -371,9 +388,161 @@ void createEncodeTable(list* L,listHuff* hf)
             fprintf(jj,"%c",m);
             m=0;
         }
-
+    }
+    //sisa kode huffman yang belum tertulis
+    while(countByte!=0)
+    {
+        m=m | (0<<(7-countByte));
+        countByte++;
+        if(countByte>=8)
+        {
+            countByte=0;
+//            printBit(m);
+            fprintf(jj,"%c",m);
+            m=0;
+        }
     }
     fclose(jj);
+}
+
+void decodeTable(const char* filename)
+{
+    int keycount=0;
+    int encodecount=0;
+    int i=0;
+    int j=0;
+    int maxi;
+    bool whatever;
+    char b=0;
+    char c=0;
+    char symbol;
+    char tempScan[5000];
+    char huffsimbol[10];
+    bool path[16];
+    int len;
+//    FILE* ja=fopen("decode.txt","w");
+    FILE* jj=fopen(filename,"r");
+    if(jj==NULL) return;
+    fseek(jj,2,SEEK_SET);
+
+    fscanf(jj,"%d",&keycount);
+    fscanf(jj,"%d",&encodecount);//printf("%d %d\n",keycount,encodecount);
+    fseek(jj,1,SEEK_CUR);
+
+    htree itsrandom;
+    listHuff anorandom;
+    itsrandom.left=NULL;
+    itsrandom.right=NULL;
+    anorandom.first=NULL;
+
+    for(i=0;i<keycount;i++)
+    {
+
+        fscanf(jj,"%c",&b);//printf("%d ",b);
+        for(j=0;j<b;j++)
+        {
+            fscanf(jj,"%c",&symbol);//printf("%c",symbol);
+            huffsimbol[j]=symbol;
+        }
+        huffsimbol[b]='\0';
+
+        fscanf(jj,"%c",&b);
+        len=b;              //printf("%d ",b);
+        //AMBIL 2 BYTE HUFFMAN CODE
+        fscanf(jj,"%c",&b); //printBit(b);printf("\n");
+        fscanf(jj,"%c",&c); //printBit(c);printf("\n");
+
+        //masa bodo sama koding panjang!! pala udah pusing
+        path [0]=b&0b10000000;path [1]=b&0b01000000;
+        path [2]=b&0b00100000;path [3]=b&0b00010000;
+        path [4]=b&0b00001000;path [5]=b&0b00000100;
+        path [6]=b&0b00000010;path [7]=b&1;
+        path [8]=c&0b10000000;path [9]=c&0b01000000;
+        path[10]=c&0b00100000;path[11]=c&0b00010000;
+        path[12]=c&0b00001000;path[13]=c&0b00000100;
+        path[14]=c&0b00000010;path[15]=c&1;//for(j=0;j<16;j++){printf("%d",path[j]);}printf("\n");
+
+        //BUAT HUFFMAN TABLE DARI INFORMASI DIATAS
+        huffTreeCreateFromBit(&itsrandom,path,len,huffsimbol);
+
+        //reset dulu mas bro
+        for(j=0;j<16;j++)
+        {
+            path[j]=false;
+        }
+
+    }
+//    printf("\nprint recently created huffman tree\n\t\t---\n");
+    huffTableCreate(&itsrandom,&anorandom);
+//    huffTablePrint(&anorandom);
+//    printf("\ndone\n");
+
+    resetEncodeTable();
+
+    i=0;
+    symbol=fgetc(jj);
+    while(symbol!=EOF)
+    {
+        tempScan[i]=symbol;
+        i++;
+        symbol=fgetc(jj);
+    }
+    tempScan[i]='\0';
+    maxi=i;
+    for(i=0;i<maxi;i++)
+    {
+        for(j=0;j<8;j++)
+        {
+            switch(j)
+            {
+                case 0: whatever=tempScan[i]&0x80;break;
+                case 1: whatever=tempScan[i]&0x40;break;
+                case 2: whatever=tempScan[i]&0x20;break;
+                case 3: whatever=tempScan[i]&0x10;break;
+                case 4: whatever=tempScan[i]&0x8;break;
+                case 5: whatever=tempScan[i]&0x4;break;
+                case 6: whatever=tempScan[i]&0x2;break;
+                case 7: whatever=tempScan[i]&0x1;break;
+            }
+            addEncodeTable(whatever);
+        }
+    }
+    //untuk mengubah stream bit sesuai dengan yang ada di File
+    bitLen=encodecount;
+    printf("\nthis is stream of encode (bitLen:%d encodecount:%d)\n",bitLen,encodecount);
+    FILE* endOfMisery=fopen("decode.txt","w");
+
+    //mulai menDECODE dan menulis
+    fprintf(endOfMisery,"{this is decoded file}\n");
+    htree* tempTree=&itsrandom;
+    for(i=0;i<encodecount;i++)
+    {
+        if(bitEncode[i]==false)
+        {
+            //pindah ke kiri
+            tempTree=tempTree->left;
+            //apakah sudah di ujung?
+            if(tempTree->left==NULL)
+            {
+                fprintf(endOfMisery,"%s",tempTree->symbol);
+                tempTree=&itsrandom;
+            }
+        }
+        if(bitEncode[i]==true)
+        {
+            //pindah ke kanan
+            tempTree=tempTree->right;
+            //apakah sudah di ujung?
+            if(tempTree->right==NULL)
+            {
+                fprintf(endOfMisery,"%s",tempTree->symbol);
+                tempTree=&itsrandom;
+            }
+        }
+        printf("%d",bitEncode[i]);
+    }
+    fclose(jj);
+
 }
 
 
@@ -499,8 +668,12 @@ int main (){
     listHuff beta;
     beta.first=NULL;
     huffTableCreate(akarpohon->first->branch,&beta);
-    huffTablePrint(&beta);
+//    huffTablePrint(&beta);
     createEncodeTable(&parselist,&beta);
+
+    printf("\nready to decode table\n");
+
+    decodeTable("watatita.dat");
 //    printPaths(akarpohon->first->branch,pp);
 //    fclose(pp);
     //print_list(&tabel_huffman);

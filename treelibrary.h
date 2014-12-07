@@ -72,6 +72,7 @@ void huffTableAdd(listHuff* hf,char symbol[], bool path[], int pathLen);
 void huffTablePrint(listHuff* hf);
 void printEncodedFile(FILE* fhff,listHuff* hf);
 
+void huffTreeCreateFromBit(htree* node,bool path[16],int pathlen,char sim[10]);
 
 
 #endif // TREELIBRARY_H_INCLUDED
