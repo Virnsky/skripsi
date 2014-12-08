@@ -378,7 +378,7 @@ void createEncodeTable(list* L,listHuff* hf)
     m=0;
     for(i=0;i<bitLen;i++)
     {
-        printf("%d",bitEncode[i]);
+//        printf("%d",bitEncode[i]);
         m=m | (bitEncode[i]<<(7-countByte));
         countByte++;
         if(countByte>=8)
@@ -453,14 +453,14 @@ void decodeTable(const char* filename)
         fscanf(jj,"%c",&c); //printBit(c);printf("\n");
 
         //masa bodo sama koding panjang!! pala udah pusing
-        path [0]=b&0b10000000;path [1]=b&0b01000000;
-        path [2]=b&0b00100000;path [3]=b&0b00010000;
-        path [4]=b&0b00001000;path [5]=b&0b00000100;
-        path [6]=b&0b00000010;path [7]=b&1;
-        path [8]=c&0b10000000;path [9]=c&0b01000000;
-        path[10]=c&0b00100000;path[11]=c&0b00010000;
-        path[12]=c&0b00001000;path[13]=c&0b00000100;
-        path[14]=c&0b00000010;path[15]=c&1;//for(j=0;j<16;j++){printf("%d",path[j]);}printf("\n");
+        path [0]=b&0x80;path [1]=b&0x40;
+        path [2]=b&0x20;path [3]=b&0x10;
+        path [4]=b&0x08;path [5]=b&0x04;
+        path [6]=b&0x02;path [7]=b&0x01;
+        path [8]=c&0x80;path [9]=c&0x40;
+        path[10]=c&0x20;path[11]=c&0x10;
+        path[12]=c&0x08;path[13]=c&0x04;
+        path[14]=c&0x02;path[15]=c&0x01;//for(j=0;j<16;j++){printf("%d",path[j]);}printf("\n");
 
         //BUAT HUFFMAN TABLE DARI INFORMASI DIATAS
         huffTreeCreateFromBit(&itsrandom,path,len,huffsimbol);
@@ -542,6 +542,7 @@ void decodeTable(const char* filename)
         printf("%d",bitEncode[i]);
     }
     fclose(jj);
+    fclose(endOfMisery);
 
 }
 
