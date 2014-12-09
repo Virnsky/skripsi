@@ -15,6 +15,9 @@ int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0;
 bool bitEncode[50000];
 int bitLen;
 
+//misc file handler
+char tempsajo[50], argv2[50];
+    
 struct data_t
 {
 	char symbol[10];
@@ -337,7 +340,9 @@ void createEncodeTable(list* L,listHuff* hf)
             lt=lt->next;
         }//for(i=0;i<bitLen;i++){if(i%8==0){printf(" ");}printf("%d",bitEncode[i]);}printf("\nnumber of bit%d\n",bitLen);
 
-    FILE* jj=fopen("watatita.dat","w");
+    strcpy(tempsajo, argv2);
+    strcat(tempsajo, ".dat");
+    FILE* jj=fopen(tempsajo,"w");
     char m=0;
     int countByte=0;
     int countHuffTable=0;
@@ -515,7 +520,7 @@ void decodeTable(const char* filename)
     //untuk mengubah stream bit sesuai dengan yang ada di File
     bitLen=encodecount;
     printf("\nthis is stream of encode (bitLen:%d encodecount:%d)\n",bitLen,encodecount);
-    FILE* endOfMisery=fopen("decode.txt","w");
+    FILE* endOfMisery=fopen(argv2,"w");
 
     //mulai menDECODE dan menulis
     fprintf(endOfMisery,"{this is decoded file}\n");
@@ -548,13 +553,20 @@ void decodeTable(const char* filename)
     }
     fclose(jj);
     fclose(endOfMisery);
-
+	printf("\n");
 }
 
 
-int main (){
-    fp=fopen("cerita3.txt", "r");
-    if(fp==NULL)    printf("kucing tidak ada\n");
+int main (int argc,char **argv){
+    if (argc!=3){
+		printf("cara pakai: program INPUT-FILE OUTPUT-FILE\n");
+		printf("cara pakai: pustaka huffman berupa berkas OUTPUT-FILE.dat\n");
+		return(0);
+		}
+	
+	strcpy(argv2,argv[2]);	
+    fp=fopen(argv[1], "r");
+    if(fp==NULL) printf("file masukan tidak ada\n");
     list L;
     L.first=NULL;
     list parselist;
@@ -745,7 +757,7 @@ int main (){
 
     printf("\nready to decode table\n");
 
-    decodeTable("watatita.dat");
+    decodeTable(tempsajo);
 //    printPaths(akarpohon->first->branch,pp);
 //    fclose(pp);
     //print_list(&tabel_huffman);
