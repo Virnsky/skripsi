@@ -7,10 +7,10 @@ FILE* fp;
 fpos_t pos1;
 char str2[10], str1[10], str3[10], s[10];
 int i=0, z=0, k=0, p=0;
-int x,sisa,total,limit, huf_var, batas, mulai;
+int x,sisa,total,limit, huf_var, batas, mulai, hufChoose;
 char temp_prio1[10], temp_prio2[10], temp_prio3[10], temp_prio4[10], temp_prio5[10], vt[10];
 int temp_ind1 = 0, temp_ind2 = 0, temp_ind3 = 0, temp_ind4 = 0, temp_ind5 = 0,temp_max_fre;
-int a=0, b=0, c=0, d=0, e=0;
+int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0;
 
 bool bitEncode[50000];
 int bitLen;
@@ -200,6 +200,7 @@ symbol_list* get_symbol(const char* symbol_name,list* L)
 
 void var_reset(){
     //printf("\nTahap Var_Reset : Ok");
+    temp_max_fre = 0;
     memset(str1, '\0',10);
     memset(str2, '\0',10);
     memset(str3, '\0',10);
@@ -211,19 +212,19 @@ void var_reset(){
     memset(vt, '\0',10);
     total=0;
     k=0;
-    temp_max_fre = 0;
 };
 
 void compare_sysmbol(list *lt,char str[],int index_seek, int limit, char temp_symbol [],int &index_symbol, int &frek_symbol){
     var_reset();
     //printf("\nTahap Awal Comparing Simbol : Ok");
     while(k<limit){
+        memset(str, '\0',10);
         total = index_seek+k;
         fseek(fp,total,SEEK_SET);
         fread(str,1,huf_var,fp);
         symbol_list* yuri=get_symbol(str,lt);
         if(yuri==NULL){
-            printf("\nYuri = Null");
+            printf("");
         }
         else{
             int f=yuri->t.frekuensi;
@@ -236,21 +237,25 @@ void compare_sysmbol(list *lt,char str[],int index_seek, int limit, char temp_sy
                  }
             }
         }
+        //printf("\nFound Simbol : %s",str);
     k++;
     }
 };
 void preadd_parse(list* lt,char str[],int limited,int index, list* L){
     var_reset();
     fseek(fp,index,SEEK_SET);
-    fread(str,1,(limited+1),fp);
+    fread(str,1,limited,fp);
     //printf("\nIsi str : %s",str);
-    strncpy(vt,str,(limited+1));
+    strncpy(vt,str,limited);
     //printf("Isi strncpy : %s",vt);
     add_symbol(vt,lt);
     check_symbol(vt,L);
-    if(!strcmp(str,"")) printf(" Kosong");
+    if(!strcmp(str,"")) printf("");
 };
 
+void hufLengthFix(list *L, char str[]){
+
+};
 
 huffTable* findHuffTable(listHuff* hf,const char* symbol)
 {
@@ -548,7 +553,7 @@ void decodeTable(const char* filename)
 
 
 int main (){
-    fp=fopen("cerita2.txt", "r");
+    fp=fopen("cerita3.txt", "r");
     if(fp==NULL)    printf("kucing tidak ada\n");
     list L;
     L.first=NULL;
@@ -557,105 +562,162 @@ int main (){
     parselist.first=NULL;
     tabel_huffman.first=NULL;
 
-    printf("Enter Length: ");
+    printf("Masukan Panjang Huffman (1 sampai 6): ");
     scanf("%d", &huf_var);
-
-    fseek(fp,0,SEEK_SET);
-    printf("%d character left\n",count_char_left(fp));
-    for(i=0;i<5;i++) fgetc(fp);
-    printf("%d character left\n",count_char_left(fp));
-    printf("\n\nProses pembentukan dan pencarian kemunculan Simbol......");
-    for(i=0;i<count_char_max(fp)-(huf_var-1); i++){
-        fseek(fp,i,SEEK_SET);
-        fread(str2,1,huf_var,fp);
-        check_symbol(str2,&L);
+    printf("\nPilih Metode Huffman : \n[1] Variasi Panjang Simbol \n[2] Panjang Simbol Fix\nPilihan : ");
+    scanf("%d", &hufChoose);
+    if(huf_var==1){
+        fseek(fp,0,SEEK_SET);
+        printf("%d character left\n",count_char_left(fp));
+        for(i=0;i<5;i++) fgetc(fp);
+        printf("%d character left\n",count_char_left(fp));
+        printf("\nProses Pembentukan dan Pencarian Kemunculan Simbol....... ");
+        for(i=0;i<count_char_max(fp)-huf_var; i++){
+            fseek(fp,i,SEEK_SET);
+            fread(str2,1,huf_var,fp);
+            check_symbol(str2,&tabel_huffman);
+            add_symbol(str2,&parselist);
+        }
+        printf("Selesai\n");
     }
-    printf("\n...Selesai");
-    //print_list(&L);
-    //printf("\nTotal Karakter Dalam Berkas Adalah %d\n",count_char_max(fp));
+    else{
+        if(hufChoose==1){
+        fseek(fp,0,SEEK_SET);
+        printf("%d character left\n",count_char_left(fp));
+        for(i=0;i<5;i++) fgetc(fp);
+        printf("%d character left\n",count_char_left(fp));
+        printf("\nProses Pembentukan dan Pencarian Kemunculan Simbol....... ");
+        for(i=0;i<count_char_max(fp)-(huf_var-1); i++){
+            fseek(fp,i,SEEK_SET);
+            fread(str2,1,huf_var,fp);
+            check_symbol(str2,&L);
+        }
+        printf("Selesai\n");
+        //print_list(&L);
+        //printf("\nTotal Karakter Dalam Berkas Adalah %d\n",count_char_max(fp));
 
-        /* ##### BEGIN OF PARSING SYMBOLS ##### */
-    printf("\n\nProses Parsing Simbol......");
-    fseek(fp,0,SEEK_SET);
-    limit=count_char_max(fp)-huf_var;
-    for(z; z<=limit; z){
-        fseek(fp,z,SEEK_SET);
-        compare_sysmbol(&L,str1,z,huf_var,temp_prio1,temp_ind1,temp_max_fre);                   // Tahap 1
+            /* ##### BEGIN OF PARSING SYMBOLS ##### */
+        printf("\nProses Parsing Simbol dan Pembentukan Tabel Huffman....... ");
+        fseek(fp,0,SEEK_SET);
+        for(z; z<=(count_char_max(fp)-huf_var); z){
+            var_reset();
+            //printf("\n\Proses ke %d",p);
+            fseek(fp,z,SEEK_SET);
+            compare_sysmbol(&L,str1,z,huf_var,temp_prio1,temp_ind1,temp_max_fre);                   // Tahap 1
 
-        if (temp_ind1!=0){
-            mulai=z+temp_ind1;
-            compare_sysmbol(&L,str2,mulai,huf_var,temp_prio2,temp_ind2,temp_max_fre);       // Tahap 2
+            if (temp_ind1!=0){
+                mulai=z+temp_ind1;
+                compare_sysmbol(&L,str2,mulai,huf_var,temp_prio2,temp_ind2,temp_max_fre);       // Tahap 2
 
-            if(temp_ind2!=0){
-                batas=temp_ind1+temp_ind2;
-                mulai=(z+temp_ind2+temp_ind1);
-                compare_sysmbol(&L,str3,mulai,huf_var,temp_prio3,temp_ind3,temp_max_fre);
-                sisa=temp_ind1+temp_ind2+temp_ind3+1;
+                if(temp_ind2!=0){
+                    batas=temp_ind1+temp_ind2; //????
+                    mulai=(z+temp_ind2+temp_ind1);
+                    compare_sysmbol(&L,str3,mulai,huf_var,temp_prio3,temp_ind3,temp_max_fre);
 
-                if(sisa>=huf_var){
-                    batas=(sisa+1)-huf_var;
-                    compare_sysmbol(&L,str1,z,batas,temp_prio4,temp_ind4,temp_max_fre);
-                    strncpy(temp_prio5,temp_prio4,huf_var);
+                    if(temp_ind3!=0){
+                        sisa=temp_ind1+temp_ind2+temp_ind3-1;
+                    }
+                    else{
+                        sisa=temp_ind1+temp_ind2-1;
+                    }
+                    if(sisa>huf_var){
+                        batas=sisa-huf_var+1;
+                        compare_sysmbol(&L,str1,z,batas,temp_prio4,temp_ind4,temp_max_fre);
+                        strncpy(temp_prio5,temp_prio4,huf_var);
 
-                    if(temp_ind4!=0){
-                        batas=temp_ind4-1;
-                        preadd_parse(&parselist,str1,batas,z, &tabel_huffman);
-                        if(temp_prio4 != temp_prio5){
-                            batas=(sisa+1)-huf_var;
-                            compare_sysmbol(&L,str2,z,batas,temp_prio5,temp_ind5,temp_max_fre);
-                            add_symbol(temp_prio5,&parselist);
-                            check_symbol(temp_prio5,&tabel_huffman);
-                            a=1;
+                        if(temp_ind4!=0){
+                            batas=temp_ind4-1;
+                            preadd_parse(&parselist,str1,batas,z, &tabel_huffman);
+                            a++;
+                            z=z+temp_ind4;
+                            //printf("\n-->PreAdd Symbol : %s",str1);
+                            /*if(temp_prio4 != temp_prio5){
+                                batas=(sisa+1)-huf_var;
+                                compare_sysmbol(&L,str2,z,batas,temp_prio5,temp_ind5,temp_max_fre);
+                                add_symbol(temp_prio5,&parselist);
+                                check_symbol(temp_prio5,&tabel_huffman);
+                                b++;
+                            }
+                            else{
+                                add_symbol(temp_prio4,&parselist);
+                                check_symbol(temp_prio4,&tabel_huffman);
+                                c++;
+                            }
+                            z=z+temp_ind4+huf_var;
+                        */
                         }
                         else{
                             add_symbol(temp_prio4,&parselist);
                             check_symbol(temp_prio4,&tabel_huffman);
-                            b=1;
+                            z=z+temp_ind4+huf_var;
+                            d++;
+                            //printf("\n-->Add Symbol : %s",temp_prio4);
                         }
-                        z=z+temp_ind4+huf_var;
                     }
                     else{
-                        add_symbol(temp_prio4,&parselist);
-                        check_symbol(temp_prio4,&tabel_huffman);
-                        z=z+temp_ind4+huf_var;
-                        c=1;
+                        batas=sisa;
+                        preadd_parse(&parselist,str1,batas,z, &tabel_huffman);
+                        z=z+sisa;
+                        g++;
+                        //printf("\n-->PreAdd Symbol : %s",str1);
                     }
+                }
+                else{
+                    batas=temp_ind1;
+                    preadd_parse(&parselist,str2,batas,z, &tabel_huffman);
+                    z=z+temp_ind1;
+                    e++;
+                    //printf("\n-->PreAdd Symbol : %s",str2);
                 }
             }
             else{
-                batas=temp_ind1-1;
-                preadd_parse(&parselist,str2,batas,z, &tabel_huffman);
-                z=z+temp_ind1;
-                d=1;
+                add_symbol(temp_prio1,&parselist);
+                check_symbol(temp_prio1,&tabel_huffman);
+                z=z+huf_var+temp_ind1;
+                f++;
+                //printf("\n-->Add Symbol : %s",temp_prio1);
             }
+            p++;
+
+        }
+        batas=count_char_max(fp)-z;
+        if(batas!=0){
+            preadd_parse(&parselist,str3,batas,z,&tabel_huffman);
+        }
+        printf("Selesai\n");
+        /*  ##### END OF PARSING SYMBOLS #####   */
         }
         else{
-            add_symbol(temp_prio1,&parselist);
-            check_symbol(temp_prio1,&tabel_huffman);
-            z=z+huf_var+temp_ind1;
-            e=1;
-
+            fseek(fp,0,SEEK_SET);
+            printf("%d character left\n",count_char_left(fp));
+            for(i=0;i<5;i++) fgetc(fp);
+            printf("%d character left\n",count_char_left(fp));
+            printf("\nProses Pembentukan, Pencarian Kemunculan, dan Parsing Simbol....... ");
+            for(i=0;i<count_char_max(fp)-huf_var; i){
+                fseek(fp,i,SEEK_SET);
+                fread(str2,1,huf_var,fp);
+                check_symbol(str2,&tabel_huffman);
+                add_symbol(str2,&parselist);
+                i=i+huf_var;
+            }
+            batas=count_char_max(fp)-i;
+            if(batas!=0){
+                preadd_parse(&parselist,str3,batas,i,&tabel_huffman);
+            }
+            printf("Selesai\n");
+            }
         }
-        p++;
+    fclose(fp);
 
-    }
-    batas=count_char_max(fp)-z;
-    if(batas!=0){
-        preadd_parse(&parselist,str3,batas,z,&tabel_huffman);
-    }
-    printf("\n...Selesai");
-    /*  ##### END OF PARSING SYMBOLS #####   */
     //printf("\n\nData yang siap dikode kan\n");
     //print_list(&parselist);
     //printf("\n\nTabel Huffman\n");
+    printf("\nProses Sorting Tabel Huffman....... ");
     sort_list(&tabel_huffman);
-    printf("\n\nSorting Tabel Huffman ...... Selesai");
-    //printf("\nZ = %d \nCount Max = %d \n Count Left = %d",z,count_char_max(fp),count_char_left(fp));
-    //printf("\na = %d \nb = %d \nc = %d \nd = %d \ne = %d",a,b,c,d,e);
-    //return 1;
+    printf("Selesai\n");
     //print_list(&tabel_huffman);
-    fclose (fp);
-    printf("\n\nProses Pembentukan Tree......");
+    //printf("\na = %d\nb = %d\nc = %d \nd = %d\ne = %d\nf = %d \n",a,b,c,d,e,f);
+
     //Special test 'untuk pembentukan pohon'
     htlist_head* akarpohon;
     akarpohon->first=NULL;
@@ -673,7 +735,7 @@ int main (){
     create_tree(akarpohon);
 
 //    debug_list(akarpohon);
-    printf("\n...Selesai");
+
     //printf("succesfully create tree\n");
     listHuff beta;
     beta.first=NULL;
@@ -681,9 +743,9 @@ int main (){
 //    huffTablePrint(&beta);
     createEncodeTable(&parselist,&beta);
 
-    printf("\n\nProses Decoding Output......\n");
+    printf("\nready to decode table\n");
+
     decodeTable("watatita.dat");
-    printf("\n\n...Selesai");
 //    printPaths(akarpohon->first->branch,pp);
 //    fclose(pp);
     //print_list(&tabel_huffman);
