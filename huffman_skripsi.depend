@@ -1,0 +1,75 @@
+# depslib dependency file v1.0
+1415514946 source:c:\users\scyld\documents\skripsi project\parse_variasi.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1416211493 source:c:\users\scyld\documents\skripsi project\huffman_skripsi\parse_variasi.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1416247776 source:e:\project\gitproject\skripsi\parse_variasi.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+	<treelibrary.h>
+
+1416247588 e:\project\gitproject\skripsi\\treelibrary.h
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1416248095 source:e:\project\gitproject\skripsi\treelibrary.cpp
+	<treelibrary.h>
+
+1418050120 source:c:\users\scyld\documents\github\skripsi\parse_variasi.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+	"treelibrary.h"
+
+1418013209 source:c:\users\scyld\documents\github\skripsi\treelibrary.cpp
+	"treelibrary.h"
+
+1418013209 c:\users\scyld\documents\github\skripsi\treelibrary.h
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1417305135 source:d:\not c\skripsi-master3\skripsi-master\parse_variasi.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+	"treelibrary.h"
+
+1417306088 d:\not c\skripsi-master3\skripsi-master\treelibrary.h
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1417304813 source:d:\not c\skripsi-master3\skripsi-master\treelibrary.cpp
+	"treelibrary.h"
+
+1417304813 source:c:\users\scyld\documents\github\skripsi\skripsi-master\treelibrary.cpp
+	"treelibrary.h"
+
+1417306088 c:\users\scyld\documents\github\skripsi\skripsi-master\treelibrary.h
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1417965050 source:e:\project\github project\skripsi\parse_variasi.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+	"treelibrary.h"
+
+1417956122 e:\project\github project\skripsi\treelibrary.h
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1417959377 source:e:\project\github project\skripsi\treelibrary.cpp
+	"treelibrary.h"
+
