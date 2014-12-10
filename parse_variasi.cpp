@@ -17,7 +17,7 @@ int bitLen;
 
 //misc file handler
 char tempsajo[50], argv2[50];
-    
+
 struct data_t
 {
 	char symbol[10];
@@ -563,8 +563,8 @@ int main (int argc,char **argv){
 		printf("cara pakai: pustaka huffman berupa berkas OUTPUT-FILE.dat\n");
 		return(0);
 		}
-	
-	strcpy(argv2,argv[2]);	
+
+	strcpy(argv2,argv[2]);
     fp=fopen(argv[1], "r");
     if(fp==NULL) printf("file masukan tidak ada\n");
     list L;

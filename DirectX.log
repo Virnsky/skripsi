@@ -1,0 +1,744 @@
+09/18/14 17:17:01: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_24_x64.inf [DefaultInstall]
+09/18/14 17:17:01: infinst: Target file: 'C:\windows\system32\d3dx9_24.dll' 
+	Target file is Version 9.5.132.0
+	Source file is Version 9.5.132.0
+09/18/14 17:17:01: infinst: Currently C:\windows\system32\d3dx9_24.dll is newer than the one being installed.
+09/18/14 17:17:02: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_25_x64.inf [DefaultInstall]
+09/18/14 17:17:02: infinst: Target file: 'C:\windows\system32\d3dx9_25.dll' 
+	Target file is Version 9.6.168.0
+	Source file is Version 9.6.168.0
+09/18/14 17:17:02: infinst: Currently C:\windows\system32\d3dx9_25.dll is newer than the one being installed.
+09/18/14 17:17:03: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_26_x64.inf [DefaultInstall]
+09/18/14 17:17:03: infinst: Target file: 'C:\windows\system32\d3dx9_26.dll' 
+	Target file is Version 9.7.239.0
+	Source file is Version 9.7.239.0
+09/18/14 17:17:03: infinst: Currently C:\windows\system32\d3dx9_26.dll is newer than the one being installed.
+09/18/14 17:17:04: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_27_x64.inf [DefaultInstall]
+09/18/14 17:17:05: infinst: Target file: 'C:\windows\system32\d3dx9_27.dll' 
+	Target file is Version 9.8.299.0
+	Source file is Version 9.8.299.0
+09/18/14 17:17:05: infinst: Currently C:\windows\system32\d3dx9_27.dll is newer than the one being installed.
+09/18/14 17:17:05: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_28_x64.inf [DefaultInstall]
+09/18/14 17:17:05: infinst: Target file: 'C:\windows\system32\d3dx9_28.dll' 
+	Target file is Version 9.10.455.0
+	Source file is Version 9.10.455.0
+09/18/14 17:17:05: infinst: Currently C:\windows\system32\d3dx9_28.dll is newer than the one being installed.
+09/18/14 17:17:06: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_29_x64.inf [DefaultInstall]
+09/18/14 17:17:06: infinst: Target file: 'C:\windows\system32\d3dx9_29.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+09/18/14 17:17:06: infinst: Currently C:\windows\system32\d3dx9_29.dll is newer than the one being installed.
+09/18/14 17:17:07: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT_x64.inf [DefaultInstall]
+09/18/14 17:17:07: infinst: Target file: 'C:\windows\system32\xactengine2_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+09/18/14 17:17:07: infinst: Currently C:\windows\system32\xactengine2_0.dll is newer than the one being installed.
+09/18/14 17:17:07: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+09/18/14 17:17:07: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+09/18/14 17:17:08: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_30_x64.inf [DefaultInstall]
+09/18/14 17:17:08: infinst: Target file: 'C:\windows\system32\d3dx9_30.dll' 
+	Target file is Version 9.12.589.0
+	Source file is Version 9.12.589.0
+09/18/14 17:17:08: infinst: Currently C:\windows\system32\d3dx9_30.dll is newer than the one being installed.
+09/18/14 17:17:15: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_1_x64.inf [DefaultInstall]
+09/18/14 17:17:15: infinst: Target file: 'C:\windows\system32\xactengine2_1.dll' 
+	Target file is Version 9.12.589.0
+	Source file is Version 9.12.589.0
+09/18/14 17:17:15: infinst: Currently C:\windows\system32\xactengine2_1.dll is newer than the one being installed.
+09/18/14 17:17:15: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+09/18/14 17:17:15: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+09/18/14 17:17:15: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\xinput1_1_x64.inf [Install_Driver]
+09/18/14 17:17:15: infinst: Target file: 'C:\windows\system32\xinput1_1.dll' 
+	Target file is Version 9.12.589.0
+	Source file is Version 9.12.589.0
+09/18/14 17:17:15: infinst: Currently C:\windows\system32\xinput1_1.dll is newer than the one being installed.
+09/18/14 17:17:15: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_2_x64.inf [DefaultInstall]
+09/18/14 17:17:15: infinst: Target file: 'C:\windows\system32\xactengine2_2.dll' 
+	Target file is Version 9.13.644.0
+	Source file is Version 9.13.644.0
+09/18/14 17:17:15: infinst: Currently C:\windows\system32\xactengine2_2.dll is newer than the one being installed.
+09/18/14 17:17:15: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+09/18/14 17:17:15: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+09/18/14 17:17:16: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\xinput1_2_x64.inf [Install_Driver]
+09/18/14 17:17:16: infinst: Target file: 'C:\windows\system32\xinput1_2.dll' 
+	Target file is Version 9.14.701.0
+	Source file is Version 9.14.701.0
+09/18/14 17:17:16: infinst: Currently C:\windows\system32\xinput1_2.dll is newer than the one being installed.
+09/18/14 17:17:16: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_3_x64.inf [DefaultInstall]
+09/18/14 17:17:16: infinst: Target file: 'C:\windows\system32\xactengine2_3.dll' 
+	Target file is Version 9.14.701.0
+	Source file is Version 9.14.701.0
+09/18/14 17:17:16: infinst: Currently C:\windows\system32\xactengine2_3.dll is newer than the one being installed.
+09/18/14 17:17:16: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+09/18/14 17:17:16: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+09/18/14 17:17:17: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_31_x64.inf [DefaultInstall]
+09/18/14 17:17:17: infinst: Target file: 'C:\windows\system32\d3dx9_31.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+09/18/14 17:17:17: infinst: Currently C:\windows\system32\d3dx9_31.dll is newer than the one being installed.
+09/18/14 17:17:18: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_4_x64.inf [DefaultInstall]
+09/18/14 17:17:18: infinst: Target file: 'C:\windows\system32\xactengine2_4.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+09/18/14 17:17:18: infinst: Currently C:\windows\system32\xactengine2_4.dll is newer than the one being installed.
+09/18/14 17:17:18: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+09/18/14 17:17:18: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+09/18/14 17:17:19: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_32_x64.inf [DefaultInstall]
+09/18/14 17:17:20: infinst: Target file: 'C:\windows\system32\d3dx9_32.dll' 
+	Target file is Version 9.16.843.0
+	Source file is Version 9.16.843.0
+09/18/14 17:17:20: infinst: Currently C:\windows\system32\d3dx9_32.dll is newer than the one being installed.
+09/18/14 17:17:20: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx10_00_x64.inf [DefaultInstall]
+09/18/14 17:17:20: infinst: Target file: 'C:\windows\system32\d3dx10.dll' 
+	Target file is Version 9.16.843.0
+	Source file is Version 9.16.843.0
+09/18/14 17:17:20: infinst: Currently C:\windows\system32\d3dx10.dll is newer than the one being installed.
+09/18/14 17:17:20: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_5_x64.inf [DefaultInstall]
+09/18/14 17:17:20: infinst: Target file: 'C:\windows\system32\xactengine2_5.dll' 
+	Target file is Version 9.16.857.0
+	Source file is Version 9.16.857.0
+09/18/14 17:17:20: infinst: Currently C:\windows\system32\xactengine2_5.dll is newer than the one being installed.
+09/18/14 17:17:20: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+09/18/14 17:17:20: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+09/18/14 17:17:21: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_6_x64.inf [DefaultInstall]
+09/18/14 17:17:21: infinst: Target file: 'C:\windows\system32\xactengine2_6.dll' 
+	Target file is Version 9.17.892.0
+	Source file is Version 9.17.892.0
+09/18/14 17:17:21: infinst: Currently C:\windows\system32\xactengine2_6.dll is newer than the one being installed.
+09/18/14 17:17:21: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+09/18/14 17:17:21: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+09/18/14 17:17:21: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_33_x64.inf [DefaultInstall]
+09/18/14 17:17:22: infinst: Target file: 'C:\windows\system32\d3dx9_33.dll' 
+	Target file is Version 9.18.904.15
+	Source file is Version 9.18.904.15
+09/18/14 17:17:22: infinst: Currently C:\windows\system32\d3dx9_33.dll is newer than the one being installed.
+09/18/14 17:17:22: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx10_33_x64.inf [DefaultInstall]
+09/18/14 17:17:22: infinst: Target file: 'C:\windows\system32\d3dx10_33.dll' 
+	Target file is Version 9.18.904.21
+	Source file is Version 9.18.904.21
+09/18/14 17:17:22: infinst: Currently C:\windows\system32\d3dx10_33.dll is newer than the one being installed.
+09/18/14 17:17:23: infinst: Target file: 'C:\windows\system32\D3DCompiler_33.dll' 
+	Target file is Version 9.18.904.15
+	Source file is Version 9.18.904.15
+09/18/14 17:17:23: infinst: Currently C:\windows\system32\D3DCompiler_33.dll is newer than the one being installed.
+09/18/14 17:17:23: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_7_x64.inf [DefaultInstall]
+09/18/14 17:17:23: infinst: Target file: 'C:\windows\system32\xactengine2_7.dll' 
+	Target file is Version 9.18.944.0
+	Source file is Version 9.18.944.0
+09/18/14 17:17:23: infinst: Currently C:\windows\system32\xactengine2_7.dll is newer than the one being installed.
+09/18/14 17:17:23: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+09/18/14 17:17:23: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+09/18/14 17:17:23: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\xinput1_3_x64.inf [Install_Driver]
+09/18/14 17:17:23: infinst: Target file: 'C:\windows\system32\xinput1_3.dll' 
+	Target file is Version 9.18.944.0
+	Source file is Version 9.18.944.0
+09/18/14 17:17:23: infinst: Currently C:\windows\system32\xinput1_3.dll is newer than the one being installed.
+09/18/14 17:17:24: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_34_x64.inf [DefaultInstall]
+09/18/14 17:17:25: infinst: Target file: 'C:\windows\system32\d3dx9_34.dll' 
+	Target file is Version 9.19.949.46
+	Source file is Version 9.19.949.46
+09/18/14 17:17:25: infinst: Currently C:\windows\system32\d3dx9_34.dll is newer than the one being installed.
+09/18/14 17:17:25: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx10_34_x64.inf [DefaultInstall]
+09/18/14 17:17:25: infinst: Target file: 'C:\windows\system32\d3dx10_34.dll' 
+	Target file is Version 9.19.949.46
+	Source file is Version 9.19.949.46
+09/18/14 17:17:25: infinst: Currently C:\windows\system32\d3dx10_34.dll is newer than the one being installed.
+09/18/14 17:17:25: infinst: Target file: 'C:\windows\system32\D3DCompiler_34.dll' 
+	Target file is Version 9.19.949.46
+	Source file is Version 9.19.949.46
+09/18/14 17:17:25: infinst: Currently C:\windows\system32\D3DCompiler_34.dll is newer than the one being installed.
+09/18/14 17:17:26: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_8_x64.inf [DefaultInstall]
+09/18/14 17:17:26: infinst: Target file: 'C:\windows\system32\xactengine2_8.dll' 
+	Target file is Version 9.19.1007.0
+	Source file is Version 9.19.1007.0
+09/18/14 17:17:26: infinst: Currently C:\windows\system32\xactengine2_8.dll is newer than the one being installed.
+09/18/14 17:17:26: infinst: Target file: 'C:\windows\system32\x3daudio1_2.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.19.1007.0
+09/18/14 17:17:27: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_35_x64.inf [DefaultInstall]
+09/18/14 17:17:27: infinst: Target file: 'C:\windows\system32\d3dx9_35.dll' 
+	Target file is Version 9.19.949.1104
+	Source file is Version 9.19.949.1104
+09/18/14 17:17:27: infinst: Currently C:\windows\system32\d3dx9_35.dll is newer than the one being installed.
+09/18/14 17:17:28: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx10_35_x64.inf [DefaultInstall]
+09/18/14 17:17:28: infinst: Target file: 'C:\windows\system32\d3dx10_35.dll' 
+	Target file is Version 9.19.949.1104
+	Source file is Version 9.19.949.1104
+09/18/14 17:17:28: infinst: Currently C:\windows\system32\d3dx10_35.dll is newer than the one being installed.
+09/18/14 17:17:28: infinst: Target file: 'C:\windows\system32\D3DCompiler_35.dll' 
+	Target file is Version 9.19.949.1104
+	Source file is Version 9.19.949.1104
+09/18/14 17:17:28: infinst: Currently C:\windows\system32\D3DCompiler_35.dll is newer than the one being installed.
+09/18/14 17:17:28: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_9_x64.inf [DefaultInstall]
+09/18/14 17:17:28: infinst: Target file: 'C:\windows\system32\xactengine2_9.dll' 
+	Target file is Version 9.20.1057.0
+	Source file is Version 9.20.1057.0
+09/18/14 17:17:28: infinst: Currently C:\windows\system32\xactengine2_9.dll is newer than the one being installed.
+09/18/14 17:17:29: infinst: Target file: 'C:\windows\system32\x3daudio1_2.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.20.1057.0
+09/18/14 17:17:30: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx9_36_x64.inf [DefaultInstall]
+09/18/14 17:17:30: infinst: Target file: 'C:\windows\system32\d3dx9_36.dll' 
+	Target file is Version 9.19.949.2111
+	Source file is Version 9.19.949.2111
+09/18/14 17:17:30: infinst: Currently C:\windows\system32\d3dx9_36.dll is newer than the one being installed.
+09/18/14 17:17:31: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx10_36_x64.inf [DefaultInstall]
+09/18/14 17:17:31: infinst: Target file: 'C:\windows\system32\d3dx10_36.dll' 
+	Target file is Version 9.19.949.2009
+	Source file is Version 9.19.949.2009
+09/18/14 17:17:31: infinst: Currently C:\windows\system32\d3dx10_36.dll is newer than the one being installed.
+09/18/14 17:17:31: infinst: Target file: 'C:\windows\system32\D3DCompiler_36.dll' 
+	Target file is Version 9.19.949.2111
+	Source file is Version 9.19.949.2111
+09/18/14 17:17:31: infinst: Currently C:\windows\system32\D3DCompiler_36.dll is newer than the one being installed.
+09/18/14 17:17:31: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\X3DAudio1_2_x64.inf [DefaultInstall]
+09/18/14 17:17:31: infinst: Target file: 'C:\windows\system32\X3DAudio1_2.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.21.1148.0
+09/18/14 17:17:31: infinst: Currently C:\windows\system32\X3DAudio1_2.dll is newer than the one being installed.
+09/18/14 17:17:31: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT2_10_x64.inf [DefaultInstall]
+09/18/14 17:17:32: infinst: Target file: 'C:\windows\system32\xactengine2_10.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.21.1148.0
+09/18/14 17:17:32: infinst: Currently C:\windows\system32\xactengine2_10.dll is newer than the one being installed.
+09/18/14 17:17:32: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\D3DX9_37_x64.inf [DefaultInstall]
+09/18/14 17:17:33: infinst: Target file: 'C:\windows\system32\D3DX9_37.dll' 
+	Target file is Version 9.22.949.2248
+	Source file is Version 9.22.949.2248
+09/18/14 17:17:33: infinst: C:\windows\system32\D3DX9_37.dll have been installed already.
+09/18/14 17:17:33: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\d3dx10_37_x64.inf [DefaultInstall]
+09/18/14 17:17:33: infinst: Target file: 'C:\windows\system32\d3dx10_37.dll' 
+	Target file is Version 9.19.949.2185
+	Source file is Version 9.19.949.2185
+09/18/14 17:17:33: infinst: C:\windows\system32\d3dx10_37.dll have been installed already.
+09/18/14 17:17:33: infinst: Target file: 'C:\windows\system32\D3DCompiler_37.dll' 
+	Target file is Version 9.22.949.2248
+	Source file is Version 9.22.949.2248
+09/18/14 17:17:33: infinst: C:\windows\system32\D3DCompiler_37.dll have been installed already.
+09/18/14 17:17:33: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\X3DAudio1_3_x64.inf [DefaultInstall]
+09/18/14 17:17:33: infinst: Target file: 'C:\windows\system32\X3DAudio1_3.dll' 
+	Target file is Version 9.22.1284.0
+	Source file is Version 9.22.1284.0
+09/18/14 17:17:33: infinst: C:\windows\system32\X3DAudio1_3.dll have been installed already.
+09/18/14 17:17:34: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XACT3_0_x64.inf [DefaultInstall]
+09/18/14 17:17:34: infinst: Target file: 'C:\windows\system32\xactengine3_0.dll' 
+	Target file is Version 9.22.1284.0
+	Source file is Version 9.22.1284.0
+09/18/14 17:17:34: infinst: C:\windows\system32\xactengine3_0.dll have been installed already.
+09/18/14 17:17:34: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXFBFE.tmp\XAudio2_0_x64.inf [DefaultInstall]
+09/18/14 17:17:34: infinst: Target file: 'C:\windows\system32\XAudio2_0.dll' 
+	Target file is Version 9.22.1284.0
+	Source file is Version 9.22.1284.0
+09/18/14 17:17:34: infinst: C:\windows\system32\XAudio2_0.dll have been installed already.
+11/07/14 23:48:08: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_24_x64.inf [DefaultInstall]
+11/07/14 23:48:09: infinst: Target file: 'C:\windows\system32\d3dx9_24.dll' 
+	Target file is Version 9.5.132.0
+	Source file is Version 9.5.132.0
+11/07/14 23:48:09: infinst: Currently C:\windows\system32\d3dx9_24.dll is newer than the one being installed.
+11/07/14 23:48:10: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_25_x64.inf [DefaultInstall]
+11/07/14 23:48:11: infinst: Target file: 'C:\windows\system32\d3dx9_25.dll' 
+	Target file is Version 9.6.168.0
+	Source file is Version 9.6.168.0
+11/07/14 23:48:11: infinst: Currently C:\windows\system32\d3dx9_25.dll is newer than the one being installed.
+11/07/14 23:48:11: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_26_x64.inf [DefaultInstall]
+11/07/14 23:48:11: infinst: Target file: 'C:\windows\system32\d3dx9_26.dll' 
+	Target file is Version 9.7.239.0
+	Source file is Version 9.7.239.0
+11/07/14 23:48:11: infinst: Currently C:\windows\system32\d3dx9_26.dll is newer than the one being installed.
+11/07/14 23:48:12: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_27_x64.inf [DefaultInstall]
+11/07/14 23:48:12: infinst: Target file: 'C:\windows\system32\d3dx9_27.dll' 
+	Target file is Version 9.8.299.0
+	Source file is Version 9.8.299.0
+11/07/14 23:48:12: infinst: Currently C:\windows\system32\d3dx9_27.dll is newer than the one being installed.
+11/07/14 23:48:13: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_28_x64.inf [DefaultInstall]
+11/07/14 23:48:13: infinst: Target file: 'C:\windows\system32\d3dx9_28.dll' 
+	Target file is Version 9.10.455.0
+	Source file is Version 9.10.455.0
+11/07/14 23:48:13: infinst: Currently C:\windows\system32\d3dx9_28.dll is newer than the one being installed.
+11/07/14 23:48:13: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_29_x64.inf [DefaultInstall]
+11/07/14 23:48:13: infinst: Target file: 'C:\windows\system32\d3dx9_29.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/07/14 23:48:13: infinst: Currently C:\windows\system32\d3dx9_29.dll is newer than the one being installed.
+11/07/14 23:48:14: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT_x64.inf [DefaultInstall]
+11/07/14 23:48:14: infinst: Target file: 'C:\windows\system32\xactengine2_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/07/14 23:48:14: infinst: Currently C:\windows\system32\xactengine2_0.dll is newer than the one being installed.
+11/07/14 23:48:14: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/07/14 23:48:14: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+11/07/14 23:48:14: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_30_x64.inf [DefaultInstall]
+11/07/14 23:48:15: infinst: Target file: 'C:\windows\system32\d3dx9_30.dll' 
+	Target file is Version 9.12.589.0
+	Source file is Version 9.12.589.0
+11/07/14 23:48:15: infinst: Currently C:\windows\system32\d3dx9_30.dll is newer than the one being installed.
+11/07/14 23:48:19: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_1_x64.inf [DefaultInstall]
+11/07/14 23:48:20: infinst: Target file: 'C:\windows\system32\xactengine2_1.dll' 
+	Target file is Version 9.12.589.0
+	Source file is Version 9.12.589.0
+11/07/14 23:48:20: infinst: Currently C:\windows\system32\xactengine2_1.dll is newer than the one being installed.
+11/07/14 23:48:20: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/07/14 23:48:20: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+11/07/14 23:48:20: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\xinput1_1_x64.inf [Install_Driver]
+11/07/14 23:48:20: infinst: Target file: 'C:\windows\system32\xinput1_1.dll' 
+	Target file is Version 9.12.589.0
+	Source file is Version 9.12.589.0
+11/07/14 23:48:20: infinst: Currently C:\windows\system32\xinput1_1.dll is newer than the one being installed.
+11/07/14 23:48:20: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_2_x64.inf [DefaultInstall]
+11/07/14 23:48:20: infinst: Target file: 'C:\windows\system32\xactengine2_2.dll' 
+	Target file is Version 9.13.644.0
+	Source file is Version 9.13.644.0
+11/07/14 23:48:20: infinst: Currently C:\windows\system32\xactengine2_2.dll is newer than the one being installed.
+11/07/14 23:48:20: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/07/14 23:48:20: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+11/07/14 23:48:20: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\xinput1_2_x64.inf [Install_Driver]
+11/07/14 23:48:20: infinst: Target file: 'C:\windows\system32\xinput1_2.dll' 
+	Target file is Version 9.14.701.0
+	Source file is Version 9.14.701.0
+11/07/14 23:48:20: infinst: Currently C:\windows\system32\xinput1_2.dll is newer than the one being installed.
+11/07/14 23:48:21: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_3_x64.inf [DefaultInstall]
+11/07/14 23:48:21: infinst: Target file: 'C:\windows\system32\xactengine2_3.dll' 
+	Target file is Version 9.14.701.0
+	Source file is Version 9.14.701.0
+11/07/14 23:48:21: infinst: Currently C:\windows\system32\xactengine2_3.dll is newer than the one being installed.
+11/07/14 23:48:21: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/07/14 23:48:21: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+11/07/14 23:48:21: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_31_x64.inf [DefaultInstall]
+11/07/14 23:48:21: infinst: Target file: 'C:\windows\system32\d3dx9_31.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/07/14 23:48:21: infinst: Currently C:\windows\system32\d3dx9_31.dll is newer than the one being installed.
+11/07/14 23:48:21: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_4_x64.inf [DefaultInstall]
+11/07/14 23:48:22: infinst: Target file: 'C:\windows\system32\xactengine2_4.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/07/14 23:48:22: infinst: Currently C:\windows\system32\xactengine2_4.dll is newer than the one being installed.
+11/07/14 23:48:22: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/07/14 23:48:22: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+11/07/14 23:48:22: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_32_x64.inf [DefaultInstall]
+11/07/14 23:48:23: infinst: Target file: 'C:\windows\system32\d3dx9_32.dll' 
+	Target file is Version 9.16.843.0
+	Source file is Version 9.16.843.0
+11/07/14 23:48:23: infinst: Currently C:\windows\system32\d3dx9_32.dll is newer than the one being installed.
+11/07/14 23:48:23: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx10_00_x64.inf [DefaultInstall]
+11/07/14 23:48:23: infinst: Target file: 'C:\windows\system32\d3dx10.dll' 
+	Target file is Version 9.16.843.0
+	Source file is Version 9.16.843.0
+11/07/14 23:48:23: infinst: Currently C:\windows\system32\d3dx10.dll is newer than the one being installed.
+11/07/14 23:48:23: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_5_x64.inf [DefaultInstall]
+11/07/14 23:48:23: infinst: Target file: 'C:\windows\system32\xactengine2_5.dll' 
+	Target file is Version 9.16.857.0
+	Source file is Version 9.16.857.0
+11/07/14 23:48:23: infinst: Currently C:\windows\system32\xactengine2_5.dll is newer than the one being installed.
+11/07/14 23:48:23: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/07/14 23:48:23: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+11/07/14 23:48:23: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_6_x64.inf [DefaultInstall]
+11/07/14 23:48:23: infinst: Target file: 'C:\windows\system32\xactengine2_6.dll' 
+	Target file is Version 9.17.892.0
+	Source file is Version 9.17.892.0
+11/07/14 23:48:23: infinst: Currently C:\windows\system32\xactengine2_6.dll is newer than the one being installed.
+11/07/14 23:48:23: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/07/14 23:48:23: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+11/07/14 23:48:24: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_33_x64.inf [DefaultInstall]
+11/07/14 23:48:25: infinst: Target file: 'C:\windows\system32\d3dx9_33.dll' 
+	Target file is Version 9.18.904.15
+	Source file is Version 9.18.904.15
+11/07/14 23:48:25: infinst: Currently C:\windows\system32\d3dx9_33.dll is newer than the one being installed.
+11/07/14 23:48:26: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx10_33_x64.inf [DefaultInstall]
+11/07/14 23:48:26: infinst: Target file: 'C:\windows\system32\d3dx10_33.dll' 
+	Target file is Version 9.18.904.21
+	Source file is Version 9.18.904.21
+11/07/14 23:48:26: infinst: Currently C:\windows\system32\d3dx10_33.dll is newer than the one being installed.
+11/07/14 23:48:26: infinst: Target file: 'C:\windows\system32\D3DCompiler_33.dll' 
+	Target file is Version 9.18.904.15
+	Source file is Version 9.18.904.15
+11/07/14 23:48:26: infinst: Currently C:\windows\system32\D3DCompiler_33.dll is newer than the one being installed.
+11/07/14 23:48:26: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_7_x64.inf [DefaultInstall]
+11/07/14 23:48:26: infinst: Target file: 'C:\windows\system32\xactengine2_7.dll' 
+	Target file is Version 9.18.944.0
+	Source file is Version 9.18.944.0
+11/07/14 23:48:26: infinst: Currently C:\windows\system32\xactengine2_7.dll is newer than the one being installed.
+11/07/14 23:48:26: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/07/14 23:48:26: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+11/07/14 23:48:26: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\xinput1_3_x64.inf [Install_Driver]
+11/07/14 23:48:26: infinst: Target file: 'C:\windows\system32\xinput1_3.dll' 
+	Target file is Version 9.18.944.0
+	Source file is Version 9.18.944.0
+11/07/14 23:48:26: infinst: Currently C:\windows\system32\xinput1_3.dll is newer than the one being installed.
+11/07/14 23:48:27: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_34_x64.inf [DefaultInstall]
+11/07/14 23:48:27: infinst: Target file: 'C:\windows\system32\d3dx9_34.dll' 
+	Target file is Version 9.19.949.46
+	Source file is Version 9.19.949.46
+11/07/14 23:48:27: infinst: Currently C:\windows\system32\d3dx9_34.dll is newer than the one being installed.
+11/07/14 23:48:27: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx10_34_x64.inf [DefaultInstall]
+11/07/14 23:48:28: infinst: Target file: 'C:\windows\system32\d3dx10_34.dll' 
+	Target file is Version 9.19.949.46
+	Source file is Version 9.19.949.46
+11/07/14 23:48:28: infinst: Currently C:\windows\system32\d3dx10_34.dll is newer than the one being installed.
+11/07/14 23:48:28: infinst: Target file: 'C:\windows\system32\D3DCompiler_34.dll' 
+	Target file is Version 9.19.949.46
+	Source file is Version 9.19.949.46
+11/07/14 23:48:28: infinst: Currently C:\windows\system32\D3DCompiler_34.dll is newer than the one being installed.
+11/07/14 23:48:28: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_8_x64.inf [DefaultInstall]
+11/07/14 23:48:28: infinst: Target file: 'C:\windows\system32\xactengine2_8.dll' 
+	Target file is Version 9.19.1007.0
+	Source file is Version 9.19.1007.0
+11/07/14 23:48:28: infinst: Currently C:\windows\system32\xactengine2_8.dll is newer than the one being installed.
+11/07/14 23:48:28: infinst: Target file: 'C:\windows\system32\x3daudio1_2.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.19.1007.0
+11/07/14 23:48:29: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_35_x64.inf [DefaultInstall]
+11/07/14 23:48:29: infinst: Target file: 'C:\windows\system32\d3dx9_35.dll' 
+	Target file is Version 9.19.949.1104
+	Source file is Version 9.19.949.1104
+11/07/14 23:48:29: infinst: Currently C:\windows\system32\d3dx9_35.dll is newer than the one being installed.
+11/07/14 23:48:29: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx10_35_x64.inf [DefaultInstall]
+11/07/14 23:48:30: infinst: Target file: 'C:\windows\system32\d3dx10_35.dll' 
+	Target file is Version 9.19.949.1104
+	Source file is Version 9.19.949.1104
+11/07/14 23:48:30: infinst: Currently C:\windows\system32\d3dx10_35.dll is newer than the one being installed.
+11/07/14 23:48:30: infinst: Target file: 'C:\windows\system32\D3DCompiler_35.dll' 
+	Target file is Version 9.19.949.1104
+	Source file is Version 9.19.949.1104
+11/07/14 23:48:30: infinst: Currently C:\windows\system32\D3DCompiler_35.dll is newer than the one being installed.
+11/07/14 23:48:30: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_9_x64.inf [DefaultInstall]
+11/07/14 23:48:30: infinst: Target file: 'C:\windows\system32\xactengine2_9.dll' 
+	Target file is Version 9.20.1057.0
+	Source file is Version 9.20.1057.0
+11/07/14 23:48:30: infinst: Currently C:\windows\system32\xactengine2_9.dll is newer than the one being installed.
+11/07/14 23:48:30: infinst: Target file: 'C:\windows\system32\x3daudio1_2.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.20.1057.0
+11/07/14 23:48:31: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx9_36_x64.inf [DefaultInstall]
+11/07/14 23:48:31: infinst: Target file: 'C:\windows\system32\d3dx9_36.dll' 
+	Target file is Version 9.19.949.2111
+	Source file is Version 9.19.949.2111
+11/07/14 23:48:31: infinst: Currently C:\windows\system32\d3dx9_36.dll is newer than the one being installed.
+11/07/14 23:48:32: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx10_36_x64.inf [DefaultInstall]
+11/07/14 23:48:32: infinst: Target file: 'C:\windows\system32\d3dx10_36.dll' 
+	Target file is Version 9.19.949.2009
+	Source file is Version 9.19.949.2009
+11/07/14 23:48:32: infinst: Currently C:\windows\system32\d3dx10_36.dll is newer than the one being installed.
+11/07/14 23:48:32: infinst: Target file: 'C:\windows\system32\D3DCompiler_36.dll' 
+	Target file is Version 9.19.949.2111
+	Source file is Version 9.19.949.2111
+11/07/14 23:48:32: infinst: Currently C:\windows\system32\D3DCompiler_36.dll is newer than the one being installed.
+11/07/14 23:48:32: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\X3DAudio1_2_x64.inf [DefaultInstall]
+11/07/14 23:48:32: infinst: Target file: 'C:\windows\system32\X3DAudio1_2.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.21.1148.0
+11/07/14 23:48:32: infinst: Currently C:\windows\system32\X3DAudio1_2.dll is newer than the one being installed.
+11/07/14 23:48:33: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT2_10_x64.inf [DefaultInstall]
+11/07/14 23:48:33: infinst: Target file: 'C:\windows\system32\xactengine2_10.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.21.1148.0
+11/07/14 23:48:33: infinst: Currently C:\windows\system32\xactengine2_10.dll is newer than the one being installed.
+11/07/14 23:48:33: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\D3DX9_37_x64.inf [DefaultInstall]
+11/07/14 23:48:34: infinst: Target file: 'C:\windows\system32\D3DX9_37.dll' 
+	Target file is Version 9.22.949.2248
+	Source file is Version 9.22.949.2248
+11/07/14 23:48:34: infinst: C:\windows\system32\D3DX9_37.dll have been installed already.
+11/07/14 23:48:34: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\d3dx10_37_x64.inf [DefaultInstall]
+11/07/14 23:48:34: infinst: Target file: 'C:\windows\system32\d3dx10_37.dll' 
+	Target file is Version 9.19.949.2185
+	Source file is Version 9.19.949.2185
+11/07/14 23:48:34: infinst: C:\windows\system32\d3dx10_37.dll have been installed already.
+11/07/14 23:48:35: infinst: Target file: 'C:\windows\system32\D3DCompiler_37.dll' 
+	Target file is Version 9.22.949.2248
+	Source file is Version 9.22.949.2248
+11/07/14 23:48:35: infinst: C:\windows\system32\D3DCompiler_37.dll have been installed already.
+11/07/14 23:48:35: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\X3DAudio1_3_x64.inf [DefaultInstall]
+11/07/14 23:48:35: infinst: Target file: 'C:\windows\system32\X3DAudio1_3.dll' 
+	Target file is Version 9.22.1284.0
+	Source file is Version 9.22.1284.0
+11/07/14 23:48:35: infinst: C:\windows\system32\X3DAudio1_3.dll have been installed already.
+11/07/14 23:48:35: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XACT3_0_x64.inf [DefaultInstall]
+11/07/14 23:48:35: infinst: Target file: 'C:\windows\system32\xactengine3_0.dll' 
+	Target file is Version 9.22.1284.0
+	Source file is Version 9.22.1284.0
+11/07/14 23:48:35: infinst: C:\windows\system32\xactengine3_0.dll have been installed already.
+11/07/14 23:48:36: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DXBECE.tmp\XAudio2_0_x64.inf [DefaultInstall]
+11/07/14 23:48:36: infinst: Target file: 'C:\windows\system32\XAudio2_0.dll' 
+	Target file is Version 9.22.1284.0
+	Source file is Version 9.22.1284.0
+11/07/14 23:48:36: infinst: C:\windows\system32\XAudio2_0.dll have been installed already.
+11/08/14 00:05:05: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_24_x64.inf [DefaultInstall]
+11/08/14 00:05:06: infinst: Target file: 'C:\windows\system32\d3dx9_24.dll' 
+	Target file is Version 9.5.132.0
+	Source file is Version 9.5.132.0
+11/08/14 00:05:06: infinst: Currently C:\windows\system32\d3dx9_24.dll is newer than the one being installed.
+11/08/14 00:05:07: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_25_x64.inf [DefaultInstall]
+11/08/14 00:05:08: infinst: Target file: 'C:\windows\system32\d3dx9_25.dll' 
+	Target file is Version 9.6.168.0
+	Source file is Version 9.6.168.0
+11/08/14 00:05:08: infinst: Currently C:\windows\system32\d3dx9_25.dll is newer than the one being installed.
+11/08/14 00:05:09: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_26_x64.inf [DefaultInstall]
+11/08/14 00:05:09: infinst: Target file: 'C:\windows\system32\d3dx9_26.dll' 
+	Target file is Version 9.7.239.0
+	Source file is Version 9.7.239.0
+11/08/14 00:05:09: infinst: Currently C:\windows\system32\d3dx9_26.dll is newer than the one being installed.
+11/08/14 00:05:11: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_27_x64.inf [DefaultInstall]
+11/08/14 00:05:11: infinst: Target file: 'C:\windows\system32\d3dx9_27.dll' 
+	Target file is Version 9.8.299.0
+	Source file is Version 9.8.299.0
+11/08/14 00:05:11: infinst: Currently C:\windows\system32\d3dx9_27.dll is newer than the one being installed.
+11/08/14 00:05:11: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_28_x64.inf [DefaultInstall]
+11/08/14 00:05:12: infinst: Target file: 'C:\windows\system32\d3dx9_28.dll' 
+	Target file is Version 9.10.455.0
+	Source file is Version 9.10.455.0
+11/08/14 00:05:12: infinst: Currently C:\windows\system32\d3dx9_28.dll is newer than the one being installed.
+11/08/14 00:05:13: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_29_x64.inf [DefaultInstall]
+11/08/14 00:05:13: infinst: Target file: 'C:\windows\system32\d3dx9_29.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/08/14 00:05:13: infinst: Currently C:\windows\system32\d3dx9_29.dll is newer than the one being installed.
+11/08/14 00:05:14: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT_x64.inf [DefaultInstall]
+11/08/14 00:05:14: infinst: Target file: 'C:\windows\system32\xactengine2_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/08/14 00:05:14: infinst: Currently C:\windows\system32\xactengine2_0.dll is newer than the one being installed.
+11/08/14 00:05:14: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/08/14 00:05:14: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+11/08/14 00:05:15: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_30_x64.inf [DefaultInstall]
+11/08/14 00:05:16: infinst: Target file: 'C:\windows\system32\d3dx9_30.dll' 
+	Target file is Version 9.12.589.0
+	Source file is Version 9.12.589.0
+11/08/14 00:05:16: infinst: Currently C:\windows\system32\d3dx9_30.dll is newer than the one being installed.
+11/08/14 00:05:20: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_1_x64.inf [DefaultInstall]
+11/08/14 00:05:20: infinst: Target file: 'C:\windows\system32\xactengine2_1.dll' 
+	Target file is Version 9.12.589.0
+	Source file is Version 9.12.589.0
+11/08/14 00:05:20: infinst: Currently C:\windows\system32\xactengine2_1.dll is newer than the one being installed.
+11/08/14 00:05:20: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/08/14 00:05:20: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+11/08/14 00:05:20: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\xinput1_1_x64.inf [Install_Driver]
+11/08/14 00:05:20: infinst: Target file: 'C:\windows\system32\xinput1_1.dll' 
+	Target file is Version 9.12.589.0
+	Source file is Version 9.12.589.0
+11/08/14 00:05:20: infinst: Currently C:\windows\system32\xinput1_1.dll is newer than the one being installed.
+11/08/14 00:05:20: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_2_x64.inf [DefaultInstall]
+11/08/14 00:05:20: infinst: Target file: 'C:\windows\system32\xactengine2_2.dll' 
+	Target file is Version 9.13.644.0
+	Source file is Version 9.13.644.0
+11/08/14 00:05:20: infinst: Currently C:\windows\system32\xactengine2_2.dll is newer than the one being installed.
+11/08/14 00:05:21: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/08/14 00:05:21: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+11/08/14 00:05:21: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\xinput1_2_x64.inf [Install_Driver]
+11/08/14 00:05:21: infinst: Target file: 'C:\windows\system32\xinput1_2.dll' 
+	Target file is Version 9.14.701.0
+	Source file is Version 9.14.701.0
+11/08/14 00:05:21: infinst: Currently C:\windows\system32\xinput1_2.dll is newer than the one being installed.
+11/08/14 00:05:21: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_3_x64.inf [DefaultInstall]
+11/08/14 00:05:21: infinst: Target file: 'C:\windows\system32\xactengine2_3.dll' 
+	Target file is Version 9.14.701.0
+	Source file is Version 9.14.701.0
+11/08/14 00:05:21: infinst: Currently C:\windows\system32\xactengine2_3.dll is newer than the one being installed.
+11/08/14 00:05:21: infinst: Target file: 'C:\windows\system32\x3daudio1_0.dll' 
+	Target file is Version 9.11.519.0
+	Source file is Version 9.11.519.0
+11/08/14 00:05:21: infinst: Currently C:\windows\system32\x3daudio1_0.dll is newer than the one being installed.
+11/08/14 00:05:21: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_31_x64.inf [DefaultInstall]
+11/08/14 00:05:22: infinst: Target file: 'C:\windows\system32\d3dx9_31.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/08/14 00:05:22: infinst: Currently C:\windows\system32\d3dx9_31.dll is newer than the one being installed.
+11/08/14 00:05:22: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_4_x64.inf [DefaultInstall]
+11/08/14 00:05:22: infinst: Target file: 'C:\windows\system32\xactengine2_4.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/08/14 00:05:22: infinst: Currently C:\windows\system32\xactengine2_4.dll is newer than the one being installed.
+11/08/14 00:05:22: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/08/14 00:05:22: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+11/08/14 00:05:23: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_32_x64.inf [DefaultInstall]
+11/08/14 00:05:23: infinst: Target file: 'C:\windows\system32\d3dx9_32.dll' 
+	Target file is Version 9.16.843.0
+	Source file is Version 9.16.843.0
+11/08/14 00:05:23: infinst: Currently C:\windows\system32\d3dx9_32.dll is newer than the one being installed.
+11/08/14 00:05:24: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx10_00_x64.inf [DefaultInstall]
+11/08/14 00:05:24: infinst: Target file: 'C:\windows\system32\d3dx10.dll' 
+	Target file is Version 9.16.843.0
+	Source file is Version 9.16.843.0
+11/08/14 00:05:24: infinst: Currently C:\windows\system32\d3dx10.dll is newer than the one being installed.
+11/08/14 00:05:24: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_5_x64.inf [DefaultInstall]
+11/08/14 00:05:24: infinst: Target file: 'C:\windows\system32\xactengine2_5.dll' 
+	Target file is Version 9.16.857.0
+	Source file is Version 9.16.857.0
+11/08/14 00:05:24: infinst: Currently C:\windows\system32\xactengine2_5.dll is newer than the one being installed.
+11/08/14 00:05:24: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/08/14 00:05:24: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+11/08/14 00:05:25: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_6_x64.inf [DefaultInstall]
+11/08/14 00:05:25: infinst: Target file: 'C:\windows\system32\xactengine2_6.dll' 
+	Target file is Version 9.17.892.0
+	Source file is Version 9.17.892.0
+11/08/14 00:05:25: infinst: Currently C:\windows\system32\xactengine2_6.dll is newer than the one being installed.
+11/08/14 00:05:25: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/08/14 00:05:25: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+11/08/14 00:05:26: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_33_x64.inf [DefaultInstall]
+11/08/14 00:05:27: infinst: Target file: 'C:\windows\system32\d3dx9_33.dll' 
+	Target file is Version 9.18.904.15
+	Source file is Version 9.18.904.15
+11/08/14 00:05:27: infinst: Currently C:\windows\system32\d3dx9_33.dll is newer than the one being installed.
+11/08/14 00:05:27: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx10_33_x64.inf [DefaultInstall]
+11/08/14 00:05:28: infinst: Target file: 'C:\windows\system32\d3dx10_33.dll' 
+	Target file is Version 9.18.904.21
+	Source file is Version 9.18.904.21
+11/08/14 00:05:28: infinst: Currently C:\windows\system32\d3dx10_33.dll is newer than the one being installed.
+11/08/14 00:05:28: infinst: Target file: 'C:\windows\system32\D3DCompiler_33.dll' 
+	Target file is Version 9.18.904.15
+	Source file is Version 9.18.904.15
+11/08/14 00:05:28: infinst: Currently C:\windows\system32\D3DCompiler_33.dll is newer than the one being installed.
+11/08/14 00:05:28: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_7_x64.inf [DefaultInstall]
+11/08/14 00:05:29: infinst: Target file: 'C:\windows\system32\xactengine2_7.dll' 
+	Target file is Version 9.18.944.0
+	Source file is Version 9.18.944.0
+11/08/14 00:05:29: infinst: Currently C:\windows\system32\xactengine2_7.dll is newer than the one being installed.
+11/08/14 00:05:29: infinst: Target file: 'C:\windows\system32\x3daudio1_1.dll' 
+	Target file is Version 9.15.779.0
+	Source file is Version 9.15.779.0
+11/08/14 00:05:29: infinst: Currently C:\windows\system32\x3daudio1_1.dll is newer than the one being installed.
+11/08/14 00:05:29: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\xinput1_3_x64.inf [Install_Driver]
+11/08/14 00:05:29: infinst: Target file: 'C:\windows\system32\xinput1_3.dll' 
+	Target file is Version 9.18.944.0
+	Source file is Version 9.18.944.0
+11/08/14 00:05:30: infinst: Currently C:\windows\system32\xinput1_3.dll is newer than the one being installed.
+11/08/14 00:05:30: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_34_x64.inf [DefaultInstall]
+11/08/14 00:05:31: infinst: Target file: 'C:\windows\system32\d3dx9_34.dll' 
+	Target file is Version 9.19.949.46
+	Source file is Version 9.19.949.46
+11/08/14 00:05:31: infinst: Currently C:\windows\system32\d3dx9_34.dll is newer than the one being installed.
+11/08/14 00:05:39: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx10_34_x64.inf [DefaultInstall]
+11/08/14 00:05:39: infinst: Target file: 'C:\windows\system32\d3dx10_34.dll' 
+	Target file is Version 9.19.949.46
+	Source file is Version 9.19.949.46
+11/08/14 00:05:39: infinst: Currently C:\windows\system32\d3dx10_34.dll is newer than the one being installed.
+11/08/14 00:05:40: infinst: Target file: 'C:\windows\system32\D3DCompiler_34.dll' 
+	Target file is Version 9.19.949.46
+	Source file is Version 9.19.949.46
+11/08/14 00:05:40: infinst: Currently C:\windows\system32\D3DCompiler_34.dll is newer than the one being installed.
+11/08/14 00:05:40: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_8_x64.inf [DefaultInstall]
+11/08/14 00:05:41: infinst: Target file: 'C:\windows\system32\xactengine2_8.dll' 
+	Target file is Version 9.19.1007.0
+	Source file is Version 9.19.1007.0
+11/08/14 00:05:41: infinst: Currently C:\windows\system32\xactengine2_8.dll is newer than the one being installed.
+11/08/14 00:05:41: infinst: Target file: 'C:\windows\system32\x3daudio1_2.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.19.1007.0
+11/08/14 00:05:42: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_35_x64.inf [DefaultInstall]
+11/08/14 00:05:42: infinst: Target file: 'C:\windows\system32\d3dx9_35.dll' 
+	Target file is Version 9.19.949.1104
+	Source file is Version 9.19.949.1104
+11/08/14 00:05:42: infinst: Currently C:\windows\system32\d3dx9_35.dll is newer than the one being installed.
+11/08/14 00:05:43: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx10_35_x64.inf [DefaultInstall]
+11/08/14 00:05:43: infinst: Target file: 'C:\windows\system32\d3dx10_35.dll' 
+	Target file is Version 9.19.949.1104
+	Source file is Version 9.19.949.1104
+11/08/14 00:05:43: infinst: Currently C:\windows\system32\d3dx10_35.dll is newer than the one being installed.
+11/08/14 00:05:43: infinst: Target file: 'C:\windows\system32\D3DCompiler_35.dll' 
+	Target file is Version 9.19.949.1104
+	Source file is Version 9.19.949.1104
+11/08/14 00:05:43: infinst: Currently C:\windows\system32\D3DCompiler_35.dll is newer than the one being installed.
+11/08/14 00:05:43: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_9_x64.inf [DefaultInstall]
+11/08/14 00:05:43: infinst: Target file: 'C:\windows\system32\xactengine2_9.dll' 
+	Target file is Version 9.20.1057.0
+	Source file is Version 9.20.1057.0
+11/08/14 00:05:43: infinst: Currently C:\windows\system32\xactengine2_9.dll is newer than the one being installed.
+11/08/14 00:05:43: infinst: Target file: 'C:\windows\system32\x3daudio1_2.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.20.1057.0
+11/08/14 00:05:45: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx9_36_x64.inf [DefaultInstall]
+11/08/14 00:05:45: infinst: Target file: 'C:\windows\system32\d3dx9_36.dll' 
+	Target file is Version 9.19.949.2111
+	Source file is Version 9.19.949.2111
+11/08/14 00:05:45: infinst: Currently C:\windows\system32\d3dx9_36.dll is newer than the one being installed.
+11/08/14 00:05:46: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx10_36_x64.inf [DefaultInstall]
+11/08/14 00:05:46: infinst: Target file: 'C:\windows\system32\d3dx10_36.dll' 
+	Target file is Version 9.19.949.2009
+	Source file is Version 9.19.949.2009
+11/08/14 00:05:46: infinst: Currently C:\windows\system32\d3dx10_36.dll is newer than the one being installed.
+11/08/14 00:05:47: infinst: Target file: 'C:\windows\system32\D3DCompiler_36.dll' 
+	Target file is Version 9.19.949.2111
+	Source file is Version 9.19.949.2111
+11/08/14 00:05:47: infinst: Currently C:\windows\system32\D3DCompiler_36.dll is newer than the one being installed.
+11/08/14 00:05:47: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\X3DAudio1_2_x64.inf [DefaultInstall]
+11/08/14 00:05:47: infinst: Target file: 'C:\windows\system32\X3DAudio1_2.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.21.1148.0
+11/08/14 00:05:47: infinst: Currently C:\windows\system32\X3DAudio1_2.dll is newer than the one being installed.
+11/08/14 00:05:48: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT2_10_x64.inf [DefaultInstall]
+11/08/14 00:05:48: infinst: Target file: 'C:\windows\system32\xactengine2_10.dll' 
+	Target file is Version 9.21.1148.0
+	Source file is Version 9.21.1148.0
+11/08/14 00:05:48: infinst: Currently C:\windows\system32\xactengine2_10.dll is newer than the one being installed.
+11/08/14 00:05:49: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\D3DX9_37_x64.inf [DefaultInstall]
+11/08/14 00:05:50: infinst: Target file: 'C:\windows\system32\D3DX9_37.dll' 
+	Target file is Version 9.22.949.2248
+	Source file is Version 9.22.949.2248
+11/08/14 00:05:50: infinst: C:\windows\system32\D3DX9_37.dll have been installed already.
+11/08/14 00:05:50: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\d3dx10_37_x64.inf [DefaultInstall]
+11/08/14 00:05:50: infinst: Target file: 'C:\windows\system32\d3dx10_37.dll' 
+	Target file is Version 9.19.949.2185
+	Source file is Version 9.19.949.2185
+11/08/14 00:05:50: infinst: C:\windows\system32\d3dx10_37.dll have been installed already.
+11/08/14 00:05:50: infinst: Target file: 'C:\windows\system32\D3DCompiler_37.dll' 
+	Target file is Version 9.22.949.2248
+	Source file is Version 9.22.949.2248
+11/08/14 00:05:50: infinst: C:\windows\system32\D3DCompiler_37.dll have been installed already.
+11/08/14 00:05:51: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\X3DAudio1_3_x64.inf [DefaultInstall]
+11/08/14 00:05:51: infinst: Target file: 'C:\windows\system32\X3DAudio1_3.dll' 
+	Target file is Version 9.22.1284.0
+	Source file is Version 9.22.1284.0
+11/08/14 00:05:51: infinst: C:\windows\system32\X3DAudio1_3.dll have been installed already.
+11/08/14 00:05:51: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XACT3_0_x64.inf [DefaultInstall]
+11/08/14 00:05:51: infinst: Target file: 'C:\windows\system32\xactengine3_0.dll' 
+	Target file is Version 9.22.1284.0
+	Source file is Version 9.22.1284.0
+11/08/14 00:05:51: infinst: C:\windows\system32\xactengine3_0.dll have been installed already.
+11/08/14 00:05:52: infinst: Installing C:\Users\Scyld\AppData\Local\Temp\DX425F.tmp\XAudio2_0_x64.inf [DefaultInstall]
+11/08/14 00:05:52: infinst: Target file: 'C:\windows\system32\XAudio2_0.dll' 
+	Target file is Version 9.22.1284.0
+	Source file is Version 9.22.1284.0
+11/08/14 00:05:52: infinst: C:\windows\system32\XAudio2_0.dll have been installed already.
