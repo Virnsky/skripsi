@@ -12,8 +12,9 @@ char temp_prio1[10], temp_prio2[10], temp_prio3[10], temp_prio4[10], temp_prio5[
 int temp_ind1 = 0, temp_ind2 = 0, temp_ind3 = 0, temp_ind4 = 0, temp_ind5 = 0,temp_max_fre;
 int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0;
 
-bool bitEncode[50000];
-int bitLen;
+bool bitEncode[500000];
+char tempScan[50000];
+unsigned int bitLen;
 
 //misc file handler
 char tempsajo[50], argv2[50];
@@ -426,7 +427,6 @@ void decodeTable(const char* filename)
     char b=0;
     char c=0;
     char symbol;
-    char tempScan[5000];
     char huffsimbol[10];
     bool path[16];
     int len;
@@ -463,14 +463,14 @@ void decodeTable(const char* filename)
         fscanf(jj,"%c",&c); //printBit(c);printf("\n");
 
         //masa bodo sama koding panjang!! pala udah pusing
-        path [0]=b&0x80;path [1]=b&0x40;
-        path [2]=b&0x20;path [3]=b&0x10;
-        path [4]=b&0x08;path [5]=b&0x04;
-        path [6]=b&0x02;path [7]=b&0x01;
-        path [8]=c&0x80;path [9]=c&0x40;
-        path[10]=c&0x20;path[11]=c&0x10;
-        path[12]=c&0x08;path[13]=c&0x04;
-        path[14]=c&0x02;path[15]=c&0x01;//for(j=0;j<16;j++){printf("%d",path[j]);}printf("\n");
+        path [0]=((b&0x80)&&0x80);path [1]=((b&0x40)&&0x40);
+        path [2]=((b&0x20)&&0x20);path [3]=((b&0x10)&&0x10);
+        path [4]=((b&0x08)&&0x08);path [5]=((b&0x04)&&0x04);
+        path [6]=((b&0x02)&&0x02);path [7]=((b&0x01)&&0x01);
+        path [8]=((c&0x80)&&0x80);path [9]=((c&0x40)&&0x40);
+        path[10]=((c&0x20)&&0x20);path[11]=((c&0x10)&&0x10);
+        path[12]=((c&0x08)&&0x08);path[13]=((c&0x04)&&0x04);
+        path[14]=((c&0x02)&&0x02);path[15]=((c&0x01)&&0x01);//for(j=0;j<16;j++){printf("%d",path[j]);}printf("\n");
 
         //BUAT HUFFMAN TABLE DARI INFORMASI DIATAS
         huffTreeCreateFromBit(&itsrandom,path,len,huffsimbol);
@@ -505,14 +505,14 @@ void decodeTable(const char* filename)
         {
             switch(j)
             {
-                case 0: whatever=tempScan[i]&0x80;break;
-                case 1: whatever=tempScan[i]&0x40;break;
-                case 2: whatever=tempScan[i]&0x20;break;
-                case 3: whatever=tempScan[i]&0x10;break;
-                case 4: whatever=tempScan[i]&0x8;break;
-                case 5: whatever=tempScan[i]&0x4;break;
-                case 6: whatever=tempScan[i]&0x2;break;
-                case 7: whatever=tempScan[i]&0x1;break;
+                case 0: whatever=((tempScan[i]&0x80)&&0x80);break;
+                case 1: whatever=((tempScan[i]&0x40)&&0x40);break;
+                case 2: whatever=((tempScan[i]&0x20)&&0x20);break;
+                case 3: whatever=((tempScan[i]&0x10)&&0x10);break;
+                case 4: whatever=((tempScan[i]&0x08)&&0x08);break;
+                case 5: whatever=((tempScan[i]&0x04)&&0x04);break;
+                case 6: whatever=((tempScan[i]&0x02)&&0x02);break;
+                case 7: whatever=((tempScan[i]&0x01)&&0x01);break;
             }
             addEncodeTable(whatever);
         }
