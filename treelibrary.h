@@ -33,7 +33,7 @@ struct htlist_head
 struct huffData
 {
 	char symbol[10];
-	bool encode[32];
+	bool encode[16];
 	int len;
 	int frek;
 };
