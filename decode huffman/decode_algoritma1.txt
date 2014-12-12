@@ -1,0 +1,40 @@
+http://www.arturocampos.com/cp_ch3-3.html
+
+
+At first we have as much as the compressor does, a probability distribution. The compressor made a code table. The decompressor doesn't use this method though. It instead keeps the whole huffman binary tree, and of course a pointer to the root to do the recursion process.
+
+In your implementation you'll make the tree as usual and then you'll store a pointer to last node in the list, which is the root. Then the process can start. We'll navigate the tree by using the pointers to the children that each node has. This process is done by a recursive function which accepts as a parameter a pointer to the current node, and returns the symbol (in our case a byte). This is the code for this function:
+
+byte huffman_decode_byte ( pointer to binary tree node ) 
+{ 
+//First we have to check if we are in a fictive node or in leaf. 
+//In our case we decided that fictive nodes have a value higher 
+//than any other symbol. If using bytes, 256. That's the way 
+//we know it.
+
+if( node->value != 256 ) 
+ { 
+ //It's a leaf, return the symbol 
+ return node->value; 
+ } 
+else 
+ { 
+ //We are on a fictive node, we have to right to the 
+ //left or the right node depending on the next bit. 
+ //We'll return the value returned by the function 
+ //called, which will be the decoded byte. 
+ if( get_bit() == 0) 
+  { 
+  //Go to the left 
+  return ( huffman_decode_byte( node->left_node ) ); 
+  } 
+ else 
+  { 
+  //Go to the right 
+  return ( huffman_decode_byte( node->right_node ) ); 
+  } 
+ }
+
+}
+
+This function would be called using as a parameter the pointer to the root. When the byte is found it will be returned to the calling function, and at last to the original call. 

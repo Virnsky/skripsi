@@ -1,0 +1,5 @@
+http://stackoverflow.com/questions/21854069/decoding-huffman-tree
+
+====Decode Variable length====
+http://www.ie.u-ryukyu.ac.jp/~wada/design03/spec_e.html
+==============================

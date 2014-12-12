@@ -721,8 +721,8 @@ int main (int argc,char **argv){
         }
     fclose(fp);
 
-    //printf("\n\nData yang siap dikode kan\n");
-    //print_list(&parselist);
+    printf("\n\nData yang siap dikode kan\n");
+    print_list(&parselist);
     //printf("\n\nTabel Huffman\n");
     printf("\nProses Sorting Tabel Huffman....... ");
     sort_list(&tabel_huffman);
@@ -733,6 +733,7 @@ int main (int argc,char **argv){
     //Special test 'untuk pembentukan pohon'
     htlist_head* akarpohon;
     akarpohon->first=NULL;
+    printf("\ntes1\n");
     htree* pohon;
     symbol_list* ksim=tabel_huffman.first;
     while(ksim!=NULL)
@@ -740,6 +741,7 @@ int main (int argc,char **argv){
         add_tree_list(akarpohon,ksim->t.symbol,ksim->t.frekuensi);
         ksim=ksim->next;
     }
+    printf("\ntes2\n");
 //    FILE* pp=fopen("pohon.txt", "w");
 //    sort_tree_list(akarpohon);
 //    debug_list(akarpohon);
@@ -753,11 +755,13 @@ int main (int argc,char **argv){
     beta.first=NULL;
     huffTableCreate(akarpohon->first->branch,&beta);
 //    huffTablePrint(&beta);
+    printf("\ntes3\n");
     createEncodeTable(&parselist,&beta);
 
     printf("\nready to decode table\n");
-
+    printf("\ntes4\n");
     decodeTable(tempsajo);
+    printf("\ntes5\n");
 //    printPaths(akarpohon->first->branch,pp);
 //    fclose(pp);
     //print_list(&tabel_huffman);
