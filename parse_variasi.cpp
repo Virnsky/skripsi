@@ -19,6 +19,10 @@ int bitLen;
 //misc file handler
 char tempsajo[50], argv2[50];
 
+char filename1[50];
+char filename2[50];
+char filename3[50];
+
 struct data_t
 {
 	char symbol[10];
@@ -318,7 +322,7 @@ void printBit(char a)
     printf("%d",g);
 }
 
-void createEncodeTable(list* L,listHuff* hf)
+void createEncodeTable(list* L,listHuff* hf,const char* fFileName)
 {
         symbol_list* lt=L->first;
         int i;
@@ -341,9 +345,7 @@ void createEncodeTable(list* L,listHuff* hf)
             lt=lt->next;
         }//for(i=0;i<bitLen;i++){if(i%8==0){printf(" ");}printf("%d",bitEncode[i]);}printf("\nnumber of bit%d\n",bitLen);
 
-    strcpy(tempsajo, argv2);
-    strcat(tempsajo, ".dat");
-    FILE* jj=fopen(tempsajo,"w");
+    FILE* jj=fopen(fFileName,"w");
     char m=0;
     int countByte=0;
     int countHuffTable=0;
@@ -416,7 +418,7 @@ void createEncodeTable(list* L,listHuff* hf)
     fclose(jj);
 }
 
-void decodeTable(const char* filename)
+void decodeTable(const char* filename,const char* filenameKey)
 {
     int keycount=0;
     int encodecount=0;
@@ -521,7 +523,7 @@ void decodeTable(const char* filename)
     //untuk mengubah stream bit sesuai dengan yang ada di File
     bitLen=encodecount;
     printf("\nthis is stream of encode (bitLen:%d encodecount:%d)\n",bitLen,encodecount);
-    FILE* endOfMisery=fopen(argv2,"w");
+    FILE* endOfMisery=fopen(filename2,"w");
 
     //mulai menDECODE dan menulis
     fprintf(endOfMisery,"{this is decoded file}\n");
@@ -559,14 +561,26 @@ void decodeTable(const char* filename)
 
 
 int main (int argc,char **argv){
-    if (argc!=3){
-		printf("cara pakai: program INPUT-FILE OUTPUT-FILE\n");
-		printf("cara pakai: pustaka huffman berupa berkas OUTPUT-FILE.dat\n");
-		return(0);
-		}
 
-	strcpy(argv2,argv[2]);
-    fp=fopen(argv[1], "r");
+    if (argc!=3){
+//		printf("cara pakai: program INPUT-FILE OUTPUT-FILE\n");
+//		printf("cara pakai: pustaka huffman berupa berkas OUTPUT-FILE.dat\n");
+//		return(0);
+        printf("nama file masukan  :");scanf("%s",&filename1);
+        printf("nama file keluaran :");scanf("%s",&filename2);
+        strcpy(filename3,filename2);
+        strcat(filename2,".dat");
+        strcat(filename3,"_key.dat");
+    }else
+    {
+        strcpy(filename1,argv[1]);
+        strcpy(filename2,argv[2]);
+        strcpy(filename3,filename2);
+        strcat(filename2,".dat");
+        strcat(filename3,"_key.dat");
+    }
+
+    fp=fopen(filename1, "r");
     if(fp==NULL) printf("file masukan tidak ada\n");
     list L;
     L.first=NULL;
@@ -765,7 +779,7 @@ int main (int argc,char **argv){
 
     printf("\nready to decode table\n");
     printf("\ntes4\n");
-    decodeTable(tempsajo);
+    decodeTable(filename2,filename3);
     printf("\ntes5\n");
 //    printPaths(akarpohon->first->branch,pp);
 //    fclose(pp);
