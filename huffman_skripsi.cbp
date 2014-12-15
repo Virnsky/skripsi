@@ -33,6 +33,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="fileManipulator.h" />
 		<Unit filename="parse_variasi.cpp" />
 		<Unit filename="treelibrary.cpp" />
 		<Unit filename="treelibrary.h" />

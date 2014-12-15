@@ -2,6 +2,7 @@
 #include <string.h>
 #include <malloc.h>
 #include "treelibrary.h"
+#include "fileManipulator.h"
 
 FILE* fp;
 fpos_t pos1;
@@ -585,7 +586,8 @@ int main (int argc,char **argv){
         printf("%d character left\n",count_char_left(fp));
         printf("\nProses Pembentukan dan Pencarian Kemunculan Simbol....... ");
         for(i=0;i<count_char_max(fp)-huf_var; i++){
-            fseek(fp,i,SEEK_SET);
+//            fseek(fp,i,SEEK_SET);
+            yogaSeek(fp,i,YOGA_SEEK_SET);
             fread(str2,1,huf_var,fp);
             check_symbol(str2,&tabel_huffman);
             add_symbol(str2,&parselist);
@@ -600,7 +602,8 @@ int main (int argc,char **argv){
         printf("%d character left\n",count_char_left(fp));
         printf("\nProses Pembentukan dan Pencarian Kemunculan Simbol....... ");
         for(i=0;i<count_char_max(fp)-(huf_var-1); i++){
-            fseek(fp,i,SEEK_SET);
+//            fseek(fp,i,SEEK_SET);
+            yogaSeek(fp,i,YOGA_SEEK_SET);
             fread(str2,1,huf_var,fp);
             check_symbol(str2,&L);
         }
@@ -614,7 +617,8 @@ int main (int argc,char **argv){
         for(z; z<=(count_char_max(fp)-huf_var); z){
             var_reset();
             //printf("\n\Proses ke %d",p);
-            fseek(fp,z,SEEK_SET);
+//            fseek(fp,z,SEEK_SET);
+            yogaSeek(fp,z,YOGA_SEEK_SET);
             compare_sysmbol(&L,str1,z,huf_var,temp_prio1,temp_ind1,temp_max_fre);                   // Tahap 1
 
             if (temp_ind1!=0){
@@ -706,7 +710,8 @@ int main (int argc,char **argv){
             printf("%d character left\n",count_char_left(fp));
             printf("\nProses Pembentukan, Pencarian Kemunculan, dan Parsing Simbol....... ");
             for(i=0;i<count_char_max(fp)-huf_var; i){
-                fseek(fp,i,SEEK_SET);
+//                fseek(fp,i,SEEK_SET);
+                yogaSeek(fp,i,YOGA_SEEK_SET);
                 fread(str2,1,huf_var,fp);
                 check_symbol(str2,&tabel_huffman);
                 add_symbol(str2,&parselist);
