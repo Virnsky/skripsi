@@ -154,41 +154,7 @@ void check_symbol(char symbol_name[],list* L)
     }
 }
 
-int  count_char_max(FILE* t_fp)
-{
-    fpos_t pos;
-    int count_char=0;
-    char char_scan;
 
-    fgetpos(t_fp,&pos);
-    fseek(t_fp,0,SEEK_SET);
-    char_scan=fgetc(t_fp);
-    while(char_scan!=EOF)
-    {
-        count_char++;
-        char_scan=fgetc(t_fp);
-    }
-    fsetpos(t_fp,&pos);
-    return count_char;
-}
-
-int count_char_left(FILE* t_fp)
-{
-    fpos_t pos;
-    int count_char=0;
-    char char_scan;
-
-    fgetpos(t_fp,&pos);
-
-    char_scan=fgetc(t_fp);
-    while(char_scan!=EOF)
-    {
-        count_char++;
-        char_scan=fgetc(t_fp);
-    }
-    fsetpos(t_fp,&pos);
-    return count_char;
-}
 
 symbol_list* get_symbol(const char* symbol_name,list* L)
 {
@@ -230,7 +196,8 @@ void compare_sysmbol(list *lt,char str[],int index_seek, int limit, char temp_sy
     while(k<limit){
         memset(str, '\0',10);
         total = index_seek+k;
-        fseek(fp,total,SEEK_SET);
+//        fseek(fp,total,SEEK_SET);
+        yogaSeek(fp,total,YOGA_SEEK_SET);
         fread(str,1,huf_var,fp);
         symbol_list* yuri=get_symbol(str,lt);
         if(yuri==NULL){
@@ -253,7 +220,8 @@ void compare_sysmbol(list *lt,char str[],int index_seek, int limit, char temp_sy
 };
 void preadd_parse(list* lt,char str[],int limited,int index, list* L){
     var_reset();
-    fseek(fp,index,SEEK_SET);
+//    fseek(fp,index,SEEK_SET);
+    yogaSeek(fp,index,YOGA_SEEK_SET);
     fread(str,1,limited,fp);
     //printf("\nIsi str : %s",str);
     strncpy(vt,str,limited);
@@ -386,7 +354,7 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
         {
             countByte=0;
             #ifdef _DEBUG_MODE_
-            printBit(m);
+//            printBit(m);
             #endif // _DEBUG_MODE_
             fprintf(kk,"%c",m);
             m=0;
@@ -401,7 +369,7 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
         {
             countByte=0;
             #ifdef _DEBUG_MODE_
-            printBit(m);
+//            printBit(m);
             #endif // _DEBUG_MODE_
             fprintf(kk,"%c",m);
             m=0;
@@ -573,7 +541,11 @@ int main (int argc,char **argv){
     }
 
     fp=fopen(filename1, "r");
-    if(fp==NULL) printf("file masukan tidak ada\n");
+    if(fp==NULL)
+    {
+        printf("file masukan tidak ada\n");
+        return 0;
+    }
     list L;
     L.first=NULL;
     list parselist;
@@ -733,7 +705,9 @@ int main (int argc,char **argv){
     fclose(fp);
 
     printf("\n\nData yang siap dikode kan\n");
+    #ifdef _DEBUG_MODE_
     print_list(&parselist);
+    #endif
     //printf("\n\nTabel Huffman\n");
     printf("\nProses Sorting Tabel Huffman....... ");
     sort_list(&tabel_huffman);
