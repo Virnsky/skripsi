@@ -4,6 +4,8 @@
 #include "treelibrary.h"
 #include "fileManipulator.h"
 
+#define _DEBUG_MODE_
+
 FILE* fp;
 fpos_t pos1;
 char str2[10], str1[10], str3[10], s[10];
@@ -13,7 +15,7 @@ char temp_prio1[10], temp_prio2[10], temp_prio3[10], temp_prio4[10], temp_prio5[
 int temp_ind1 = 0, temp_ind2 = 0, temp_ind3 = 0, temp_ind4 = 0, temp_ind5 = 0,temp_max_fre;
 int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0;
 
-bool bitEncode[50000];
+bool bitEncode[8000000];
 int bitLen;
 
 //misc file handler
@@ -295,34 +297,18 @@ void addEncodeTable(bool val)
 void printBit(char a)
 {
 //    printf("%d",a/256);
-    char g;
-    g=a&0b10000000;
-    g=g>>7;
-    g=g&1;
-    printf("%d",g);
-    g=a&0b01000000;
-    g=g>>6;
-    printf("%d",g);
-    g=a&0b00100000;
-    g=g>>5;
-    printf("%d",g);
-    g=a&0b00010000;
-    g=g>>4;
-    printf("%d",g);
-    g=a&0b00001000;
-    g=g>>3;
-    printf("%d",g);
-    g=a&0b00000100;
-    g=g>>2;
-    printf("%d",g);
-    g=a&0b00000010;
-    g=g>>1;
-    printf("%d",g);
-    g=a&1;
-    printf("%d",g);
+    bool g;
+    g=((a&0x80)&&0x80);printf("%d",g);
+    g=((a&0x40)&&0x40);printf("%d",g);
+    g=((a&0x20)&&0x20);printf("%d",g);
+    g=((a&0x10)&&0x10);printf("%d",g);
+    g=((a&0x08)&&0x08);printf("%d",g);
+    g=((a&0x04)&&0x04);printf("%d",g);
+    g=((a&0x02)&&0x02);printf("%d",g);
+    g=a&1;printf("%d",g);
 }
 
-void createEncodeTable(list* L,listHuff* hf,const char* fFileName)
+void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fFileKeyName)
 {
         symbol_list* lt=L->first;
         int i;
@@ -346,10 +332,12 @@ void createEncodeTable(list* L,listHuff* hf,const char* fFileName)
         }//for(i=0;i<bitLen;i++){if(i%8==0){printf(" ");}printf("%d",bitEncode[i]);}printf("\nnumber of bit%d\n",bitLen);
 
     FILE* jj=fopen(fFileName,"w");
+    FILE* kk=fopen(fFileKeyName,"w");
     char m=0;
     int countByte=0;
     int countHuffTable=0;
-    fprintf(jj,"%c%c",0xA7,0x7A);
+    fprintf(jj,"%c%c%c%c",'Y','O','G','A');
+//    fprintf(kk,"%c%c%c%c",'Y','O','G','A');
 
     //count number of keys
     huffTable* a=hf->first;
@@ -397,8 +385,10 @@ void createEncodeTable(list* L,listHuff* hf,const char* fFileName)
         if(countByte>=8)
         {
             countByte=0;
-//            printBit(m);
-            fprintf(jj,"%c",m);
+            #ifdef _DEBUG_MODE_
+            printBit(m);
+            #endif // _DEBUG_MODE_
+            fprintf(kk,"%c",m);
             m=0;
         }
     }
@@ -410,8 +400,10 @@ void createEncodeTable(list* L,listHuff* hf,const char* fFileName)
         if(countByte>=8)
         {
             countByte=0;
-//            printBit(m);
-            fprintf(jj,"%c",m);
+            #ifdef _DEBUG_MODE_
+            printBit(m);
+            #endif // _DEBUG_MODE_
+            fprintf(kk,"%c",m);
             m=0;
         }
     }
@@ -775,12 +767,12 @@ int main (int argc,char **argv){
     huffTableCreate(akarpohon->first->branch,&beta);
 //    huffTablePrint(&beta);
     printf("\ntes3\n");
-    createEncodeTable(&parselist,&beta);
+    createEncodeTable(&beta,&parselist,filename2,filename3);
 
-    printf("\nready to decode table\n");
-    printf("\ntes4\n");
-    decodeTable(filename2,filename3);
-    printf("\ntes5\n");
+//    printf("\nready to decode table\n");
+//    printf("\ntes4\n");
+//    decodeTable(filename2,filename3);
+//    printf("\ntes5\n");
 //    printPaths(akarpohon->first->branch,pp);
 //    fclose(pp);
     //print_list(&tabel_huffman);
