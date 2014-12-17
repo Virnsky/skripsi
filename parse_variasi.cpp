@@ -299,8 +299,8 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
             lt=lt->next;
         }//for(i=0;i<bitLen;i++){if(i%8==0){printf(" ");}printf("%d",bitEncode[i]);}printf("\nnumber of bit%d\n",bitLen);
 
-    FILE* jj=fopen(fFileName,"w");
-    FILE* kk=fopen(fFileKeyName,"w");
+    FILE* jj=fopen(fFileKeyName,"w");
+    FILE* kk=fopen(fFileName,"w");
     char m=0;
     int countByte=0;
     int countHuffTable=0;
@@ -376,6 +376,7 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
         }
     }
     fclose(jj);
+    fclose(kk);
 }
 
 void decodeTable(const char* filename,const char* filenameKey)
