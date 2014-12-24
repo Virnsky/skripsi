@@ -15,7 +15,7 @@ char temp_prio1[10], temp_prio2[10], temp_prio3[10], temp_prio4[10], temp_prio5[
 int temp_ind1 = 0, temp_ind2 = 0, temp_ind3 = 0, temp_ind4 = 0, temp_ind5 = 0,temp_max_fre;
 int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0;
 
-bool bitEncode[8000000];
+bool bitEncode[80000000];
 int bitLen;
 
 //misc file handler
@@ -279,7 +279,7 @@ void printBit(char a)
 void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fFileKeyName)
 {
         symbol_list* lt=L->first;
-        int i;
+        int i;int j;
         while(lt!=NULL)
         {
             huffTable* huffSrc=findHuffTable(hf,lt->t.symbol);
@@ -304,8 +304,8 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
     char m=0;
     int countByte=0;
     int countHuffTable=0;
+    fprintf(kk,"%c%c%c%c",'Y','O','G','A');
     fprintf(jj,"%c%c%c%c",'Y','O','G','A');
-//    fprintf(kk,"%c%c%c%c",'Y','O','G','A');
 
     //count number of keys
     huffTable* a=hf->first;
@@ -324,25 +324,21 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
     {
 //        printf("%d %s %d ",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
         fprintf(jj,"%c%s%c",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
-        // 8 bit pertama huffman code
-        for(i=0;i<8;i++)
-        {
-            m=m | (a->huff.encode[i]<<(7-i));
-        }
-        fprintf(jj,"%c",m);//printBit(m);printf("\n");
-        m=0;
-        //8 bit ke dua
-        for(i=0;i<8;i++)
-        {
-            m=m | (a->huff.encode[i+8]<<(7-i));
-        }
-        fprintf(jj,"%c",m);//printBit(m);printf("\n");
-        m=0;
 
+        // 4 byte huffman
+        for(j=0;j<4;j++)
+        {
+            for(i=0;i<8;i++)
+            {
+                m=m | (a->huff.encode[i+8*j]<<(7-i));
+            }
+            fprintf(jj,"%c",m);
+//            printBit(m);
+            m=0;
+        }
         a=a->next;
-    }
+    }//    printf("\n");
 
-    printf("\n");
 
     m=0;
     for(i=0;i<bitLen;i++)
@@ -388,34 +384,38 @@ void decodeTable(const char* filename,const char* filenameKey)
     int maxi;
     bool whatever;
     char b=0;
-    char c=0;
+    char c[4]={0,0,0,0};
     char symbol;
-    char tempScan[5000];
+    char tempScan[8000000];
     char huffsimbol[10];
-    bool path[16];
+    bool path[32];
     int len;
 //    FILE* ja=fopen("decode.txt","w");
     FILE* jj=fopen(filename,"r");
+    FILE* kk=fopen(filenameKey,"r");
     if(jj==NULL) return;
-    fseek(jj,2,SEEK_SET);
+    if(kk==NULL) return;
+    fseek(kk,4,SEEK_SET);
+    fseek(jj,4,SEEK_SET);
 
-    fscanf(jj,"%d",&keycount);
-    fscanf(jj,"%d",&encodecount);//printf("%d %d\n",keycount,encodecount);
-    fseek(jj,1,SEEK_CUR);
+    fscanf(kk,"%d",&keycount);
+    fscanf(kk,"%d",&encodecount);//printf("%d %d\n",keycount,encodecount);
+    fseek(kk,1,SEEK_CUR);
 
-    htree itsrandom;
-    listHuff anorandom;
-    itsrandom.left=NULL;
-    itsrandom.right=NULL;
-    anorandom.first=NULL;
+    htree* itsrandom=(htree*)malloc(sizeof(htree));
+    listHuff* anorandom=(listHuff*)malloc(sizeof(listHuff));
+    itsrandom->left=NULL;
+    itsrandom->right=NULL;
+    anorandom->first=NULL;
 
     for(i=0;i<keycount;i++)
     {
 
-        fscanf(jj,"%c",&b);//printf("%d ",b);
+        fscanf(kk,"%c",&b);//printf("%d ",b);
         for(j=0;j<b;j++)
         {
-            fscanf(jj,"%c",&symbol);//printf("%c",symbol);
+            fscanf(kk,"%c",&symbol);
+            printf("%c",symbol);
             huffsimbol[j]=symbol;
         }
         huffsimbol[b]='\0';
@@ -423,31 +423,48 @@ void decodeTable(const char* filename,const char* filenameKey)
         fscanf(jj,"%c",&b);
         len=b;              //printf("%d ",b);
         //AMBIL 2 BYTE HUFFMAN CODE
-        fscanf(jj,"%c",&b); //printBit(b);printf("\n");
-        fscanf(jj,"%c",&c); //printBit(c);printf("\n");
+        fscanf(kk,"%c",&c[0]); //printBit(b);printf("\n");
+        fscanf(kk,"%c",&c[1]); //printBit(c);printf("\n");
+        fscanf(kk,"%c",&c[2]);
+        fscanf(kk,"%c",&c[3]);
+        printf("%d %c%c%c%c\n",b,c[0],c[1],c[2],c[3]);
 
         //masa bodo sama koding panjang!! pala udah pusing
-        path [0]=b&0x80;path [1]=b&0x40;
-        path [2]=b&0x20;path [3]=b&0x10;
-        path [4]=b&0x08;path [5]=b&0x04;
-        path [6]=b&0x02;path [7]=b&0x01;
-        path [8]=c&0x80;path [9]=c&0x40;
-        path[10]=c&0x20;path[11]=c&0x10;
-        path[12]=c&0x08;path[13]=c&0x04;
-        path[14]=c&0x02;path[15]=c&0x01;//for(j=0;j<16;j++){printf("%d",path[j]);}printf("\n");
+/*
+        path [0]=c[0]&0x80;path [1]=c[0]&0x40;
+        path [2]=c[0]&0x20;path [3]=c[0]&0x10;
+        path [4]=c[0]&0x08;path [5]=c[0]&0x04;
+        path [6]=c[0]&0x02;path [7]=c[0]&0x01;
 
+        path [8]=c[1]&0x80;path [9]=c[1]&0x40;
+        path[10]=c[1]&0x20;path[11]=c[1]&0x10;
+        path[12]=c[1]&0x08;path[13]=c[1]&0x04;
+        path[14]=c[1]&0x02;path[15]=c[1]&0x01;//for(j=0;j<16;j++){printf("%d",path[j]);}printf("\n");
+
+        path[16]=c[2]&0x80;path[17]=c[2]&0x40;
+        path[18]=c[2]&0x20;path[19]=c[2]&0x10;
+        path[20]=c[2]&0x08;path[21]=c[2]&0x04;
+        path[22]=c[2]&0x02;path[23]=c[2]&0x01;
+
+        path[24]=c[3]&0x80;path[25]=c[3]&0x40;
+        path[26]=c[3]&0x20;path[27]=c[3]&0x10;
+        path[28]=c[3]&0x08;path[29]=c[3]&0x04;
+        path[30]=c[3]&0x02;path[31]=c[3]&0x01;
+*/
         //BUAT HUFFMAN TABLE DARI INFORMASI DIATAS
-        huffTreeCreateFromBit(&itsrandom,path,len,huffsimbol);
+//        huffTreeCreateFromBit(itsrandom,path,len,huffsimbol);
 
         //reset dulu mas bro
-        for(j=0;j<16;j++)
-        {
-            path[j]=false;
-        }
+//        for(j=0;j<32;j++)
+//        {
+//            path[j]=false;
+//        }
 
     }
 //    printf("\nprint recently created huffman tree\n\t\t---\n");
-    huffTableCreate(&itsrandom,&anorandom);
+
+//    huffTableCreate(itsrandom,anorandom);
+
 //    huffTablePrint(&anorandom);
 //    printf("\ndone\n");
 
@@ -484,11 +501,12 @@ void decodeTable(const char* filename,const char* filenameKey)
     //untuk mengubah stream bit sesuai dengan yang ada di File
     bitLen=encodecount;
     printf("\nthis is stream of encode (bitLen:%d encodecount:%d)\n",bitLen,encodecount);
-    FILE* endOfMisery=fopen(filename2,"w");
+    scanf("%s",filename1);
+    FILE* endOfMisery=fopen(filename1,"w");
 
     //mulai menDECODE dan menulis
     fprintf(endOfMisery,"{this is decoded file}\n");
-    htree* tempTree=&itsrandom;
+    htree* tempTree=itsrandom;
     for(i=0;i<encodecount;i++)
     {
         if(bitEncode[i]==false)
@@ -499,7 +517,7 @@ void decodeTable(const char* filename,const char* filenameKey)
             if(tempTree->left==NULL)
             {
                 fprintf(endOfMisery,"%s",tempTree->symbol);
-                tempTree=&itsrandom;
+                tempTree=itsrandom;
             }
         }
         if(bitEncode[i]==true)
@@ -510,12 +528,12 @@ void decodeTable(const char* filename,const char* filenameKey)
             if(tempTree->right==NULL)
             {
                 fprintf(endOfMisery,"%s",tempTree->symbol);
-                tempTree=&itsrandom;
+                tempTree=itsrandom;
             }
         }
         printf("%d",bitEncode[i]);
     }
-    fclose(jj);
+    fclose(jj);fclose(kk);
     fclose(endOfMisery);
 	printf("\n");
 }

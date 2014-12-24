@@ -301,7 +301,7 @@ void huffTablePrint(listHuff* hf)
         a=a->next;
     }
 }
-void huffTreeCreateFromBit(htree* node,bool path[16],int pathlen,char sim[10])
+void huffTreeCreateFromBit(htree* node,bool path[32],int pathlen,char sim[10])
 {
     int i=0;
     htree* tempNode=node;
