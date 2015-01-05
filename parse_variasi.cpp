@@ -276,16 +276,13 @@ void printBit(char a)
     g=a&1;printf("%d",g);
 }
 
-void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fFileKeyName)
+void createEncodeTable(listHuff* hf,list* L,list* keyList,const char* fFileName,const char* fFileKeyName)
 {
         symbol_list* lt=L->first;
         int i;int j;
 
         FILE* notimportant=fopen("a_debug.txt","w");
 
-/*------------------------------------------------------
-            start encode file
-------------------------------------------------------*/
         while(lt!=NULL)
         {
             huffTable* huffSrc=findHuffTable(hf,lt->t.symbol);
@@ -306,8 +303,6 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
             lt=lt->next;
         }//for(i=0;i<bitLen;i++){if(i%8==0){printf(" ");}printf("%d",bitEncode[i]);}printf("\nnumber of bit%d\n",bitLen);
 
-//------------------finished encode file--------------------------
-
     FILE* kk=fopen(fFileKeyName,"w");
     FILE* jj=fopen(fFileName,"w");
     char m=0;
@@ -315,57 +310,25 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
     int countHuffTable=0;
 
     //count number of keys
-
-    huffTable* a=hf->first;
+    symbol_list* a=keyList->first;
     while(a!=NULL)
     {
         countHuffTable++;
         a=a->next;
     }
 
-
-/*----------------------------
-            print key
-------------------------------*/
-
     //print number of keys and number of bit
     fprintf(kk,"%d %d ",countHuffTable,bitLen);
 
     m=0;
-    a=hf->first;
+    a=keyList->first;
     while(a!=NULL)
-    {//        printf("%d %s %d ",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
-
-        fprintf(kk,"%c%s%c",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
-        // 8 bit pertama huffman code
-        for(i=0;i<8;i++)
-        {
-            m=m | (a->huff.encode[i]<<(7-i));
-        }
-        fprintf(kk,"%c",m);//printBit(m);printf("\n");
-        m=0;
-        //8 bit ke dua
-        for(i=0;i<8;i++)
-        {
-            m=m | (a->huff.encode[i+8]<<(7-i));
-        }
-        fprintf(kk,"%c",m);//printBit(m);printf("\n");
-        m=0;
-
-        //---------------
-        //-----debug-----
-        fprintf(notimportant,"%d %s %d ",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
-        for(i=0;i<a->huff.len;i++)
-        {
-            fprintf(notimportant,"%d",a->huff.encode[i]);
-        }
-        fprintf(notimportant,"\n");
-        //---end debug---
-        //---------------
-
+    {
+        printf("%d %s %d\n",strlen(a->t.symbol),a->t.symbol,a->t.frekuensi);
+        fprintf(kk,"%c%s%c",strlen(a->t.symbol),a->t.symbol,a->t.frekuensi);
+        fprintf(notimportant,"%d %s %d\n",strlen(a->t.symbol),a->t.symbol,a->t.frekuensi);
         a=a->next;
     }
-//------------------finished print key--------------------------
 
 //    m=0;
 //    a=hf->first;
@@ -389,9 +352,7 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
 //    }//    printf("\n");
 
 
-/*---------------------------------------
-            print encoded file
------------------------------------------*/
+
     m=0;
     for(i=0;i<bitLen;i++)
     {
@@ -812,7 +773,7 @@ int main (int argc,char **argv){
     huffTableCreate(akarpohon->first->branch,&beta);
 
     printf("\ntes3\n");
-    createEncodeTable(&beta,&parselist,filename2,filename3);
+    createEncodeTable(&beta,&parselist,&tabel_huffman,filename2,filename3);
 
 //    printf("\nready to decode table\n");
 //    printf("\ntes4\n");

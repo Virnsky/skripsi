@@ -59,7 +59,7 @@
 	<string.h>
 	<malloc.h>
 
-1420374740 source:e:\project\github project\skripsi\parse_variasi.cpp
+1420202941 source:e:\project\github project\skripsi\parse_variasi.cpp
 	<stdio.h>
 	<string.h>
 	<malloc.h>
@@ -78,6 +78,14 @@
 	"fileManipulator.h"
 
 1418802324 e:\project\github project\skripsi\filemanipulator.h
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+
+1419520704 source:e:\project\github project\skripsi - 4 jan '15\treelibrary.cpp
+	"treelibrary.h"
+
+1419692966 e:\project\github project\skripsi - 4 jan '15\treelibrary.h
 	<stdio.h>
 	<string.h>
 	<malloc.h>
