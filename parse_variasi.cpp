@@ -280,6 +280,12 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
 {
         symbol_list* lt=L->first;
         int i;int j;
+
+        FILE* notimportant=fopen("a_debug.txt","w");
+
+/*------------------------------------------------------
+            start encode file
+------------------------------------------------------*/
         while(lt!=NULL)
         {
             huffTable* huffSrc=findHuffTable(hf,lt->t.symbol);
@@ -290,6 +296,7 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
                 return;
             }else
             {
+//                fprintf(notimportant,"%s",huffSrc->huff.symbol);
                 for(i=0;i<huffSrc->huff.len;i++)
                 {
                     addEncodeTable(huffSrc->huff.encode[i]);
@@ -299,15 +306,16 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
             lt=lt->next;
         }//for(i=0;i<bitLen;i++){if(i%8==0){printf(" ");}printf("%d",bitEncode[i]);}printf("\nnumber of bit%d\n",bitLen);
 
-    FILE* jj=fopen(fFileKeyName,"w");
-    FILE* kk=fopen(fFileName,"w");
+//------------------finished encode file--------------------------
+
+    FILE* kk=fopen(fFileKeyName,"w");
+    FILE* jj=fopen(fFileName,"w");
     char m=0;
     int countByte=0;
     int countHuffTable=0;
-    fprintf(kk,"%c%c%c%c",'Y','O','G','A');
-    fprintf(jj,"%c%c%c%c",'Y','O','G','A');
 
     //count number of keys
+
     huffTable* a=hf->first;
     while(a!=NULL)
     {
@@ -315,31 +323,75 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
         a=a->next;
     }
 
+
+/*----------------------------
+            print key
+------------------------------*/
+
     //print number of keys and number of bit
-    fprintf(jj,"%d %d ",countHuffTable,bitLen);
+    fprintf(kk,"%d %d ",countHuffTable,bitLen);
 
     m=0;
     a=hf->first;
     while(a!=NULL)
-    {
-//        printf("%d %s %d ",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
-        fprintf(jj,"%c%s%c",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
+    {//        printf("%d %s %d ",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
 
-        // 4 byte huffman
-        for(j=0;j<4;j++)
+        fprintf(kk,"%c%s%c",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
+        // 8 bit pertama huffman code
+        for(i=0;i<8;i++)
         {
-            for(i=0;i<8;i++)
-            {
-                m=m | (a->huff.encode[i+8*j]<<(7-i));
-            }
-            fprintf(jj,"%c",m);
-//            printBit(m);
-            m=0;
+            m=m | (a->huff.encode[i]<<(7-i));
         }
+        fprintf(kk,"%c",m);//printBit(m);printf("\n");
+        m=0;
+        //8 bit ke dua
+        for(i=0;i<8;i++)
+        {
+            m=m | (a->huff.encode[i+8]<<(7-i));
+        }
+        fprintf(kk,"%c",m);//printBit(m);printf("\n");
+        m=0;
+
+        //---------------
+        //-----debug-----
+        fprintf(notimportant,"%d %s %d ",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
+        for(i=0;i<a->huff.len;i++)
+        {
+            fprintf(notimportant,"%d",a->huff.encode[i]);
+        }
+        fprintf(notimportant,"\n");
+        //---end debug---
+        //---------------
+
         a=a->next;
-    }//    printf("\n");
+    }
+//------------------finished print key--------------------------
+
+//    m=0;
+//    a=hf->first;
+//    while(a!=NULL)
+//    {
+////        printf("%d %s %d ",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
+//        fprintf(jj,"%c%s%c",strlen(a->huff.symbol),a->huff.symbol,a->huff.len);
+//
+//        // 4 byte huffman
+//        for(j=0;j<4;j++)
+//        {
+//            for(i=0;i<8;i++)
+//            {
+//                m=m | (a->huff.encode[i+8*j]<<(7-i));
+//            }
+//            fprintf(jj,"%c",m);
+////            printBit(m);
+//            m=0;
+//        }
+//        a=a->next;
+//    }//    printf("\n");
 
 
+/*---------------------------------------
+            print encoded file
+-----------------------------------------*/
     m=0;
     for(i=0;i<bitLen;i++)
     {
@@ -352,7 +404,7 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
             #ifdef _DEBUG_MODE_
 //            printBit(m);
             #endif // _DEBUG_MODE_
-            fprintf(kk,"%c",m);
+            fprintf(jj,"%c",m);
             m=0;
         }
     }
@@ -367,7 +419,7 @@ void createEncodeTable(listHuff* hf,list* L,const char* fFileName,const char* fF
             #ifdef _DEBUG_MODE_
 //            printBit(m);
             #endif // _DEBUG_MODE_
-            fprintf(kk,"%c",m);
+            fprintf(jj,"%c",m);
             m=0;
         }
     }
@@ -738,6 +790,7 @@ int main (int argc,char **argv){
     htlist_head* akarpohon;
     akarpohon->first=NULL;
     printf("\ntes1\n");
+    //konversi tabel huffman -> tree branch list
     htree* pohon;
     symbol_list* ksim=tabel_huffman.first;
     while(ksim!=NULL)
@@ -746,19 +799,18 @@ int main (int argc,char **argv){
         ksim=ksim->next;
     }
     printf("\ntes2\n");
-//    FILE* pp=fopen("pohon.txt", "w");
-//    sort_tree_list(akarpohon);
-//    debug_list(akarpohon);
-    //printf("create tree\n");
+    //selesai konversi
+
+    //proses mengubah tree branch list menjadi huffman tree
     create_tree(akarpohon);
-
-//    debug_list(akarpohon);
-
+    //    debug_list(akarpohon);
     //printf("succesfully create tree\n");
+
+    //
     listHuff beta;
     beta.first=NULL;
     huffTableCreate(akarpohon->first->branch,&beta);
-//    huffTablePrint(&beta);
+
     printf("\ntes3\n");
     createEncodeTable(&beta,&parselist,filename2,filename3);
 
